@@ -23,10 +23,10 @@
       <view class="family-fill" style="width: {{percent}}%"></view>
     </view>
     <view class="family-progress-note" wx:if="{{hasRecordings}}">
-      已经可以听 {{recordedCount}} 个家里的词
+      已经可以听 {{recordedCount}} 个家里的词 · 先家人，再日常
     </view>
     <view class="family-progress-note" wx:else>
-      先从第一个词开始，30 秒就好
+      第一步：把爸爸妈妈、爷爷奶奶叫对
     </view>
     <button class="primary-btn light family-btn" bindtap="startRecording">
       <image class="btn-icon" src="/assets/icons/mic.png" mode="aspectFit" />

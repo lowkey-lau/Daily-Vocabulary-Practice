@@ -34,6 +34,19 @@
   margin-bottom: 34rpx;
 }
 
+.stage-pill {
+  display: inline-flex;
+  align-items: center;
+  height: 48rpx;
+  padding: 0 20rpx;
+  margin-bottom: 14rpx;
+  border-radius: 24rpx;
+  background: var(--jade-soft);
+  color: var(--jade);
+  font-size: 22rpx;
+  font-weight: 600;
+}
+
 .word-card {
   padding: 40rpx 32rpx;
   text-align: center;

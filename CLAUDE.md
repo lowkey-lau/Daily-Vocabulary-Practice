@@ -2,10 +2,10 @@
 
 ## 项目
 
-面向碎片时间学习的多语言 / 方言词汇练习微信小程序。当前本地测试词表用 HSK 1–2 选词 40 个，验证通用学习与长辈录音流程；正式首发语言 / 方言待定。
+面向碎片时间学习的多语言 / 方言词汇练习微信小程序。当前本地测试词表有 40 个词，按「家人称呼 → 日常场景 → 基础词汇」三阶段组织，验证家庭录音与学习流程；正式首发语言 / 方言待定。
 
 - 需求唯一事实来源：`docs/PRD.md`
-- 当前阶段：本地 Demo + 家庭录音本地原型已完成（12 个页面，40 个 HSK 1–2 选词）；第二阶段云端家庭版待开发，设计见 `docs/FAMILY-MODULE.md`。
+- 当前阶段：本地 Demo + 家庭录音本地原型已完成（12 个页面，40 个三阶段测试词）；第二阶段云端家庭版待开发，设计见 `docs/FAMILY-MODULE.md`。
 
 ## 技术栈
 
@@ -14,7 +14,7 @@
 - Demo：本地存储（`wx.getStorageSync` / `wx.setStorageSync`）
 - 正式版：微信云开发（云数据库、云函数、云存储）
 - 内容以 JSON 批量导入，管理员 openid 白名单
-- 本地测试词表管线：HSK 1–2 选词（MIT）+ pinyin-pro（MIT）+ 原创释义/例句
+- 本地测试词表管线：三阶段选词 + HSK 1–2 命中参考（MIT）+ pinyin-pro（MIT）+ 原创释义/例句
 - 图标：Microsoft Fluent Emoji（MIT），本地 PNG；不引入整套 UI 组件库
 - 本地录音原型：`wx.getRecorderManager` + `wx.env.USER_DATA_PATH`；音频文件不进入云端
 - 第二阶段：家庭口音词库（长辈录音），需要云端多用户、家庭权限与录音存储
@@ -27,7 +27,7 @@
 miniprogram/      小程序客户端
   app.ts/json/wxss
   assets/         Fluent Emoji 图标（PNG）与许可
-  data/words.ts   自动生成（40 个 HSK 1–2 选词；不要手改）
+  data/words.ts   自动生成（40 个三阶段测试词；不要手改）
   content/        选词、源词表快照、来源与许可
   scripts/        fetch:hsk / build:words 内容脚本
   services/       本地存储、每日建议、复习算法、家庭录音

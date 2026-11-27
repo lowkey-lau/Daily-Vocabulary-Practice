@@ -1,104 +1,144 @@
 {
-  "description": "HSK 1–2 选词（词目/等级/词频来自 Complete HSK Vocabulary）；释义、例句、标签为本项目原创。",
+  "description": "家庭口音测试词表：家人称呼 → 日常场景 → 基础词汇。词目命中 HSK 1–2 时记录等级/词频；家人称呼和场景短语可为补充词。释义、例句、标签为原创。",
   "words": [
     {
-      "term": "爱",
-      "pos": "动词",
-      "meaning": "对人或事物有很深的感情",
-      "example": "我爱我的家人。",
-      "exampleMeaning": "表达对家人的感情。",
-      "tags": ["情感"]
+      "term": "爸爸",
+      "stage": "family",
+      "pos": "名词",
+      "meaning": "父亲",
+      "example": "爸爸去上班了。",
+      "exampleMeaning": "描述父亲。",
+      "tags": ["家庭", "称呼"]
     },
     {
-      "term": "吃",
+      "term": "妈妈",
+      "stage": "family",
+      "pos": "名词",
+      "meaning": "母亲",
+      "example": "妈妈在做饭。",
+      "exampleMeaning": "描述母亲。",
+      "tags": ["家庭", "称呼"]
+    },
+    {
+      "term": "爷爷",
+      "stage": "family",
+      "pos": "名词",
+      "meaning": "父亲的父亲",
+      "example": "爷爷喜欢喝茶。",
+      "exampleMeaning": "描述爷爷。",
+      "tags": ["家庭", "称呼"]
+    },
+    {
+      "term": "奶奶",
+      "stage": "family",
+      "pos": "名词",
+      "meaning": "父亲的母亲",
+      "example": "奶奶在院子里晒太阳。",
+      "exampleMeaning": "描述奶奶。",
+      "tags": ["家庭", "称呼"]
+    },
+    {
+      "term": "外公",
+      "stage": "family",
+      "pos": "名词",
+      "meaning": "母亲的父亲",
+      "example": "外公住在乡下。",
+      "exampleMeaning": "描述外公。",
+      "tags": ["家庭", "称呼"]
+    },
+    {
+      "term": "外婆",
+      "stage": "family",
+      "pos": "名词",
+      "meaning": "母亲的母亲",
+      "example": "外婆做的饭很好吃。",
+      "exampleMeaning": "描述外婆。",
+      "tags": ["家庭", "称呼"]
+    },
+    {
+      "term": "哥哥",
+      "stage": "family",
+      "pos": "名词",
+      "meaning": "同辈中比自己年长的男性",
+      "example": "哥哥比我高。",
+      "exampleMeaning": "描述哥哥。",
+      "tags": ["家庭", "称呼"]
+    },
+    {
+      "term": "姐姐",
+      "stage": "family",
+      "pos": "名词",
+      "meaning": "同辈中比自己年长的女性",
+      "example": "姐姐在看书。",
+      "exampleMeaning": "描述姐姐。",
+      "tags": ["家庭", "称呼"]
+    },
+    {
+      "term": "弟弟",
+      "stage": "family",
+      "pos": "名词",
+      "meaning": "同辈中比自己年幼的男性",
+      "example": "弟弟在玩球。",
+      "exampleMeaning": "描述弟弟。",
+      "tags": ["家庭", "称呼"]
+    },
+    {
+      "term": "妹妹",
+      "stage": "family",
+      "pos": "名词",
+      "meaning": "同辈中比自己年幼的女性",
+      "example": "妹妹喜欢画画。",
+      "exampleMeaning": "描述妹妹。",
+      "tags": ["家庭", "称呼"]
+    },
+    {
+      "term": "儿子",
+      "stage": "family",
+      "pos": "名词",
+      "meaning": "父母所生的男性孩子",
+      "example": "他们的儿子上小学了。",
+      "exampleMeaning": "描述儿子。",
+      "tags": ["家庭", "称呼"]
+    },
+    {
+      "term": "女儿",
+      "stage": "family",
+      "pos": "名词",
+      "meaning": "父母所生的女性孩子",
+      "example": "女儿给妈妈打电话。",
+      "exampleMeaning": "描述女儿。",
+      "tags": ["家庭", "称呼"]
+    },
+    {
+      "term": "家人",
+      "stage": "family",
+      "pos": "名词",
+      "meaning": "和自己有家庭关系的人",
+      "example": "过年要和家人一起过。",
+      "exampleMeaning": "指家庭成员。",
+      "tags": ["家庭", "称呼"]
+    },
+    {
+      "term": "吃饭",
+      "stage": "daily",
       "pos": "动词",
-      "meaning": "把食物放进嘴里咽下去",
+      "meaning": "把食物吃下去",
       "example": "我们一起去吃饭。",
       "exampleMeaning": "到了饭点，约人一起用餐。",
-      "tags": ["饮食"]
+      "tags": ["日常", "饮食"]
     },
     {
-      "term": "喝",
+      "term": "喝水",
+      "stage": "daily",
       "pos": "动词",
-      "meaning": "把水或饮料咽下去",
+      "meaning": "把水喝下去",
       "example": "运动完记得喝水。",
       "exampleMeaning": "提醒补充水分。",
-      "tags": ["饮食"]
-    },
-    {
-      "term": "看",
-      "pos": "动词",
-      "meaning": "用眼睛观察",
-      "example": "我看了一会儿书。",
-      "exampleMeaning": "描述阅读或观察。",
-      "tags": ["感官"]
-    },
-    {
-      "term": "听",
-      "pos": "动词",
-      "meaning": "用耳朵接收声音",
-      "example": "我在听音乐。",
-      "exampleMeaning": "描述听声音。",
-      "tags": ["感官"]
-    },
-    {
-      "term": "说话",
-      "pos": "动词",
-      "meaning": "用嘴表达意思",
-      "example": "他们正在说话。",
-      "exampleMeaning": "描述正在交谈。",
-      "tags": ["交流"]
-    },
-    {
-      "term": "买",
-      "pos": "动词",
-      "meaning": "用钱换东西",
-      "example": "妈妈去买菜了。",
-      "exampleMeaning": "描述购物。",
-      "tags": ["日常"]
-    },
-    {
-      "term": "来",
-      "pos": "动词",
-      "meaning": "从别处到说话人这里",
-      "example": "你明天来我家吗？",
-      "exampleMeaning": "邀请对方过来。",
-      "tags": ["出行"]
-    },
-    {
-      "term": "回",
-      "pos": "动词",
-      "meaning": "从外面回到原来的地方",
-      "example": "天黑了，早点回家。",
-      "exampleMeaning": "提醒回住处。",
-      "tags": ["出行"]
-    },
-    {
-      "term": "坐",
-      "pos": "动词",
-      "meaning": "把身体放在椅子等物体上",
-      "example": "请坐这里。",
-      "exampleMeaning": "请对方坐下。",
-      "tags": ["动作"]
-    },
-    {
-      "term": "走",
-      "pos": "动词",
-      "meaning": "用脚一步一步前进",
-      "example": "我们走路去公园。",
-      "exampleMeaning": "描述步行。",
-      "tags": ["出行"]
-    },
-    {
-      "term": "住",
-      "pos": "动词",
-      "meaning": "长期在一个地方生活",
-      "example": "我住在学校附近。",
-      "exampleMeaning": "描述居住。",
-      "tags": ["居住"]
+      "tags": ["日常", "饮食"]
     },
     {
       "term": "睡觉",
+      "stage": "daily",
       "pos": "动词",
       "meaning": "闭上眼睛休息",
       "example": "早点睡觉，明天有精神。",
@@ -106,63 +146,98 @@
       "tags": ["日常"]
     },
     {
-      "term": "工作",
+      "term": "起床",
+      "stage": "daily",
       "pos": "动词",
-      "meaning": "为了做事付出劳动",
-      "example": "爸爸每天去工作。",
-      "exampleMeaning": "描述上班劳动。",
+      "meaning": "从床上起来",
+      "example": "我每天七点起床。",
+      "exampleMeaning": "描述早晨起身。",
+      "tags": ["日常"]
+    },
+    {
+      "term": "上班",
+      "stage": "daily",
+      "pos": "动词",
+      "meaning": "去工作的地方工作",
+      "example": "爸爸早上八点上班。",
+      "exampleMeaning": "描述去工作。",
       "tags": ["工作"]
     },
     {
-      "term": "学习",
+      "term": "下班",
+      "stage": "daily",
       "pos": "动词",
-      "meaning": "通过读书或练习获得知识",
-      "example": "我每天学习一个小时。",
-      "exampleMeaning": "描述学习。",
-      "tags": ["学习"]
+      "meaning": "结束工作离开",
+      "example": "下班后一起去吃饭。",
+      "exampleMeaning": "描述工作结束。",
+      "tags": ["工作"]
     },
     {
-      "term": "认识",
+      "term": "回家",
+      "stage": "daily",
       "pos": "动词",
-      "meaning": "知道并熟悉某人或某事",
-      "example": "我认识这位老师。",
-      "exampleMeaning": "表示熟悉某人。",
-      "tags": ["关系"]
+      "meaning": "回到自己的家",
+      "example": "天黑了，早点回家。",
+      "exampleMeaning": "提醒回住处。",
+      "tags": ["日常", "出行"]
     },
     {
-      "term": "喜欢",
+      "term": "买菜",
+      "stage": "daily",
       "pos": "动词",
-      "meaning": "对人或事物有好感",
-      "example": "我喜欢喝茶。",
-      "exampleMeaning": "表达喜好。",
-      "tags": ["情感"]
+      "meaning": "购买蔬菜等食材",
+      "example": "妈妈早上去买菜。",
+      "exampleMeaning": "描述购买食材。",
+      "tags": ["日常", "饮食"]
     },
     {
-      "term": "高兴",
-      "pos": "形容词",
-      "meaning": "心情很好",
-      "example": "今天我很高兴。",
-      "exampleMeaning": "描述好心情。",
-      "tags": ["情感"]
+      "term": "做饭",
+      "stage": "daily",
+      "pos": "动词",
+      "meaning": "把食材做成饭菜",
+      "example": "今天我来做饭。",
+      "exampleMeaning": "描述下厨。",
+      "tags": ["饮食", "家务"]
     },
     {
-      "term": "热",
-      "pos": "形容词",
-      "meaning": "温度高",
-      "example": "今天很热。",
-      "exampleMeaning": "描述天气温度高。",
-      "tags": ["天气"]
+      "term": "洗碗",
+      "stage": "daily",
+      "pos": "动词",
+      "meaning": "把碗洗干净",
+      "example": "吃完饭要洗碗。",
+      "exampleMeaning": "描述饭后家务。",
+      "tags": ["家务"]
     },
     {
-      "term": "冷",
-      "pos": "形容词",
-      "meaning": "温度低",
-      "example": "冬天很冷。",
-      "exampleMeaning": "描述天气温度低。",
-      "tags": ["天气"]
+      "term": "扫地",
+      "stage": "daily",
+      "pos": "动词",
+      "meaning": "用扫帚清理地面",
+      "example": "周末一起扫地。",
+      "exampleMeaning": "描述打扫。",
+      "tags": ["家务"]
+    },
+    {
+      "term": "看电视",
+      "stage": "daily",
+      "pos": "动词",
+      "meaning": "观看电视节目",
+      "example": "爷爷喜欢看电视。",
+      "exampleMeaning": "描述观看节目。",
+      "tags": ["日常"]
+    },
+    {
+      "term": "打电话",
+      "stage": "daily",
+      "pos": "动词",
+      "meaning": "用手机和别人通话",
+      "example": "晚上给奶奶打电话。",
+      "exampleMeaning": "描述通话。",
+      "tags": ["日常"]
     },
     {
       "term": "下雨",
+      "stage": "daily",
       "pos": "动词",
       "meaning": "天空落下雨水",
       "example": "下雨了，记得带伞。",
@@ -171,6 +246,7 @@
     },
     {
       "term": "天气",
+      "stage": "daily",
       "pos": "名词",
       "meaning": "一个地方冷热晴雨的状况",
       "example": "今天天气很好。",
@@ -179,6 +255,7 @@
     },
     {
       "term": "米饭",
+      "stage": "basic",
       "pos": "名词",
       "meaning": "用米做成的饭",
       "example": "我想吃米饭。",
@@ -187,6 +264,7 @@
     },
     {
       "term": "苹果",
+      "stage": "basic",
       "pos": "名词",
       "meaning": "一种常见水果",
       "example": "这个苹果很甜。",
@@ -194,15 +272,8 @@
       "tags": ["饮食"]
     },
     {
-      "term": "茶",
-      "pos": "名词",
-      "meaning": "用茶叶泡出的饮料",
-      "example": "爷爷喜欢喝茶。",
-      "exampleMeaning": "描述饮品。",
-      "tags": ["饮食"]
-    },
-    {
       "term": "杯子",
+      "stage": "basic",
       "pos": "名词",
       "meaning": "用来喝水的容器",
       "example": "请给我一个杯子。",
@@ -211,6 +282,7 @@
     },
     {
       "term": "手机",
+      "stage": "basic",
       "pos": "名词",
       "meaning": "可以随身携带的移动电话",
       "example": "我的手机没电了。",
@@ -218,15 +290,8 @@
       "tags": ["物品"]
     },
     {
-      "term": "电视",
-      "pos": "名词",
-      "meaning": "用来看节目的家用电器",
-      "example": "爷爷在看电视。",
-      "exampleMeaning": "描述观看电视。",
-      "tags": ["物品"]
-    },
-    {
       "term": "衣服",
+      "stage": "basic",
       "pos": "名词",
       "meaning": "穿在身上的东西",
       "example": "天冷了多穿衣服。",
@@ -235,6 +300,7 @@
     },
     {
       "term": "桌子",
+      "stage": "basic",
       "pos": "名词",
       "meaning": "用来放东西或工作的家具",
       "example": "书在桌子上。",
@@ -243,6 +309,7 @@
     },
     {
       "term": "椅子",
+      "stage": "basic",
       "pos": "名词",
       "meaning": "用来坐的家具",
       "example": "请坐这把椅子。",
@@ -251,6 +318,7 @@
     },
     {
       "term": "医院",
+      "stage": "basic",
       "pos": "名词",
       "meaning": "看病、治疗的地方",
       "example": "他去医院看医生。",
@@ -259,6 +327,7 @@
     },
     {
       "term": "学校",
+      "stage": "basic",
       "pos": "名词",
       "meaning": "学习的地方",
       "example": "孩子去学校了。",
@@ -267,6 +336,7 @@
     },
     {
       "term": "老师",
+      "stage": "basic",
       "pos": "名词",
       "meaning": "教学生的人",
       "example": "老师讲课很清楚。",
@@ -275,6 +345,7 @@
     },
     {
       "term": "学生",
+      "stage": "basic",
       "pos": "名词",
       "meaning": "在学校学习的人",
       "example": "他是我的学生。",
@@ -282,39 +353,8 @@
       "tags": ["人物"]
     },
     {
-      "term": "朋友",
-      "pos": "名词",
-      "meaning": "彼此熟悉、关系好的人",
-      "example": "他是我的好朋友。",
-      "exampleMeaning": "描述关系。",
-      "tags": ["关系"]
-    },
-    {
-      "term": "家",
-      "pos": "名词",
-      "meaning": "自己居住的地方",
-      "example": "我回家了。",
-      "exampleMeaning": "表示回到住处。",
-      "tags": ["场所"]
-    },
-    {
-      "term": "爸爸",
-      "pos": "名词",
-      "meaning": "父亲",
-      "example": "爸爸去上班了。",
-      "exampleMeaning": "描述父亲。",
-      "tags": ["家庭"]
-    },
-    {
-      "term": "妈妈",
-      "pos": "名词",
-      "meaning": "母亲",
-      "example": "妈妈在做饭。",
-      "exampleMeaning": "描述母亲。",
-      "tags": ["家庭"]
-    },
-    {
       "term": "医生",
+      "stage": "basic",
       "pos": "名词",
       "meaning": "给人看病的人",
       "example": "医生给他检查身体。",

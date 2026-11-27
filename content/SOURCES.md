@@ -8,8 +8,9 @@
   - `wordlists/exclusive/old/1.json`（HSK 2.0 Level 1）
   - `wordlists/exclusive/old/2.json`（HSK 2.0 Level 2）
 - 许可：MIT License，Copyright (c) 2026 Yanis Zafirópulos
-- 本项目使用范围：仅同步**词目、HSK 等级、词频、词性**
+- 本项目使用范围：仅作为**词目命中参考**，同步 HSK 等级、词频、词性
 - 未使用：源数据中的拼音、英文释义、例句
+- 家人称呼、日常场景短语等未命中的词标记为「补充词」，释义和拼音由本项目处理
 - 快照：`content/source/hsk-2.0-level1-2.json`，2026-11-27，297 词
 - 许可全文：`content/LICENSE-HSK.txt`
 
@@ -38,7 +39,7 @@
 | --- | --- | --- |
 | Concepticon / Swadesh | CC BY 4.0 | 适合跨语言核心概念表，但需要自己补中文词目；可作为下一步扩展 |
 | CC-CEDICT | CC BY-SA 4.0 | 英文释义为主；直接采用会触发 share-alike，本版只做参考 |
-| jieba dict.txt | MIT | 有词频但无释义，本版用 HSK 选词已够 |
+| jieba dict.txt | MIT | 有词频但无释义，本版用三阶段选词即可 |
 | rime-cantonese | CC BY 4.0 / ODbL | 粤语注音，等确定粤语词书时再接 |
 | CC-Canto | CC BY-SA 3.0 | 粤语词典，等确定粤语词书时再接 |
 | PanLex | CC0 | 跨语言翻译候选，质量需母语者核对 |

@@ -11,155 +11,238 @@ export type Word = {
   example: string;
   exampleMeaning: string;
   tags: string[];
+  stage: 'family' | 'daily' | 'basic';
+  stageLabel: string;
 };
 
 export const WORDS: Word[] = [
   {
-    "id": "hsk-001",
-    "term": "爱",
-    "reading": "ài",
-    "meaning": "对人或事物有很深的感情",
-    "pos": "动词",
-    "example": "我爱我的家人。",
-    "exampleMeaning": "表达对家人的感情。",
+    "id": "field-001",
+    "term": "爸爸",
+    "reading": "bà ba",
+    "meaning": "父亲",
+    "pos": "名词",
+    "example": "爸爸去上班了。",
+    "exampleMeaning": "描述父亲。",
     "tags": [
-      "情感"
-    ]
+      "家庭",
+      "称呼"
+    ],
+    "stage": "family",
+    "stageLabel": "第一阶段 · 家人称呼"
   },
   {
-    "id": "hsk-002",
-    "term": "吃",
-    "reading": "chī",
-    "meaning": "把食物放进嘴里咽下去",
+    "id": "field-002",
+    "term": "妈妈",
+    "reading": "mā ma",
+    "meaning": "母亲",
+    "pos": "名词",
+    "example": "妈妈在做饭。",
+    "exampleMeaning": "描述母亲。",
+    "tags": [
+      "家庭",
+      "称呼"
+    ],
+    "stage": "family",
+    "stageLabel": "第一阶段 · 家人称呼"
+  },
+  {
+    "id": "field-003",
+    "term": "爷爷",
+    "reading": "yé ye",
+    "meaning": "父亲的父亲",
+    "pos": "名词",
+    "example": "爷爷喜欢喝茶。",
+    "exampleMeaning": "描述爷爷。",
+    "tags": [
+      "家庭",
+      "称呼"
+    ],
+    "stage": "family",
+    "stageLabel": "第一阶段 · 家人称呼"
+  },
+  {
+    "id": "field-004",
+    "term": "奶奶",
+    "reading": "nǎi nai",
+    "meaning": "父亲的母亲",
+    "pos": "名词",
+    "example": "奶奶在院子里晒太阳。",
+    "exampleMeaning": "描述奶奶。",
+    "tags": [
+      "家庭",
+      "称呼"
+    ],
+    "stage": "family",
+    "stageLabel": "第一阶段 · 家人称呼"
+  },
+  {
+    "id": "field-005",
+    "term": "外公",
+    "reading": "wài gōng",
+    "meaning": "母亲的父亲",
+    "pos": "名词",
+    "example": "外公住在乡下。",
+    "exampleMeaning": "描述外公。",
+    "tags": [
+      "家庭",
+      "称呼"
+    ],
+    "stage": "family",
+    "stageLabel": "第一阶段 · 家人称呼"
+  },
+  {
+    "id": "field-006",
+    "term": "外婆",
+    "reading": "wài pó",
+    "meaning": "母亲的母亲",
+    "pos": "名词",
+    "example": "外婆做的饭很好吃。",
+    "exampleMeaning": "描述外婆。",
+    "tags": [
+      "家庭",
+      "称呼"
+    ],
+    "stage": "family",
+    "stageLabel": "第一阶段 · 家人称呼"
+  },
+  {
+    "id": "field-007",
+    "term": "哥哥",
+    "reading": "gē ge",
+    "meaning": "同辈中比自己年长的男性",
+    "pos": "名词",
+    "example": "哥哥比我高。",
+    "exampleMeaning": "描述哥哥。",
+    "tags": [
+      "家庭",
+      "称呼"
+    ],
+    "stage": "family",
+    "stageLabel": "第一阶段 · 家人称呼"
+  },
+  {
+    "id": "field-008",
+    "term": "姐姐",
+    "reading": "jiě jie",
+    "meaning": "同辈中比自己年长的女性",
+    "pos": "名词",
+    "example": "姐姐在看书。",
+    "exampleMeaning": "描述姐姐。",
+    "tags": [
+      "家庭",
+      "称呼"
+    ],
+    "stage": "family",
+    "stageLabel": "第一阶段 · 家人称呼"
+  },
+  {
+    "id": "field-009",
+    "term": "弟弟",
+    "reading": "dì di",
+    "meaning": "同辈中比自己年幼的男性",
+    "pos": "名词",
+    "example": "弟弟在玩球。",
+    "exampleMeaning": "描述弟弟。",
+    "tags": [
+      "家庭",
+      "称呼"
+    ],
+    "stage": "family",
+    "stageLabel": "第一阶段 · 家人称呼"
+  },
+  {
+    "id": "field-010",
+    "term": "妹妹",
+    "reading": "mèi mei",
+    "meaning": "同辈中比自己年幼的女性",
+    "pos": "名词",
+    "example": "妹妹喜欢画画。",
+    "exampleMeaning": "描述妹妹。",
+    "tags": [
+      "家庭",
+      "称呼"
+    ],
+    "stage": "family",
+    "stageLabel": "第一阶段 · 家人称呼"
+  },
+  {
+    "id": "field-011",
+    "term": "儿子",
+    "reading": "ér zi",
+    "meaning": "父母所生的男性孩子",
+    "pos": "名词",
+    "example": "他们的儿子上小学了。",
+    "exampleMeaning": "描述儿子。",
+    "tags": [
+      "家庭",
+      "称呼"
+    ],
+    "stage": "family",
+    "stageLabel": "第一阶段 · 家人称呼"
+  },
+  {
+    "id": "field-012",
+    "term": "女儿",
+    "reading": "nǚ ér",
+    "meaning": "父母所生的女性孩子",
+    "pos": "名词",
+    "example": "女儿给妈妈打电话。",
+    "exampleMeaning": "描述女儿。",
+    "tags": [
+      "家庭",
+      "称呼"
+    ],
+    "stage": "family",
+    "stageLabel": "第一阶段 · 家人称呼"
+  },
+  {
+    "id": "field-013",
+    "term": "家人",
+    "reading": "jiā rén",
+    "meaning": "和自己有家庭关系的人",
+    "pos": "名词",
+    "example": "过年要和家人一起过。",
+    "exampleMeaning": "指家庭成员。",
+    "tags": [
+      "家庭",
+      "称呼"
+    ],
+    "stage": "family",
+    "stageLabel": "第一阶段 · 家人称呼"
+  },
+  {
+    "id": "field-014",
+    "term": "吃饭",
+    "reading": "chī fàn",
+    "meaning": "把食物吃下去",
     "pos": "动词",
     "example": "我们一起去吃饭。",
     "exampleMeaning": "到了饭点，约人一起用餐。",
     "tags": [
+      "日常",
       "饮食"
-    ]
+    ],
+    "stage": "daily",
+    "stageLabel": "第二阶段 · 日常场景"
   },
   {
-    "id": "hsk-003",
-    "term": "喝",
-    "reading": "hē",
-    "meaning": "把水或饮料咽下去",
+    "id": "field-015",
+    "term": "喝水",
+    "reading": "hē shuǐ",
+    "meaning": "把水喝下去",
     "pos": "动词",
     "example": "运动完记得喝水。",
     "exampleMeaning": "提醒补充水分。",
     "tags": [
+      "日常",
       "饮食"
-    ]
+    ],
+    "stage": "daily",
+    "stageLabel": "第二阶段 · 日常场景"
   },
   {
-    "id": "hsk-004",
-    "term": "看",
-    "reading": "kàn",
-    "meaning": "用眼睛观察",
-    "pos": "动词",
-    "example": "我看了一会儿书。",
-    "exampleMeaning": "描述阅读或观察。",
-    "tags": [
-      "感官"
-    ]
-  },
-  {
-    "id": "hsk-005",
-    "term": "听",
-    "reading": "tīng",
-    "meaning": "用耳朵接收声音",
-    "pos": "动词",
-    "example": "我在听音乐。",
-    "exampleMeaning": "描述听声音。",
-    "tags": [
-      "感官"
-    ]
-  },
-  {
-    "id": "hsk-006",
-    "term": "说话",
-    "reading": "shuō huà",
-    "meaning": "用嘴表达意思",
-    "pos": "动词",
-    "example": "他们正在说话。",
-    "exampleMeaning": "描述正在交谈。",
-    "tags": [
-      "交流"
-    ]
-  },
-  {
-    "id": "hsk-007",
-    "term": "买",
-    "reading": "mǎi",
-    "meaning": "用钱换东西",
-    "pos": "动词",
-    "example": "妈妈去买菜了。",
-    "exampleMeaning": "描述购物。",
-    "tags": [
-      "日常"
-    ]
-  },
-  {
-    "id": "hsk-008",
-    "term": "来",
-    "reading": "lái",
-    "meaning": "从别处到说话人这里",
-    "pos": "动词",
-    "example": "你明天来我家吗？",
-    "exampleMeaning": "邀请对方过来。",
-    "tags": [
-      "出行"
-    ]
-  },
-  {
-    "id": "hsk-009",
-    "term": "回",
-    "reading": "huí",
-    "meaning": "从外面回到原来的地方",
-    "pos": "动词",
-    "example": "天黑了，早点回家。",
-    "exampleMeaning": "提醒回住处。",
-    "tags": [
-      "出行"
-    ]
-  },
-  {
-    "id": "hsk-010",
-    "term": "坐",
-    "reading": "zuò",
-    "meaning": "把身体放在椅子等物体上",
-    "pos": "动词",
-    "example": "请坐这里。",
-    "exampleMeaning": "请对方坐下。",
-    "tags": [
-      "动作"
-    ]
-  },
-  {
-    "id": "hsk-011",
-    "term": "走",
-    "reading": "zǒu",
-    "meaning": "用脚一步一步前进",
-    "pos": "动词",
-    "example": "我们走路去公园。",
-    "exampleMeaning": "描述步行。",
-    "tags": [
-      "出行"
-    ]
-  },
-  {
-    "id": "hsk-012",
-    "term": "住",
-    "reading": "zhù",
-    "meaning": "长期在一个地方生活",
-    "pos": "动词",
-    "example": "我住在学校附近。",
-    "exampleMeaning": "描述居住。",
-    "tags": [
-      "居住"
-    ]
-  },
-  {
-    "id": "hsk-013",
+    "id": "field-016",
     "term": "睡觉",
     "reading": "shuì jiào",
     "meaning": "闭上眼睛休息",
@@ -168,94 +251,155 @@ export const WORDS: Word[] = [
     "exampleMeaning": "提醒按时休息。",
     "tags": [
       "日常"
-    ]
+    ],
+    "stage": "daily",
+    "stageLabel": "第二阶段 · 日常场景"
   },
   {
-    "id": "hsk-014",
-    "term": "工作",
-    "reading": "gōng zuò",
-    "meaning": "为了做事付出劳动",
+    "id": "field-017",
+    "term": "起床",
+    "reading": "qǐ chuáng",
+    "meaning": "从床上起来",
     "pos": "动词",
-    "example": "爸爸每天去工作。",
-    "exampleMeaning": "描述上班劳动。",
+    "example": "我每天七点起床。",
+    "exampleMeaning": "描述早晨起身。",
+    "tags": [
+      "日常"
+    ],
+    "stage": "daily",
+    "stageLabel": "第二阶段 · 日常场景"
+  },
+  {
+    "id": "field-018",
+    "term": "上班",
+    "reading": "shàng bān",
+    "meaning": "去工作的地方工作",
+    "pos": "动词",
+    "example": "爸爸早上八点上班。",
+    "exampleMeaning": "描述去工作。",
     "tags": [
       "工作"
-    ]
+    ],
+    "stage": "daily",
+    "stageLabel": "第二阶段 · 日常场景"
   },
   {
-    "id": "hsk-015",
-    "term": "学习",
-    "reading": "xué xí",
-    "meaning": "通过读书或练习获得知识",
+    "id": "field-019",
+    "term": "下班",
+    "reading": "xià bān",
+    "meaning": "结束工作离开",
     "pos": "动词",
-    "example": "我每天学习一个小时。",
-    "exampleMeaning": "描述学习。",
+    "example": "下班后一起去吃饭。",
+    "exampleMeaning": "描述工作结束。",
     "tags": [
-      "学习"
-    ]
+      "工作"
+    ],
+    "stage": "daily",
+    "stageLabel": "第二阶段 · 日常场景"
   },
   {
-    "id": "hsk-016",
-    "term": "认识",
-    "reading": "rèn shi",
-    "meaning": "知道并熟悉某人或某事",
+    "id": "field-020",
+    "term": "回家",
+    "reading": "huí jiā",
+    "meaning": "回到自己的家",
     "pos": "动词",
-    "example": "我认识这位老师。",
-    "exampleMeaning": "表示熟悉某人。",
+    "example": "天黑了，早点回家。",
+    "exampleMeaning": "提醒回住处。",
     "tags": [
-      "关系"
-    ]
+      "日常",
+      "出行"
+    ],
+    "stage": "daily",
+    "stageLabel": "第二阶段 · 日常场景"
   },
   {
-    "id": "hsk-017",
-    "term": "喜欢",
-    "reading": "xǐ huan",
-    "meaning": "对人或事物有好感",
+    "id": "field-021",
+    "term": "买菜",
+    "reading": "mǎi cài",
+    "meaning": "购买蔬菜等食材",
     "pos": "动词",
-    "example": "我喜欢喝茶。",
-    "exampleMeaning": "表达喜好。",
+    "example": "妈妈早上去买菜。",
+    "exampleMeaning": "描述购买食材。",
     "tags": [
-      "情感"
-    ]
+      "日常",
+      "饮食"
+    ],
+    "stage": "daily",
+    "stageLabel": "第二阶段 · 日常场景"
   },
   {
-    "id": "hsk-018",
-    "term": "高兴",
-    "reading": "gāo xìng",
-    "meaning": "心情很好",
-    "pos": "形容词",
-    "example": "今天我很高兴。",
-    "exampleMeaning": "描述好心情。",
+    "id": "field-022",
+    "term": "做饭",
+    "reading": "zuò fàn",
+    "meaning": "把食材做成饭菜",
+    "pos": "动词",
+    "example": "今天我来做饭。",
+    "exampleMeaning": "描述下厨。",
     "tags": [
-      "情感"
-    ]
+      "饮食",
+      "家务"
+    ],
+    "stage": "daily",
+    "stageLabel": "第二阶段 · 日常场景"
   },
   {
-    "id": "hsk-019",
-    "term": "热",
-    "reading": "rè",
-    "meaning": "温度高",
-    "pos": "形容词",
-    "example": "今天很热。",
-    "exampleMeaning": "描述天气温度高。",
+    "id": "field-023",
+    "term": "洗碗",
+    "reading": "xǐ wǎn",
+    "meaning": "把碗洗干净",
+    "pos": "动词",
+    "example": "吃完饭要洗碗。",
+    "exampleMeaning": "描述饭后家务。",
     "tags": [
-      "天气"
-    ]
+      "家务"
+    ],
+    "stage": "daily",
+    "stageLabel": "第二阶段 · 日常场景"
   },
   {
-    "id": "hsk-020",
-    "term": "冷",
-    "reading": "lěng",
-    "meaning": "温度低",
-    "pos": "形容词",
-    "example": "冬天很冷。",
-    "exampleMeaning": "描述天气温度低。",
+    "id": "field-024",
+    "term": "扫地",
+    "reading": "sǎo dì",
+    "meaning": "用扫帚清理地面",
+    "pos": "动词",
+    "example": "周末一起扫地。",
+    "exampleMeaning": "描述打扫。",
     "tags": [
-      "天气"
-    ]
+      "家务"
+    ],
+    "stage": "daily",
+    "stageLabel": "第二阶段 · 日常场景"
   },
   {
-    "id": "hsk-021",
+    "id": "field-025",
+    "term": "看电视",
+    "reading": "kàn diàn shì",
+    "meaning": "观看电视节目",
+    "pos": "动词",
+    "example": "爷爷喜欢看电视。",
+    "exampleMeaning": "描述观看节目。",
+    "tags": [
+      "日常"
+    ],
+    "stage": "daily",
+    "stageLabel": "第二阶段 · 日常场景"
+  },
+  {
+    "id": "field-026",
+    "term": "打电话",
+    "reading": "dǎ diàn huà",
+    "meaning": "用手机和别人通话",
+    "pos": "动词",
+    "example": "晚上给奶奶打电话。",
+    "exampleMeaning": "描述通话。",
+    "tags": [
+      "日常"
+    ],
+    "stage": "daily",
+    "stageLabel": "第二阶段 · 日常场景"
+  },
+  {
+    "id": "field-027",
     "term": "下雨",
     "reading": "xià yǔ",
     "meaning": "天空落下雨水",
@@ -264,10 +408,12 @@ export const WORDS: Word[] = [
     "exampleMeaning": "提醒带伞。",
     "tags": [
       "天气"
-    ]
+    ],
+    "stage": "daily",
+    "stageLabel": "第二阶段 · 日常场景"
   },
   {
-    "id": "hsk-022",
+    "id": "field-028",
     "term": "天气",
     "reading": "tiān qì",
     "meaning": "一个地方冷热晴雨的状况",
@@ -276,10 +422,12 @@ export const WORDS: Word[] = [
     "exampleMeaning": "描述气候状况。",
     "tags": [
       "天气"
-    ]
+    ],
+    "stage": "daily",
+    "stageLabel": "第二阶段 · 日常场景"
   },
   {
-    "id": "hsk-023",
+    "id": "field-029",
     "term": "米饭",
     "reading": "mǐ fàn",
     "meaning": "用米做成的饭",
@@ -288,10 +436,12 @@ export const WORDS: Word[] = [
     "exampleMeaning": "表示主食。",
     "tags": [
       "饮食"
-    ]
+    ],
+    "stage": "basic",
+    "stageLabel": "第三阶段 · 基础词汇"
   },
   {
-    "id": "hsk-024",
+    "id": "field-030",
     "term": "苹果",
     "reading": "píng guǒ",
     "meaning": "一种常见水果",
@@ -300,22 +450,12 @@ export const WORDS: Word[] = [
     "exampleMeaning": "描述水果。",
     "tags": [
       "饮食"
-    ]
+    ],
+    "stage": "basic",
+    "stageLabel": "第三阶段 · 基础词汇"
   },
   {
-    "id": "hsk-025",
-    "term": "茶",
-    "reading": "chá",
-    "meaning": "用茶叶泡出的饮料",
-    "pos": "名词",
-    "example": "爷爷喜欢喝茶。",
-    "exampleMeaning": "描述饮品。",
-    "tags": [
-      "饮食"
-    ]
-  },
-  {
-    "id": "hsk-026",
+    "id": "field-031",
     "term": "杯子",
     "reading": "bēi zi",
     "meaning": "用来喝水的容器",
@@ -324,10 +464,12 @@ export const WORDS: Word[] = [
     "exampleMeaning": "请求容器。",
     "tags": [
       "物品"
-    ]
+    ],
+    "stage": "basic",
+    "stageLabel": "第三阶段 · 基础词汇"
   },
   {
-    "id": "hsk-027",
+    "id": "field-032",
     "term": "手机",
     "reading": "shǒu jī",
     "meaning": "可以随身携带的移动电话",
@@ -336,22 +478,12 @@ export const WORDS: Word[] = [
     "exampleMeaning": "描述手机状态。",
     "tags": [
       "物品"
-    ]
+    ],
+    "stage": "basic",
+    "stageLabel": "第三阶段 · 基础词汇"
   },
   {
-    "id": "hsk-028",
-    "term": "电视",
-    "reading": "diàn shì",
-    "meaning": "用来看节目的家用电器",
-    "pos": "名词",
-    "example": "爷爷在看电视。",
-    "exampleMeaning": "描述观看电视。",
-    "tags": [
-      "物品"
-    ]
-  },
-  {
-    "id": "hsk-029",
+    "id": "field-033",
     "term": "衣服",
     "reading": "yī fu",
     "meaning": "穿在身上的东西",
@@ -360,10 +492,12 @@ export const WORDS: Word[] = [
     "exampleMeaning": "提醒保暖。",
     "tags": [
       "物品"
-    ]
+    ],
+    "stage": "basic",
+    "stageLabel": "第三阶段 · 基础词汇"
   },
   {
-    "id": "hsk-030",
+    "id": "field-034",
     "term": "桌子",
     "reading": "zhuō zi",
     "meaning": "用来放东西或工作的家具",
@@ -372,10 +506,12 @@ export const WORDS: Word[] = [
     "exampleMeaning": "描述位置。",
     "tags": [
       "物品"
-    ]
+    ],
+    "stage": "basic",
+    "stageLabel": "第三阶段 · 基础词汇"
   },
   {
-    "id": "hsk-031",
+    "id": "field-035",
     "term": "椅子",
     "reading": "yǐ zi",
     "meaning": "用来坐的家具",
@@ -384,10 +520,12 @@ export const WORDS: Word[] = [
     "exampleMeaning": "请对方坐下。",
     "tags": [
       "物品"
-    ]
+    ],
+    "stage": "basic",
+    "stageLabel": "第三阶段 · 基础词汇"
   },
   {
-    "id": "hsk-032",
+    "id": "field-036",
     "term": "医院",
     "reading": "yī yuàn",
     "meaning": "看病、治疗的地方",
@@ -396,10 +534,12 @@ export const WORDS: Word[] = [
     "exampleMeaning": "描述就医。",
     "tags": [
       "场所"
-    ]
+    ],
+    "stage": "basic",
+    "stageLabel": "第三阶段 · 基础词汇"
   },
   {
-    "id": "hsk-033",
+    "id": "field-037",
     "term": "学校",
     "reading": "xué xiào",
     "meaning": "学习的地方",
@@ -408,10 +548,12 @@ export const WORDS: Word[] = [
     "exampleMeaning": "描述上学。",
     "tags": [
       "场所"
-    ]
+    ],
+    "stage": "basic",
+    "stageLabel": "第三阶段 · 基础词汇"
   },
   {
-    "id": "hsk-034",
+    "id": "field-038",
     "term": "老师",
     "reading": "lǎo shī",
     "meaning": "教学生的人",
@@ -420,10 +562,12 @@ export const WORDS: Word[] = [
     "exampleMeaning": "描述老师。",
     "tags": [
       "人物"
-    ]
+    ],
+    "stage": "basic",
+    "stageLabel": "第三阶段 · 基础词汇"
   },
   {
-    "id": "hsk-035",
+    "id": "field-039",
     "term": "学生",
     "reading": "xué sheng",
     "meaning": "在学校学习的人",
@@ -432,58 +576,12 @@ export const WORDS: Word[] = [
     "exampleMeaning": "描述身份。",
     "tags": [
       "人物"
-    ]
+    ],
+    "stage": "basic",
+    "stageLabel": "第三阶段 · 基础词汇"
   },
   {
-    "id": "hsk-036",
-    "term": "朋友",
-    "reading": "péng you",
-    "meaning": "彼此熟悉、关系好的人",
-    "pos": "名词",
-    "example": "他是我的好朋友。",
-    "exampleMeaning": "描述关系。",
-    "tags": [
-      "关系"
-    ]
-  },
-  {
-    "id": "hsk-037",
-    "term": "家",
-    "reading": "jiā",
-    "meaning": "自己居住的地方",
-    "pos": "名词",
-    "example": "我回家了。",
-    "exampleMeaning": "表示回到住处。",
-    "tags": [
-      "场所"
-    ]
-  },
-  {
-    "id": "hsk-038",
-    "term": "爸爸",
-    "reading": "bà ba",
-    "meaning": "父亲",
-    "pos": "名词",
-    "example": "爸爸去上班了。",
-    "exampleMeaning": "描述父亲。",
-    "tags": [
-      "家庭"
-    ]
-  },
-  {
-    "id": "hsk-039",
-    "term": "妈妈",
-    "reading": "mā ma",
-    "meaning": "母亲",
-    "pos": "名词",
-    "example": "妈妈在做饭。",
-    "exampleMeaning": "描述母亲。",
-    "tags": [
-      "家庭"
-    ]
-  },
-  {
-    "id": "hsk-040",
+    "id": "field-040",
     "term": "医生",
     "reading": "yī shēng",
     "meaning": "给人看病的人",
@@ -492,15 +590,17 @@ export const WORDS: Word[] = [
     "exampleMeaning": "描述职业。",
     "tags": [
       "人物"
-    ]
+    ],
+    "stage": "basic",
+    "stageLabel": "第三阶段 · 基础词汇"
   }
 ];
 
 export const BOOK = {
-  "id": "hsk-daily-test",
-  "title": "普通话 · 日常词（HSK 1–2 选词）",
-  "subtitle": "40 个日常词，先跑通录音",
-  "description": "词目和拼音参考 HSK 1–2 词表；释义、例句为原创。长辈可以按自家口音录，子孙听录音选释义；正式版再按方言 / 语言词书接入。",
+  "id": "field-family-daily-test",
+  "title": "家人与日常 · 口音测试",
+  "subtitle": "先家人称呼，再日常场景 · 40 词",
+  "description": "40 个词分三组：第一阶段家人称呼 → 第二阶段日常场景 → 第三阶段基础词汇。长辈按自家口音录，子孙听录音选释义；正式版再按方言 / 语言词书接入。",
   "level": "入门",
   "total": 40
 };

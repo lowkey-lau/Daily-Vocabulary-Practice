@@ -1,0 +1,721 @@
+{
+  "source": {
+    "name": "Complete HSK Vocabulary",
+    "repo": "https://github.com/drkameleon/complete-hsk-vocabulary",
+    "files": [
+      "https://raw.githubusercontent.com/drkameleon/complete-hsk-vocabulary/main/wordlists/exclusive/old/1.json",
+      "https://raw.githubusercontent.com/drkameleon/complete-hsk-vocabulary/main/wordlists/exclusive/old/2.json"
+    ],
+    "license": "MIT",
+    "accessedAt": "2026-11-27",
+    "note": "仅提取词目、HSK 等级、词频、词性；不取源数据中的拼音和英文释义。拼音由 pinyin-pro 生成，中文释义与例句由本项目原创。"
+  },
+  "pinyin": {
+    "generator": "pinyin-pro",
+    "license": "MIT",
+    "overrides": {
+      "学生": "xué sheng"
+    }
+  },
+  "wordCount": 40,
+  "words": [
+    {
+      "id": "field-001",
+      "term": "爸爸",
+      "reading": "bà ba",
+      "meaning": "父亲",
+      "pos": "名词",
+      "example": "爸爸去上班了。",
+      "exampleMeaning": "描述父亲。",
+      "tags": [
+        "家庭",
+        "称呼"
+      ],
+      "stage": "family",
+      "stageLabel": "第一阶段 · 家人称呼",
+      "origin": "hsk",
+      "hskLevel": 1,
+      "frequency": 908
+    },
+    {
+      "id": "field-002",
+      "term": "妈妈",
+      "reading": "mā ma",
+      "meaning": "母亲",
+      "pos": "名词",
+      "example": "妈妈在做饭。",
+      "exampleMeaning": "描述母亲。",
+      "tags": [
+        "家庭",
+        "称呼"
+      ],
+      "stage": "family",
+      "stageLabel": "第一阶段 · 家人称呼",
+      "origin": "hsk",
+      "hskLevel": 1,
+      "frequency": 527
+    },
+    {
+      "id": "field-003",
+      "term": "爷爷",
+      "reading": "yé ye",
+      "meaning": "父亲的父亲",
+      "pos": "名词",
+      "example": "爷爷喜欢喝茶。",
+      "exampleMeaning": "描述爷爷。",
+      "tags": [
+        "家庭",
+        "称呼"
+      ],
+      "stage": "family",
+      "stageLabel": "第一阶段 · 家人称呼",
+      "origin": "supplemental",
+      "hskLevel": null,
+      "frequency": null
+    },
+    {
+      "id": "field-004",
+      "term": "奶奶",
+      "reading": "nǎi nai",
+      "meaning": "父亲的母亲",
+      "pos": "名词",
+      "example": "奶奶在院子里晒太阳。",
+      "exampleMeaning": "描述奶奶。",
+      "tags": [
+        "家庭",
+        "称呼"
+      ],
+      "stage": "family",
+      "stageLabel": "第一阶段 · 家人称呼",
+      "origin": "supplemental",
+      "hskLevel": null,
+      "frequency": null
+    },
+    {
+      "id": "field-005",
+      "term": "外公",
+      "reading": "wài gōng",
+      "meaning": "母亲的父亲",
+      "pos": "名词",
+      "example": "外公住在乡下。",
+      "exampleMeaning": "描述外公。",
+      "tags": [
+        "家庭",
+        "称呼"
+      ],
+      "stage": "family",
+      "stageLabel": "第一阶段 · 家人称呼",
+      "origin": "supplemental",
+      "hskLevel": null,
+      "frequency": null
+    },
+    {
+      "id": "field-006",
+      "term": "外婆",
+      "reading": "wài pó",
+      "meaning": "母亲的母亲",
+      "pos": "名词",
+      "example": "外婆做的饭很好吃。",
+      "exampleMeaning": "描述外婆。",
+      "tags": [
+        "家庭",
+        "称呼"
+      ],
+      "stage": "family",
+      "stageLabel": "第一阶段 · 家人称呼",
+      "origin": "supplemental",
+      "hskLevel": null,
+      "frequency": null
+    },
+    {
+      "id": "field-007",
+      "term": "哥哥",
+      "reading": "gē ge",
+      "meaning": "同辈中比自己年长的男性",
+      "pos": "名词",
+      "example": "哥哥比我高。",
+      "exampleMeaning": "描述哥哥。",
+      "tags": [
+        "家庭",
+        "称呼"
+      ],
+      "stage": "family",
+      "stageLabel": "第一阶段 · 家人称呼",
+      "origin": "hsk",
+      "hskLevel": 2,
+      "frequency": 1655
+    },
+    {
+      "id": "field-008",
+      "term": "姐姐",
+      "reading": "jiě jie",
+      "meaning": "同辈中比自己年长的女性",
+      "pos": "名词",
+      "example": "姐姐在看书。",
+      "exampleMeaning": "描述姐姐。",
+      "tags": [
+        "家庭",
+        "称呼"
+      ],
+      "stage": "family",
+      "stageLabel": "第一阶段 · 家人称呼",
+      "origin": "hsk",
+      "hskLevel": 2,
+      "frequency": 1513
+    },
+    {
+      "id": "field-009",
+      "term": "弟弟",
+      "reading": "dì di",
+      "meaning": "同辈中比自己年幼的男性",
+      "pos": "名词",
+      "example": "弟弟在玩球。",
+      "exampleMeaning": "描述弟弟。",
+      "tags": [
+        "家庭",
+        "称呼"
+      ],
+      "stage": "family",
+      "stageLabel": "第一阶段 · 家人称呼",
+      "origin": "hsk",
+      "hskLevel": 2,
+      "frequency": 2424
+    },
+    {
+      "id": "field-010",
+      "term": "妹妹",
+      "reading": "mèi mei",
+      "meaning": "同辈中比自己年幼的女性",
+      "pos": "名词",
+      "example": "妹妹喜欢画画。",
+      "exampleMeaning": "描述妹妹。",
+      "tags": [
+        "家庭",
+        "称呼"
+      ],
+      "stage": "family",
+      "stageLabel": "第一阶段 · 家人称呼",
+      "origin": "hsk",
+      "hskLevel": 2,
+      "frequency": 2093
+    },
+    {
+      "id": "field-011",
+      "term": "儿子",
+      "reading": "ér zi",
+      "meaning": "父母所生的男性孩子",
+      "pos": "名词",
+      "example": "他们的儿子上小学了。",
+      "exampleMeaning": "描述儿子。",
+      "tags": [
+        "家庭",
+        "称呼"
+      ],
+      "stage": "family",
+      "stageLabel": "第一阶段 · 家人称呼",
+      "origin": "hsk",
+      "hskLevel": 1,
+      "frequency": 665
+    },
+    {
+      "id": "field-012",
+      "term": "女儿",
+      "reading": "nǚ ér",
+      "meaning": "父母所生的女性孩子",
+      "pos": "名词",
+      "example": "女儿给妈妈打电话。",
+      "exampleMeaning": "描述女儿。",
+      "tags": [
+        "家庭",
+        "称呼"
+      ],
+      "stage": "family",
+      "stageLabel": "第一阶段 · 家人称呼",
+      "origin": "hsk",
+      "hskLevel": 1,
+      "frequency": 879
+    },
+    {
+      "id": "field-013",
+      "term": "家人",
+      "reading": "jiā rén",
+      "meaning": "和自己有家庭关系的人",
+      "pos": "名词",
+      "example": "过年要和家人一起过。",
+      "exampleMeaning": "指家庭成员。",
+      "tags": [
+        "家庭",
+        "称呼"
+      ],
+      "stage": "family",
+      "stageLabel": "第一阶段 · 家人称呼",
+      "origin": "supplemental",
+      "hskLevel": null,
+      "frequency": null
+    },
+    {
+      "id": "field-014",
+      "term": "吃饭",
+      "reading": "chī fàn",
+      "meaning": "把食物吃下去",
+      "pos": "动词",
+      "example": "我们一起去吃饭。",
+      "exampleMeaning": "到了饭点，约人一起用餐。",
+      "tags": [
+        "日常",
+        "饮食"
+      ],
+      "stage": "daily",
+      "stageLabel": "第二阶段 · 日常场景",
+      "origin": "supplemental",
+      "hskLevel": null,
+      "frequency": null
+    },
+    {
+      "id": "field-015",
+      "term": "喝水",
+      "reading": "hē shuǐ",
+      "meaning": "把水喝下去",
+      "pos": "动词",
+      "example": "运动完记得喝水。",
+      "exampleMeaning": "提醒补充水分。",
+      "tags": [
+        "日常",
+        "饮食"
+      ],
+      "stage": "daily",
+      "stageLabel": "第二阶段 · 日常场景",
+      "origin": "supplemental",
+      "hskLevel": null,
+      "frequency": null
+    },
+    {
+      "id": "field-016",
+      "term": "睡觉",
+      "reading": "shuì jiào",
+      "meaning": "闭上眼睛休息",
+      "pos": "动词",
+      "example": "早点睡觉，明天有精神。",
+      "exampleMeaning": "提醒按时休息。",
+      "tags": [
+        "日常"
+      ],
+      "stage": "daily",
+      "stageLabel": "第二阶段 · 日常场景",
+      "origin": "hsk",
+      "hskLevel": 1,
+      "frequency": 944
+    },
+    {
+      "id": "field-017",
+      "term": "起床",
+      "reading": "qǐ chuáng",
+      "meaning": "从床上起来",
+      "pos": "动词",
+      "example": "我每天七点起床。",
+      "exampleMeaning": "描述早晨起身。",
+      "tags": [
+        "日常"
+      ],
+      "stage": "daily",
+      "stageLabel": "第二阶段 · 日常场景",
+      "origin": "hsk",
+      "hskLevel": 2,
+      "frequency": 2645
+    },
+    {
+      "id": "field-018",
+      "term": "上班",
+      "reading": "shàng bān",
+      "meaning": "去工作的地方工作",
+      "pos": "动词",
+      "example": "爸爸早上八点上班。",
+      "exampleMeaning": "描述去工作。",
+      "tags": [
+        "工作"
+      ],
+      "stage": "daily",
+      "stageLabel": "第二阶段 · 日常场景",
+      "origin": "hsk",
+      "hskLevel": 2,
+      "frequency": 1495
+    },
+    {
+      "id": "field-019",
+      "term": "下班",
+      "reading": "xià bān",
+      "meaning": "结束工作离开",
+      "pos": "动词",
+      "example": "下班后一起去吃饭。",
+      "exampleMeaning": "描述工作结束。",
+      "tags": [
+        "工作"
+      ],
+      "stage": "daily",
+      "stageLabel": "第二阶段 · 日常场景",
+      "origin": "supplemental",
+      "hskLevel": null,
+      "frequency": null
+    },
+    {
+      "id": "field-020",
+      "term": "回家",
+      "reading": "huí jiā",
+      "meaning": "回到自己的家",
+      "pos": "动词",
+      "example": "天黑了，早点回家。",
+      "exampleMeaning": "提醒回住处。",
+      "tags": [
+        "日常",
+        "出行"
+      ],
+      "stage": "daily",
+      "stageLabel": "第二阶段 · 日常场景",
+      "origin": "supplemental",
+      "hskLevel": null,
+      "frequency": null
+    },
+    {
+      "id": "field-021",
+      "term": "买菜",
+      "reading": "mǎi cài",
+      "meaning": "购买蔬菜等食材",
+      "pos": "动词",
+      "example": "妈妈早上去买菜。",
+      "exampleMeaning": "描述购买食材。",
+      "tags": [
+        "日常",
+        "饮食"
+      ],
+      "stage": "daily",
+      "stageLabel": "第二阶段 · 日常场景",
+      "origin": "supplemental",
+      "hskLevel": null,
+      "frequency": null
+    },
+    {
+      "id": "field-022",
+      "term": "做饭",
+      "reading": "zuò fàn",
+      "meaning": "把食材做成饭菜",
+      "pos": "动词",
+      "example": "今天我来做饭。",
+      "exampleMeaning": "描述下厨。",
+      "tags": [
+        "饮食",
+        "家务"
+      ],
+      "stage": "daily",
+      "stageLabel": "第二阶段 · 日常场景",
+      "origin": "supplemental",
+      "hskLevel": null,
+      "frequency": null
+    },
+    {
+      "id": "field-023",
+      "term": "洗碗",
+      "reading": "xǐ wǎn",
+      "meaning": "把碗洗干净",
+      "pos": "动词",
+      "example": "吃完饭要洗碗。",
+      "exampleMeaning": "描述饭后家务。",
+      "tags": [
+        "家务"
+      ],
+      "stage": "daily",
+      "stageLabel": "第二阶段 · 日常场景",
+      "origin": "supplemental",
+      "hskLevel": null,
+      "frequency": null
+    },
+    {
+      "id": "field-024",
+      "term": "扫地",
+      "reading": "sǎo dì",
+      "meaning": "用扫帚清理地面",
+      "pos": "动词",
+      "example": "周末一起扫地。",
+      "exampleMeaning": "描述打扫。",
+      "tags": [
+        "家务"
+      ],
+      "stage": "daily",
+      "stageLabel": "第二阶段 · 日常场景",
+      "origin": "supplemental",
+      "hskLevel": null,
+      "frequency": null
+    },
+    {
+      "id": "field-025",
+      "term": "看电视",
+      "reading": "kàn diàn shì",
+      "meaning": "观看电视节目",
+      "pos": "动词",
+      "example": "爷爷喜欢看电视。",
+      "exampleMeaning": "描述观看节目。",
+      "tags": [
+        "日常"
+      ],
+      "stage": "daily",
+      "stageLabel": "第二阶段 · 日常场景",
+      "origin": "supplemental",
+      "hskLevel": null,
+      "frequency": null
+    },
+    {
+      "id": "field-026",
+      "term": "打电话",
+      "reading": "dǎ diàn huà",
+      "meaning": "用手机和别人通话",
+      "pos": "动词",
+      "example": "晚上给奶奶打电话。",
+      "exampleMeaning": "描述通话。",
+      "tags": [
+        "日常"
+      ],
+      "stage": "daily",
+      "stageLabel": "第二阶段 · 日常场景",
+      "origin": "hsk",
+      "hskLevel": 1,
+      "frequency": 1218
+    },
+    {
+      "id": "field-027",
+      "term": "下雨",
+      "reading": "xià yǔ",
+      "meaning": "天空落下雨水",
+      "pos": "动词",
+      "example": "下雨了，记得带伞。",
+      "exampleMeaning": "提醒带伞。",
+      "tags": [
+        "天气"
+      ],
+      "stage": "daily",
+      "stageLabel": "第二阶段 · 日常场景",
+      "origin": "hsk",
+      "hskLevel": 1,
+      "frequency": 5648
+    },
+    {
+      "id": "field-028",
+      "term": "天气",
+      "reading": "tiān qì",
+      "meaning": "一个地方冷热晴雨的状况",
+      "pos": "名词",
+      "example": "今天天气很好。",
+      "exampleMeaning": "描述气候状况。",
+      "tags": [
+        "天气"
+      ],
+      "stage": "daily",
+      "stageLabel": "第二阶段 · 日常场景",
+      "origin": "hsk",
+      "hskLevel": 1,
+      "frequency": 1675
+    },
+    {
+      "id": "field-029",
+      "term": "米饭",
+      "reading": "mǐ fàn",
+      "meaning": "用米做成的饭",
+      "pos": "名词",
+      "example": "我想吃米饭。",
+      "exampleMeaning": "表示主食。",
+      "tags": [
+        "饮食"
+      ],
+      "stage": "basic",
+      "stageLabel": "第三阶段 · 基础词汇",
+      "origin": "hsk",
+      "hskLevel": 1,
+      "frequency": 10194
+    },
+    {
+      "id": "field-030",
+      "term": "苹果",
+      "reading": "píng guǒ",
+      "meaning": "一种常见水果",
+      "pos": "名词",
+      "example": "这个苹果很甜。",
+      "exampleMeaning": "描述水果。",
+      "tags": [
+        "饮食"
+      ],
+      "stage": "basic",
+      "stageLabel": "第三阶段 · 基础词汇",
+      "origin": "hsk",
+      "hskLevel": 1,
+      "frequency": 2562
+    },
+    {
+      "id": "field-031",
+      "term": "杯子",
+      "reading": "bēi zi",
+      "meaning": "用来喝水的容器",
+      "pos": "名词",
+      "example": "请给我一个杯子。",
+      "exampleMeaning": "请求容器。",
+      "tags": [
+        "物品"
+      ],
+      "stage": "basic",
+      "stageLabel": "第三阶段 · 基础词汇",
+      "origin": "hsk",
+      "hskLevel": 1,
+      "frequency": 6162
+    },
+    {
+      "id": "field-032",
+      "term": "手机",
+      "reading": "shǒu jī",
+      "meaning": "可以随身携带的移动电话",
+      "pos": "名词",
+      "example": "我的手机没电了。",
+      "exampleMeaning": "描述手机状态。",
+      "tags": [
+        "物品"
+      ],
+      "stage": "basic",
+      "stageLabel": "第三阶段 · 基础词汇",
+      "origin": "hsk",
+      "hskLevel": 2,
+      "frequency": 857
+    },
+    {
+      "id": "field-033",
+      "term": "衣服",
+      "reading": "yī fu",
+      "meaning": "穿在身上的东西",
+      "pos": "名词",
+      "example": "天冷了多穿衣服。",
+      "exampleMeaning": "提醒保暖。",
+      "tags": [
+        "物品"
+      ],
+      "stage": "basic",
+      "stageLabel": "第三阶段 · 基础词汇",
+      "origin": "hsk",
+      "hskLevel": 1,
+      "frequency": 1472
+    },
+    {
+      "id": "field-034",
+      "term": "桌子",
+      "reading": "zhuō zi",
+      "meaning": "用来放东西或工作的家具",
+      "pos": "名词",
+      "example": "书在桌子上。",
+      "exampleMeaning": "描述位置。",
+      "tags": [
+        "物品"
+      ],
+      "stage": "basic",
+      "stageLabel": "第三阶段 · 基础词汇",
+      "origin": "hsk",
+      "hskLevel": 1,
+      "frequency": 3639
+    },
+    {
+      "id": "field-035",
+      "term": "椅子",
+      "reading": "yǐ zi",
+      "meaning": "用来坐的家具",
+      "pos": "名词",
+      "example": "请坐这把椅子。",
+      "exampleMeaning": "请对方坐下。",
+      "tags": [
+        "物品"
+      ],
+      "stage": "basic",
+      "stageLabel": "第三阶段 · 基础词汇",
+      "origin": "hsk",
+      "hskLevel": 1,
+      "frequency": 4472
+    },
+    {
+      "id": "field-036",
+      "term": "医院",
+      "reading": "yī yuàn",
+      "meaning": "看病、治疗的地方",
+      "pos": "名词",
+      "example": "他去医院看医生。",
+      "exampleMeaning": "描述就医。",
+      "tags": [
+        "场所"
+      ],
+      "stage": "basic",
+      "stageLabel": "第三阶段 · 基础词汇",
+      "origin": "hsk",
+      "hskLevel": 1,
+      "frequency": 608
+    },
+    {
+      "id": "field-037",
+      "term": "学校",
+      "reading": "xué xiào",
+      "meaning": "学习的地方",
+      "pos": "名词",
+      "example": "孩子去学校了。",
+      "exampleMeaning": "描述上学。",
+      "tags": [
+        "场所"
+      ],
+      "stage": "basic",
+      "stageLabel": "第三阶段 · 基础词汇",
+      "origin": "hsk",
+      "hskLevel": 1,
+      "frequency": 430
+    },
+    {
+      "id": "field-038",
+      "term": "老师",
+      "reading": "lǎo shī",
+      "meaning": "教学生的人",
+      "pos": "名词",
+      "example": "老师讲课很清楚。",
+      "exampleMeaning": "描述老师。",
+      "tags": [
+        "人物"
+      ],
+      "stage": "basic",
+      "stageLabel": "第三阶段 · 基础词汇",
+      "origin": "hsk",
+      "hskLevel": 1,
+      "frequency": 799
+    },
+    {
+      "id": "field-039",
+      "term": "学生",
+      "reading": "xué sheng",
+      "meaning": "在学校学习的人",
+      "pos": "名词",
+      "example": "他是我的学生。",
+      "exampleMeaning": "描述身份。",
+      "tags": [
+        "人物"
+      ],
+      "stage": "basic",
+      "stageLabel": "第三阶段 · 基础词汇",
+      "origin": "hsk",
+      "hskLevel": 1,
+      "frequency": 651
+    },
+    {
+      "id": "field-040",
+      "term": "医生",
+      "reading": "yī shēng",
+      "meaning": "给人看病的人",
+      "pos": "名词",
+      "example": "医生给他检查身体。",
+      "exampleMeaning": "描述职业。",
+      "tags": [
+        "人物"
+      ],
+      "stage": "basic",
+      "stageLabel": "第三阶段 · 基础词汇",
+      "origin": "hsk",
+      "hskLevel": 1,
+      "frequency": 827
+    }
+  ]
+}

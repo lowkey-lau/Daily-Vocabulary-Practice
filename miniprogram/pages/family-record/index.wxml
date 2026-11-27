@@ -9,6 +9,8 @@
     <view class="progress-fill" style="width: {{progressPercent}}%"></view>
   </view>
 
+  <view class="stage-pill" wx:if="{{word}}">{{word.stageLabel}}</view>
+
   <view class="card word-card" wx:if="{{word}}">
     <text class="word-hint">请用家里的说法读一遍</text>
     <text class="word-term">{{word.term}}</text>

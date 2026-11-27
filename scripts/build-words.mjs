@@ -4,12 +4,17 @@ import { pinyin } from 'pinyin-pro';
 const SELECTED_PATH = 'content/selected-words.json';
 const SOURCE_PATH = 'content/source/hsk-2.0-level1-2.json';
 const OUTPUT_TS = 'miniprogram/data/words.ts';
-const OUTPUT_JSON = 'content/core-40.json';
+const OUTPUT_JSON = 'content/core.json';
+
+const STAGE_LABELS = {
+  family: '第一阶段 · 家人称呼',
+  daily: '第二阶段 · 日常场景',
+  basic: '第三阶段 · 基础词汇',
+};
 
 // pinyin-pro 对少数轻声词会给全声调，这里人工校正。
 const PINYIN_OVERRIDES = {
   学生: 'xué sheng',
-  朋友: 'péng you',
 };
 
 const UPCOMING_BOOKS = [
@@ -42,21 +47,21 @@ async function main() {
     throw new Error('content/selected-words.json 里没有 words');
   }
 
-  const missing = selected.words.filter((word) => !byTerm.has(word.term));
-  if (missing.length) {
-    console.error(
-      `以下词不在 HSK 1–2 源词表中：${missing.map((w) => w.term).join('、')}`
-    );
-    process.exit(1);
-  }
+  const supplemental = selected.words
+    .filter((word) => !byTerm.has(word.term))
+    .map((word) => word.term);
 
   const words = selected.words.map((word, index) => {
     const sourceWord = byTerm.get(word.term);
+    const stageLabel = STAGE_LABELS[word.stage];
+    if (!stageLabel) {
+      throw new Error(`未知阶段：${word.term} → ${word.stage}`);
+    }
     const reading =
       PINYIN_OVERRIDES[word.term] ||
       pinyin(word.term, { toneType: 'symbol' });
     return {
-      id: `hsk-${String(index + 1).padStart(3, '0')}`,
+      id: `field-${String(index + 1).padStart(3, '0')}`,
       term: word.term,
       reading,
       meaning: word.meaning,
@@ -64,15 +69,17 @@ async function main() {
       example: word.example,
       exampleMeaning: word.exampleMeaning,
       tags: word.tags,
+      stage: word.stage,
+      stageLabel,
     };
   });
 
   const book = {
-    id: 'hsk-daily-test',
-    title: '普通话 · 日常词（HSK 1–2 选词）',
-    subtitle: `${words.length} 个日常词，先跑通录音`,
+    id: 'field-family-daily-test',
+    title: '家人与日常 · 口音测试',
+    subtitle: `先家人称呼，再日常场景 · ${words.length} 词`,
     description:
-      '词目和拼音参考 HSK 1–2 词表；释义、例句为原创。长辈可以按自家口音录，子孙听录音选释义；正式版再按方言 / 语言词书接入。',
+      '40 个词分三组：第一阶段家人称呼 → 第二阶段日常场景 → 第三阶段基础词汇。长辈按自家口音录，子孙听录音选释义；正式版再按方言 / 语言词书接入。',
     level: '入门',
     total: words.length,
   };
@@ -86,6 +93,8 @@ async function main() {
   example: string;
   exampleMeaning: string;
   tags: string[];
+  stage: 'family' | 'daily' | 'basic';
+  stageLabel: string;
 };
 
 `;
@@ -113,8 +122,9 @@ export const UPCOMING_BOOKS = ${JSON.stringify(UPCOMING_BOOKS, null, 2)};
       const sourceWord = byTerm.get(word.term);
       return {
         ...word,
-        hskLevel: sourceWord.hskLevel,
-        frequency: sourceWord.frequency,
+        origin: sourceWord ? 'hsk' : 'supplemental',
+        hskLevel: sourceWord ? sourceWord.hskLevel : null,
+        frequency: sourceWord ? sourceWord.frequency : null,
       };
     }),
   };
@@ -122,8 +132,16 @@ export const UPCOMING_BOOKS = ${JSON.stringify(UPCOMING_BOOKS, null, 2)};
   await fs.writeFile(OUTPUT_TS, generated);
   await fs.writeFile(OUTPUT_JSON, `${JSON.stringify(review, null, 2)}\n`);
 
-  console.log(`Generated ${OUTPUT_TS} (${words.length} words)`);
+  const hskCount = words.filter((word) => byTerm.has(word.term)).length;
+  console.log(
+    `Generated ${OUTPUT_TS} (${words.length} words: ${hskCount} HSK, ${
+      words.length - hskCount
+    } supplemental)`
+  );
   console.log(`Generated ${OUTPUT_JSON}`);
+  if (supplemental.length) {
+    console.log(`补充词：${supplemental.join('、')}`);
+  }
 }
 
 main().catch((error) => {
