@@ -5,7 +5,7 @@
 面向碎片时间学习的粤语词汇练习微信小程序。第一版聚焦「看词选义」，每天 3–5 分钟，学几个也算；数据模型保留多语言 / 方言扩展能力。
 
 - 需求唯一事实来源：`docs/PRD.md`
-- 当前阶段：本地 Demo 已完成（8 个页面，30 词，Fluent Emoji 图标 + 轻动效）；第二阶段家庭口音词库设计完成（`docs/FAMILY-MODULE.md`），待接云端开发。
+- 当前阶段：本地 Demo + 家庭录音本地原型已完成（12 个页面，30 词）；第二阶段云端家庭版待开发，设计见 `docs/FAMILY-MODULE.md`。
 
 ## 技术栈
 
@@ -15,6 +15,7 @@
 - 正式版：微信云开发（云数据库、云函数、云存储）
 - 内容以 JSON 批量导入，管理员 openid 白名单
 - 图标：Microsoft Fluent Emoji（MIT），本地 PNG；不引入整套 UI 组件库
+- 本地录音原型：`wx.getRecorderManager` + `wx.env.USER_DATA_PATH`；音频文件不进入云端
 - 第二阶段：家庭口音词库（长辈录音），需要云端多用户、家庭权限与录音存储
 
 在 PRD 评审通过前，不要擅自引入后端框架、跨端框架或第三方 UI 库；如认为有必要，先说明理由并更新文档。
@@ -26,8 +27,8 @@ miniprogram/      小程序客户端
   app.ts/json/wxss
   assets/         Fluent Emoji 图标（PNG）与许可
   data/words.ts   Demo 词库（正式版迁到 content/ JSON）
-  services/       本地存储、每日建议、复习算法
-  pages/          今日、词书、词书详情、练习、结果、统计、错词本、设置
+  services/       本地存储、每日建议、复习算法、家庭录音
+  pages/          今日、词书、词书详情、练习、结果、统计、错词本、设置、家庭录音
 cloudfunctions/   （规划）云函数
 content/          （规划）词书 JSON、TTS 与导入脚本
 docs/             PRD、设计稿、决策记录
@@ -50,6 +51,8 @@ docs/             PRD、设计稿、决策记录
 - 图标使用 Microsoft Fluent Emoji（MIT）；新增图标时在 `miniprogram/assets/README.md` 记录来源并保留许可。
 - 若后续要引入 TDesign / Vant，先更新 README / PRD 并说明构建成本与收益。
 - 家庭模块默认家庭私有；所有家庭读写经云函数校验成员身份；长辈录音需明确同意，可删除。
+- 本地录音只写 `USER_DATA_PATH`；删除录音 / 清空家庭数据时同步删除文件，避免孤儿文件。
+- 录音页必须处理 `scope.record` 权限；模拟器可能不支持录音，以真机预览为准。
 - Demo 阶段保持零后端依赖；接云开发时先更新 PRD 和数据模型，再改代码。
 
 ## 需求变更

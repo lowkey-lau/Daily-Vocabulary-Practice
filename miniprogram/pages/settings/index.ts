@@ -58,6 +58,10 @@ Page({
     wx.navigateTo({ url: '/pages/wrongbook/index' });
   },
 
+  goFamily() {
+    wx.navigateTo({ url: '/pages/family/index' });
+  },
+
   toggleAbout() {
     this.setData({ showAbout: !this.data.showAbout });
   },

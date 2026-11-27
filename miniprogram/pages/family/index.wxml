@@ -1,0 +1,129 @@
+<view class="page family-page">
+  <view class="family-hero fade-up">
+    <view class="row">
+      <image
+        class="eyebrow-icon"
+        src="/assets/icons/house.png"
+        mode="aspectFit"
+      />
+      <text class="eyebrow">家庭口音词库 · 本地原型</text>
+    </view>
+    <view class="title-xl">{{familyName}}</view>
+    <view class="caption family-sub">{{hometown}} · 爷爷的发音</view>
+  </view>
+
+  <view class="family-progress card-dark fade-up">
+    <view class="row-between">
+      <text class="family-progress-label">爷爷已录</text>
+      <text class="family-progress-count">
+        {{recordedCount}} / {{totalWords}}
+      </text>
+    </view>
+    <view class="family-track">
+      <view class="family-fill" style="width: {{percent}}%"></view>
+    </view>
+    <view class="family-progress-note" wx:if="{{hasRecordings}}">
+      已经可以听 {{recordedCount}} 个家里的词
+    </view>
+    <view class="family-progress-note" wx:else>
+      先从第一个词开始，30 秒就好
+    </view>
+    <button class="primary-btn light family-btn" bindtap="startRecording">
+      <image class="btn-icon" src="/assets/icons/mic.png" mode="aspectFit" />
+      <text>长辈录音</text>
+    </button>
+  </view>
+
+  <view class="family-actions">
+    <button class="secondary-btn family-action" bindtap="startPractice">
+      <image
+        class="btn-icon"
+        src="/assets/icons/speaker.png"
+        mode="aspectFit"
+      />
+      <text>听音选义</text>
+    </button>
+    <button class="secondary-btn family-action" bindtap="openWords">
+      <image class="btn-icon" src="/assets/icons/book.png" mode="aspectFit" />
+      <text>家庭词库</text>
+    </button>
+  </view>
+
+  <view class="section-head row-between">
+    <view class="row">
+      <image
+        class="section-icon"
+        src="/assets/icons/house.png"
+        mode="aspectFit"
+      />
+      <text class="title-md">家庭成员</text>
+    </view>
+    <text class="caption">本地模拟</text>
+  </view>
+  <view class="card members-card">
+    <view class="member-row" wx:for="{{members}}" wx:key="id">
+      <view class="member-avatar">{{item.initial}}</view>
+      <view class="flex-1">
+        <view class="member-name">{{item.name}}</view>
+        <view class="caption">{{item.role}}</view>
+      </view>
+      <text class="member-status">{{item.status}}</text>
+    </view>
+  </view>
+
+  <view class="section-head row-between">
+    <view class="row">
+      <image
+        class="section-icon"
+        src="/assets/icons/book.png"
+        mode="aspectFit"
+      />
+      <text class="title-md">最近录的</text>
+    </view>
+    <text class="text-btn" wx:if="{{hasRecordings}}" bindtap="openWords">
+      全部 ›
+    </text>
+  </view>
+
+  <view class="card recent-card" wx:if="{{hasRecordings}}">
+    <view
+      class="recent-row"
+      wx:for="{{recent}}"
+      wx:key="id"
+      hover-class="card-hover"
+      bindtap="openWords"
+    >
+      <view class="flex-1">
+        <text class="recent-term">{{item.localTerm}}</text>
+        <text class="recent-meaning">{{item.meaning}}</text>
+      </view>
+      <text class="recent-duration">{{item.duration}}s</text>
+      <image
+        class="recent-play"
+        src="/assets/icons/speaker.png"
+        mode="aspectFit"
+      />
+    </view>
+  </view>
+
+  <view class="empty" wx:else>
+    <view class="empty-icon">
+      <image
+        class="empty-icon-img"
+        src="/assets/icons/mic.png"
+        mode="aspectFit"
+      />
+    </view>
+    <view class="title-md">还没有录音</view>
+    <view class="caption">让长辈先录第一个词，子孙就能开始听了。</view>
+    <button class="primary-btn empty-btn" bindtap="startRecording">
+      <image class="btn-icon" src="/assets/icons/mic.png" mode="aspectFit" />
+      <text>去录音</text>
+    </button>
+  </view>
+
+  <button class="reset-btn" bindtap="resetFamily">清空本地家庭数据</button>
+  <view class="family-note">
+    本地原型 · 录音只保存在这台手机 · 正式版会加密同步到家庭云空间
+  </view>
+</view>

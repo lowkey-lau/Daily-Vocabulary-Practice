@@ -162,6 +162,31 @@
   white-space: nowrap;
 }
 
+.family-entry {
+  display: flex;
+  align-items: center;
+  margin-top: 24rpx;
+  padding: 24rpx;
+}
+
+.family-entry-icon {
+  width: 76rpx;
+  height: 76rpx;
+  margin-right: 20rpx;
+  flex-shrink: 0;
+}
+
+.family-entry-title {
+  font-size: 30rpx;
+  font-weight: 600;
+}
+
+.family-entry-arrow {
+  margin-left: 12rpx;
+  color: #b3aa9c;
+  font-size: 32rpx;
+}
+
 .quick-grid {
   display: flex;
   margin-top: 24rpx;

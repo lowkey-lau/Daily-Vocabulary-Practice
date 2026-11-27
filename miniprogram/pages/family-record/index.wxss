@@ -1,0 +1,201 @@
+.record-page {
+  padding-top: 20rpx;
+}
+
+.record-top {
+  margin-bottom: 18rpx;
+}
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64rpx;
+  height: 64rpx;
+  margin-left: -12rpx;
+  border-radius: 50%;
+  color: var(--jade);
+  font-size: 44rpx;
+  line-height: 1;
+}
+
+.record-title {
+  font-size: 26rpx;
+  letter-spacing: 2rpx;
+  color: var(--muted);
+}
+
+.record-count {
+  font-size: 24rpx;
+  color: var(--muted);
+}
+
+.record-track {
+  margin-bottom: 34rpx;
+}
+
+.word-card {
+  padding: 40rpx 32rpx;
+  text-align: center;
+}
+
+.word-hint {
+  display: block;
+  font-size: 22rpx;
+  color: var(--muted);
+}
+
+.word-term {
+  display: block;
+  margin-top: 16rpx;
+  font-size: 88rpx;
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: 2rpx;
+}
+
+.word-reading {
+  display: block;
+  margin-top: 8rpx;
+  font-size: 26rpx;
+  letter-spacing: 2rpx;
+  color: var(--jade);
+}
+
+.word-meaning {
+  display: block;
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  color: var(--ink);
+}
+
+.local-term {
+  display: flex;
+  align-items: center;
+  margin-top: 22rpx;
+  padding: 18rpx 24rpx;
+  border-radius: 24rpx;
+  background: var(--card);
+}
+
+.local-label {
+  margin-right: 16rpx;
+  font-size: 24rpx;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.local-input {
+  flex: 1;
+  height: 60rpx;
+  font-size: 28rpx;
+  color: var(--ink);
+}
+
+.record-area {
+  padding: 48rpx 0 24rpx;
+  text-align: center;
+}
+
+.record-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180rpx;
+  height: 180rpx;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #1b6b62, #0e4f4a);
+  box-shadow: 0 20rpx 50rpx rgba(14, 79, 74, 0.28);
+  transition: transform 160ms ease;
+}
+
+.record-btn.recording {
+  background: linear-gradient(145deg, #ef7c5b, #df6747);
+  animation: record-pulse 1.2s ease-in-out infinite;
+}
+
+.record-hover {
+  transform: scale(0.95);
+}
+
+.record-icon {
+  width: 76rpx;
+  height: 76rpx;
+}
+
+.record-status {
+  display: block;
+  margin-top: 26rpx;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+
+.record-tip {
+  display: block;
+  margin-top: 8rpx;
+  font-size: 22rpx;
+  color: var(--muted);
+}
+
+.record-actions {
+  display: flex;
+  margin-top: 12rpx;
+}
+
+.take-btn {
+  flex: 1;
+}
+
+.take-btn + .take-btn {
+  margin-left: 16rpx;
+}
+
+.save-btn {
+  margin-top: 22rpx;
+}
+
+.skip-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 22rpx;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.record-note {
+  margin-top: 30rpx;
+  text-align: center;
+  font-size: 20rpx;
+  color: #a39a8c;
+}
+
+.permission-card {
+  margin-top: 36rpx;
+  text-align: center;
+}
+
+.permission-icon {
+  display: block;
+  width: 88rpx;
+  height: 88rpx;
+  margin: 0 auto 16rpx;
+}
+
+.permission-caption {
+  margin-top: 8rpx;
+}
+
+.permission-btn {
+  margin-top: 24rpx;
+}
+
+@keyframes record-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(223, 103, 71, 0.35);
+  }
+  50% {
+    box-shadow: 0 0 0 26rpx rgba(223, 103, 71, 0);
+  }
+}

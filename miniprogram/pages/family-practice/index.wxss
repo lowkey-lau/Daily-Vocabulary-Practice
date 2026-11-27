@@ -1,0 +1,136 @@
+.family-practice {
+  padding-top: 24rpx;
+}
+
+.practice-top {
+  margin-bottom: 16rpx;
+}
+
+.practice-count {
+  font-size: 24rpx;
+  color: var(--muted);
+  letter-spacing: 1rpx;
+}
+
+.practice-track {
+  margin-bottom: 40rpx;
+}
+
+.listen-area {
+  padding: 16rpx 0 40rpx;
+  text-align: center;
+}
+
+.listen-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 168rpx;
+  height: 168rpx;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: var(--jade-soft);
+  transition: transform 160ms ease;
+}
+
+.listen-btn.playing {
+  background: var(--gold);
+  animation: listen-pulse 1.2s ease-in-out infinite;
+}
+
+.listen-hover {
+  transform: scale(0.94);
+}
+
+.listen-icon {
+  width: 76rpx;
+  height: 76rpx;
+}
+
+.listen-hint {
+  display: block;
+  margin-top: 22rpx;
+  font-size: 24rpx;
+  color: var(--muted);
+}
+
+.listen-question {
+  display: block;
+  margin-top: 10rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+}
+
+.feedback-card {
+  margin-top: 24rpx;
+}
+
+.feedback-main {
+  margin-top: 12rpx;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+
+.feedback-btn {
+  margin-top: 22rpx;
+}
+
+.family-result {
+  padding: 40rpx 0 30rpx;
+  text-align: center;
+}
+
+.result-party {
+  display: block;
+  width: 110rpx;
+  height: 110rpx;
+  margin: 0 auto 10rpx;
+  animation: party-float 640ms cubic-bezier(0.2, 0.9, 0.2, 1) both;
+}
+
+.result-count {
+  margin-top: 16rpx;
+  font-size: 96rpx;
+  line-height: 1.1;
+  font-weight: 700;
+  color: var(--jade);
+}
+
+.result-label {
+  font-size: 24rpx;
+  color: var(--muted);
+}
+
+.result-message {
+  margin-top: 16rpx;
+  font-size: 28rpx;
+}
+
+.result-back {
+  margin-top: 18rpx;
+}
+
+@keyframes listen-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(224, 174, 69, 0.35);
+  }
+  50% {
+    box-shadow: 0 0 0 26rpx rgba(224, 174, 69, 0);
+  }
+}
+
+@keyframes party-float {
+  0% {
+    opacity: 0;
+    transform: translateY(14rpx) rotate(-8deg) scale(0.8);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(-4rpx) rotate(4deg) scale(1.04);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotate(0) scale(1);
+  }
+}

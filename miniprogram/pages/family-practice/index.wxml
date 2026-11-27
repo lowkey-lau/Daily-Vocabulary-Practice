@@ -1,0 +1,87 @@
+<view class="page family-practice" wx:if="{{!showResult}}">
+  <view class="practice-top row-between">
+    <text class="eyebrow">听音选义 · 家庭词库</text>
+    <text class="practice-count">{{index + 1}} / {{total}}</text>
+  </view>
+
+  <view class="progress-track practice-track">
+    <view class="progress-fill" style="width: {{progressPercent}}%"></view>
+  </view>
+
+  <view class="listen-area" wx:if="{{question}}">
+    <view
+      class="listen-btn {{isPlaying ? 'playing' : ''}}"
+      hover-class="listen-hover"
+      bindtap="playPrompt"
+    >
+      <image
+        class="listen-icon"
+        src="/assets/icons/speaker.png"
+        mode="aspectFit"
+      />
+    </view>
+    <text class="listen-hint">
+      {{isPlaying ? '正在播放…' : '点一下，听长辈怎么说'}}
+    </text>
+    <text class="listen-question">这个词是什么意思？</text>
+  </view>
+
+  <view class="options">
+    <view
+      wx:for="{{options}}"
+      wx:key="id"
+      class="option {{item.state}}"
+      hover-class="option-hover"
+      data-id="{{item.id}}"
+      bindtap="onSelect"
+    >
+      <text class="option-letter">{{item.letter}}</text>
+      <text class="option-text">{{item.text}}</text>
+    </view>
+  </view>
+
+  <view class="feedback-card card" wx:if="{{answered}}">
+    <view class="row">
+      <image
+        class="feedback-icon"
+        src="{{isCorrect ? '/assets/icons/check.png' : '/assets/icons/cross.png'}}"
+        mode="aspectFit"
+      />
+      <view class="feedback-title {{isCorrect ? 'ok' : 'no'}}">
+        {{isCorrect ? '答对了' : '再听一次'}}
+      </view>
+    </view>
+    <view class="feedback-main">
+      {{question.localTerm}} = {{question.meaning}}
+    </view>
+    <button class="primary-btn feedback-btn" bindtap="onContinue">
+      {{index + 1 >= total ? '看结果' : '继续'}}
+    </button>
+  </view>
+</view>
+
+<view class="page family-practice" wx:else>
+  <view class="family-result">
+    <image
+      class="result-party"
+      src="/assets/icons/party.png"
+      mode="aspectFit"
+    />
+    <view class="eyebrow">家庭听音练习</view>
+    <view class="result-count">{{correctCount}} / {{total}}</view>
+    <view class="result-label">答对</view>
+    <view class="result-message">今天听了 {{total}} 个家里的词。</view>
+  </view>
+
+  <button class="primary-btn" bindtap="restart">
+    <image
+      class="btn-icon"
+      src="/assets/icons/speaker.png"
+      mode="aspectFit"
+    />
+    <text>再听一组</text>
+  </button>
+  <button class="secondary-btn result-back" bindtap="goFamily">
+    返回家庭
+  </button>
+</view>

@@ -23,6 +23,8 @@ https://github.com/microsoft/fluentui-emoji
 | icons/party.png | Party popper | 页面图标 |
 | icons/book.png | Open book | 页面图标 |
 | icons/bulb.png | Light bulb | 页面图标 |
+| icons/house.png | House | 页面图标 |
+| icons/mic.png | Microphone | 页面图标 |
 | icons/trophy.png | Trophy | 页面图标 |
 | icons/seedling.png | Seedling | 页面图标 |
 | icons/sparkles.png | Sparkles | 页面图标 |

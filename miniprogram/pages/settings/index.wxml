@@ -61,6 +61,13 @@
       </view>
       <text class="menu-arrow">›</text>
     </view>
+    <view class="menu-row" hover-class="menu-hover" bindtap="goFamily">
+      <view class="row">
+        <image class="menu-icon" src="/assets/icons/house.png" mode="aspectFit" />
+        <text>家庭口音词库</text>
+      </view>
+      <text class="menu-arrow">›</text>
+    </view>
     <view class="menu-row" hover-class="menu-hover" bindtap="toggleAbout">
       <view class="row">
         <image class="menu-icon" src="/assets/icons/bulb.png" mode="aspectFit" />

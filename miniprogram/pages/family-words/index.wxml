@@ -1,0 +1,77 @@
+<view class="page family-words">
+  <view class="words-top row-between">
+    <view class="back-btn" bindtap="goFamily">‹</view>
+    <text class="record-title">家庭词库</text>
+    <text class="record-count">{{count}} / {{totalWords}}</text>
+  </view>
+
+  <view class="words-hero">
+    <view class="title-xl">家里的说法，</view>
+    <view class="title-xl">都在这里。</view>
+    <view class="caption words-sub">
+      点喇叭听长辈的录音，点重录可以补录或改词。
+    </view>
+  </view>
+
+  <view class="words-progress">
+    <view class="progress-track">
+      <view class="progress-fill" style="width: {{percent}}%"></view>
+    </view>
+    <text class="words-progress-text">
+      已录 {{count}} 个 · 共 {{totalWords}} 个词
+    </text>
+  </view>
+
+  <view class="card words-list" wx:if="{{hasRecordings}}">
+    <view class="word-row" wx:for="{{words}}" wx:key="id">
+      <view class="flex-1">
+        <text class="word-local">{{item.localTerm}}</text>
+        <text class="word-standard" wx:if="{{item.localTerm !== item.term}}">
+          {{item.term}}
+        </text>
+        <text class="word-reading">{{item.reading}}</text>
+        <text class="word-meaning">{{item.meaning}}</text>
+      </view>
+      <view class="word-actions">
+        <text class="word-duration">{{item.duration}}s</text>
+        <view
+          class="play-btn {{playingId === item.id ? 'playing' : ''}}"
+          data-id="{{item.id}}"
+          bindtap="play"
+        >
+          <image
+            class="play-icon"
+            src="/assets/icons/speaker.png"
+            mode="aspectFit"
+          />
+        </view>
+        <text class="rerecord-btn" data-id="{{item.id}}" bindtap="rerecord">
+          重录
+        </text>
+      </view>
+    </view>
+  </view>
+
+  <view class="empty" wx:else>
+    <view class="empty-icon">
+      <image
+        class="empty-icon-img"
+        src="/assets/icons/mic.png"
+        mode="aspectFit"
+      />
+    </view>
+    <view class="title-md">还没有录音</view>
+    <view class="caption">让长辈先录几个词，这里就会长出来。</view>
+    <button class="primary-btn empty-btn" bindtap="goRecord">
+      <image class="btn-icon" src="/assets/icons/mic.png" mode="aspectFit" />
+      <text>去录音</text>
+    </button>
+  </view>
+
+  <button class="primary-btn add-btn" wx:if="{{hasRecordings}}" bindtap="goRecord">
+    <image class="btn-icon" src="/assets/icons/mic.png" mode="aspectFit" />
+    <text>继续录音</text>
+  </button>
+
+  <view class="words-note">本地原型 · 录音只保存在这台手机</view>
+</view>

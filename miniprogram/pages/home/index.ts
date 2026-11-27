@@ -1,4 +1,5 @@
 import { addExtraWords, getHome, getWrongCount } from '../../services/store';
+import { getFamilyOverview } from '../../services/family-store';
 
 Page({
   data: {
@@ -20,6 +21,8 @@ Page({
     planNewCount: 0,
     planReviewCount: 0,
     wrongCount: 0,
+    familyRecorded: 0,
+    familySubtitle: '让长辈录下家里的说法',
   },
 
   onShow() {
@@ -28,9 +31,14 @@ Page({
 
   refresh() {
     const home = getHome();
+    const recorded = getFamilyOverview().recordedCount;
     this.setData({
       ...home,
       wrongCount: getWrongCount(),
+      familyRecorded: recorded,
+      familySubtitle: recorded
+        ? `已录 ${recorded} 个词 · 去听听`
+        : '让长辈录下家里的说法',
     });
   },
 
@@ -61,5 +69,9 @@ Page({
 
   goStats() {
     wx.navigateTo({ url: '/pages/stats/index' });
+  },
+
+  goFamily() {
+    wx.navigateTo({ url: '/pages/family/index' });
   },
 });

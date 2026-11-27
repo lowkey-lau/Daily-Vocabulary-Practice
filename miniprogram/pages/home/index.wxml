@@ -97,6 +97,23 @@
     </view>
   </view>
 
+  <view
+    class="family-entry card"
+    hover-class="card-hover"
+    bindtap="goFamily"
+  >
+    <image
+      class="family-entry-icon"
+      src="/assets/icons/house.png"
+      mode="aspectFit"
+    />
+    <view class="flex-1">
+      <view class="family-entry-title">家庭口音词库</view>
+      <view class="caption">{{familySubtitle}}</view>
+    </view>
+    <text class="family-entry-arrow">›</text>
+  </view>
+
   <view class="quick-grid">
     <view class="quick-card" hover-class="card-hover" bindtap="goWrong">
       <image

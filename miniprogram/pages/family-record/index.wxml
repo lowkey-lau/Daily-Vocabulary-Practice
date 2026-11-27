@@ -1,0 +1,99 @@
+<view class="page record-page">
+  <view class="record-top row-between">
+    <view class="back-btn" bindtap="goBack">‹</view>
+    <text class="record-title">长辈录音</text>
+    <text class="record-count">{{index + 1}} / {{total}}</text>
+  </view>
+
+  <view class="progress-track record-track">
+    <view class="progress-fill" style="width: {{progressPercent}}%"></view>
+  </view>
+
+  <view class="card word-card" wx:if="{{word}}">
+    <text class="word-hint">请用家里的说法读一遍</text>
+    <text class="word-term">{{word.term}}</text>
+    <text class="word-reading">{{word.reading}}</text>
+    <text class="word-meaning">{{word.meaning}}</text>
+  </view>
+
+  <view class="local-term">
+    <text class="local-label">我们这里叫</text>
+    <input
+      class="local-input"
+      value="{{localTerm}}"
+      placeholder="一样就不用填，家人也能后补"
+      maxlength="20"
+      bindinput="onLocalTermInput"
+    />
+  </view>
+
+  <view class="permission-card card" wx:if="{{permissionDenied}}">
+    <image
+      class="permission-icon"
+      src="/assets/icons/mic.png"
+      mode="aspectFit"
+    />
+    <view class="title-md">需要麦克风权限</view>
+    <view class="caption permission-caption">
+      开启后才能录下长辈的声音。真机预览效果最好。
+    </view>
+    <button class="secondary-btn permission-btn" bindtap="openSettings">
+      去设置
+    </button>
+  </view>
+
+  <view class="record-area" wx:else>
+    <view
+      class="record-btn {{isRecording ? 'recording' : ''}}"
+      hover-class="record-hover"
+      bindtap="onRecordTap"
+    >
+      <image
+        class="record-icon"
+        src="/assets/icons/mic.png"
+        mode="aspectFit"
+      />
+    </view>
+    <text class="record-status" wx:if="{{isRecording}}">
+      录音中 · {{seconds}} 秒
+    </text>
+    <text class="record-status" wx:elif="{{hasTake}}">
+      已录 {{seconds}} 秒
+    </text>
+    <text class="record-status" wx:else>按一下开始录音</text>
+    <text class="record-tip" wx:if="{{isRecording}}">
+      再点一下停止 · 最长 15 秒
+    </text>
+    <text class="record-tip" wx:else>安静环境，手机离嘴 10–20cm</text>
+  </view>
+
+  <view class="record-actions" wx:if="{{hasTake && !isRecording}}">
+    <button class="secondary-btn take-btn" bindtap="playTake">
+      <image
+        class="btn-icon"
+        src="/assets/icons/speaker.png"
+        mode="aspectFit"
+      />
+      <text>{{isPlaying ? '播放中…' : '试听'}}</text>
+    </button>
+    <button class="secondary-btn take-btn" bindtap="onRecordTap">
+      <image class="btn-icon" src="/assets/icons/mic.png" mode="aspectFit" />
+      <text>重录</text>
+    </button>
+  </view>
+
+  <button
+    class="primary-btn save-btn"
+    wx:if="{{hasTake && !isRecording}}"
+    bindtap="saveAndNext"
+  >
+    <image class="btn-icon" src="/assets/icons/check.png" mode="aspectFit" />
+    <text>保存，下一个</text>
+  </button>
+
+  <button class="text-btn skip-btn" bindtap="skip">跳过这个词</button>
+
+  <view class="record-note">
+    录音只保存在这台手机 · 正式版会加密同步到家庭云空间
+  </view>
+</view>

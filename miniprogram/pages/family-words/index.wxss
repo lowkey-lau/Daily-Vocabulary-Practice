@@ -1,0 +1,151 @@
+.family-words {
+  padding-top: 20rpx;
+}
+
+.words-top {
+  margin-bottom: 18rpx;
+}
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64rpx;
+  height: 64rpx;
+  margin-left: -12rpx;
+  border-radius: 50%;
+  color: var(--jade);
+  font-size: 44rpx;
+  line-height: 1;
+}
+
+.record-title {
+  font-size: 26rpx;
+  letter-spacing: 2rpx;
+  color: var(--muted);
+}
+
+.record-count {
+  font-size: 24rpx;
+  color: var(--muted);
+}
+
+.words-hero {
+  margin-top: 12rpx;
+}
+
+.words-sub {
+  margin-top: 12rpx;
+}
+
+.words-progress {
+  margin: 28rpx 0 18rpx;
+}
+
+.words-progress-text {
+  display: block;
+  margin-top: 10rpx;
+  font-size: 23rpx;
+  color: var(--muted);
+}
+
+.words-list {
+  padding: 8rpx 28rpx;
+}
+
+.word-row {
+  display: flex;
+  align-items: center;
+  padding: 24rpx 0;
+  border-top: 2rpx solid var(--line);
+}
+
+.word-row:first-child {
+  border-top: none;
+}
+
+.word-local {
+  display: block;
+  font-size: 34rpx;
+  font-weight: 600;
+}
+
+.word-standard {
+  display: block;
+  margin-top: 2rpx;
+  font-size: 22rpx;
+  color: var(--muted);
+}
+
+.word-reading {
+  display: block;
+  margin-top: 2rpx;
+  font-size: 22rpx;
+  letter-spacing: 1rpx;
+  color: var(--jade);
+}
+
+.word-meaning {
+  display: block;
+  margin-top: 6rpx;
+  font-size: 24rpx;
+  color: var(--muted);
+}
+
+.word-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 18rpx;
+}
+
+.word-duration {
+  font-size: 20rpx;
+  color: var(--muted);
+}
+
+.play-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64rpx;
+  height: 64rpx;
+  margin-top: 6rpx;
+  border-radius: 50%;
+  background: var(--jade-soft);
+  transition: transform 160ms ease;
+}
+
+.play-btn.playing {
+  background: var(--gold);
+}
+
+.play-icon {
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.rerecord-btn {
+  margin-top: 8rpx;
+  font-size: 21rpx;
+  color: var(--jade);
+}
+
+.empty {
+  margin-top: 20rpx;
+}
+
+.empty-btn {
+  margin-top: 36rpx;
+}
+
+.add-btn {
+  margin-top: 28rpx;
+}
+
+.words-note {
+  margin-top: 26rpx;
+  text-align: center;
+  font-size: 20rpx;
+  color: #a39a8c;
+}

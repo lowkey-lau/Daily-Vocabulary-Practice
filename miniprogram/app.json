@@ -7,7 +7,11 @@
     "pages/result/index",
     "pages/book-detail/index",
     "pages/stats/index",
-    "pages/wrongbook/index"
+    "pages/wrongbook/index",
+    "pages/family/index",
+    "pages/family-record/index",
+    "pages/family-words/index",
+    "pages/family-practice/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#0E4F4A",
