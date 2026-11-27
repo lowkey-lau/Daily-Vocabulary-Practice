@@ -6,7 +6,11 @@
       <view class="caption">得闲就学，几个都算。</view>
     </view>
     <view class="streak-pill">
-      <text class="streak-fire">🔥</text>
+      <image
+        class="streak-icon"
+        src="/assets/icons/fire.png"
+        mode="aspectFit"
+      />
       <text class="streak-number">{{streak}}</text>
       <text class="streak-label">天</text>
     </view>
@@ -38,26 +42,48 @@
       class="primary-btn light hero-btn"
       bindtap="startPractice"
     >
-      {{answered === 0 ? '开始今日练习' : '继续练习'}}
+      <image
+        class="btn-icon"
+        src="/assets/icons/sparkles.png"
+        mode="aspectFit"
+      />
+      <text>{{answered === 0 ? '开始今日练习' : '继续练习'}}</text>
     </button>
     <button
       wx:elif="{{completed}}"
       class="primary-btn light hero-btn"
       bindtap="extraPractice"
     >
-      再学 3 个
+      <image
+        class="btn-icon"
+        src="/assets/icons/sparkles.png"
+        mode="aspectFit"
+      />
+      <text>再学 3 个</text>
     </button>
     <button wx:else class="primary-btn light hero-btn" bindtap="goWrong">
-      复习错词
+      <image class="btn-icon" src="/assets/icons/memo.png" mode="aspectFit" />
+      <text>复习错词</text>
     </button>
   </view>
 
   <view class="section-head row-between">
-    <text class="title-md">正在学</text>
+    <view class="row">
+      <image
+        class="section-icon"
+        src="/assets/icons/book.png"
+        mode="aspectFit"
+      />
+      <text class="title-md">正在学</text>
+    </view>
     <text class="text-btn" bindtap="goBooks">换词书 ›</text>
   </view>
 
-  <view class="book-card card" bindtap="goBookDetail">
+  <view
+    class="book-card card"
+    hover-class="card-hover"
+    bindtap="goBookDetail"
+  >
     <view class="book-cover">粤</view>
     <view class="flex-1">
       <view class="title-md">{{bookTitle}}</view>
@@ -72,13 +98,21 @@
   </view>
 
   <view class="quick-grid">
-    <view class="quick-card" bindtap="goWrong">
-      <text class="quick-icon">✎</text>
+    <view class="quick-card" hover-class="card-hover" bindtap="goWrong">
+      <image
+        class="quick-icon"
+        src="/assets/icons/memo.png"
+        mode="aspectFit"
+      />
       <text class="quick-title">错词本</text>
       <text class="quick-caption">{{wrongCount}} 个待复习</text>
     </view>
-    <view class="quick-card" bindtap="goStats">
-      <text class="quick-icon">◷</text>
+    <view class="quick-card" hover-class="card-hover" bindtap="goStats">
+      <image
+        class="quick-icon"
+        src="/assets/icons/chart.png"
+        mode="aspectFit"
+      />
       <text class="quick-title">学习统计</text>
       <text class="quick-caption">看看这周学了几天</text>
     </view>

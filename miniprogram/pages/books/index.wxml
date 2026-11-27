@@ -1,12 +1,23 @@
 <view class="page books">
   <view class="books-hero fade-up">
-    <view class="eyebrow">词书</view>
+    <view class="row">
+      <image
+        class="eyebrow-icon"
+        src="/assets/icons/book.png"
+        mode="aspectFit"
+      />
+      <text class="eyebrow">词书</text>
+    </view>
     <view class="title-xl">选一本，</view>
     <view class="title-xl">每天学几个。</view>
     <view class="caption books-sub">先做粤语，其他方言在路上。</view>
   </view>
 
-  <view class="book-main card fade-up" bindtap="openBook">
+  <view
+    class="book-main card fade-up"
+    hover-class="card-hover"
+    bindtap="openBook"
+  >
     <view class="book-main-cover">
       <text class="cover-char">粤</text>
       <text class="cover-label">入门 · {{totalWords}} 词</text>
@@ -30,18 +41,27 @@
         <text>粤拼注音</text>
       </view>
       <button class="primary-btn book-btn" catchtap="start">
-        {{hasProgress ? '继续学习' : '开始学习'}}
+        <image class="btn-icon" src="/assets/icons/book.png" mode="aspectFit" />
+        <text>{{hasProgress ? '继续学习' : '开始学习'}}</text>
       </button>
     </view>
   </view>
 
   <view class="section-head row-between">
-    <text class="title-md">在路上</text>
+    <view class="row">
+      <image
+        class="section-icon"
+        src="/assets/icons/sparkles.png"
+        mode="aspectFit"
+      />
+      <text class="title-md">在路上</text>
+    </view>
     <text class="caption">先把粤语学稳</text>
   </view>
 
   <view
     class="upcoming-card card"
+    hover-class="card-hover"
     wx:for="{{upcoming}}"
     wx:key="id"
     bindtap="showComing"

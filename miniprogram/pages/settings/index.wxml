@@ -6,7 +6,14 @@
       <view class="profile-sub">每天学几个，得闲就学</view>
     </view>
     <view class="profile-streak">
-      <text class="profile-streak-num">{{streak}}</text>
+      <view class="profile-streak-row">
+        <image
+          class="profile-streak-icon"
+          src="/assets/icons/fire.png"
+          mode="aspectFit"
+        />
+        <text class="profile-streak-num">{{streak}}</text>
+      </view>
       <text class="profile-streak-label">天连续</text>
     </view>
   </view>
@@ -40,16 +47,25 @@
   </view>
 
   <view class="card menu-card">
-    <view class="menu-row" bindtap="goStats">
-      <text>学习统计</text>
+    <view class="menu-row" hover-class="menu-hover" bindtap="goStats">
+      <view class="row">
+        <image class="menu-icon" src="/assets/icons/chart.png" mode="aspectFit" />
+        <text>学习统计</text>
+      </view>
       <text class="menu-arrow">›</text>
     </view>
-    <view class="menu-row" bindtap="goWrong">
-      <text>错词本</text>
+    <view class="menu-row" hover-class="menu-hover" bindtap="goWrong">
+      <view class="row">
+        <image class="menu-icon" src="/assets/icons/memo.png" mode="aspectFit" />
+        <text>错词本</text>
+      </view>
       <text class="menu-arrow">›</text>
     </view>
-    <view class="menu-row" bindtap="toggleAbout">
-      <text>关于与隐私</text>
+    <view class="menu-row" hover-class="menu-hover" bindtap="toggleAbout">
+      <view class="row">
+        <image class="menu-icon" src="/assets/icons/bulb.png" mode="aspectFit" />
+        <text>关于与隐私</text>
+      </view>
       <text class="menu-arrow">{{showAbout ? '⌄' : '›'}}</text>
     </view>
     <view class="about-body" wx:if="{{showAbout}}">
@@ -64,6 +80,9 @@
       </text>
       <text class="about-p">
         发音将由第三方 TTS 预生成，正式接入后会在这里说明来源。
+      </text>
+      <text class="about-p">
+        图标来自 Microsoft Fluent Emoji（MIT License）。
       </text>
     </view>
   </view>
@@ -83,6 +102,9 @@
     </view>
   </view>
 
-  <button class="clear-btn" bindtap="clearData">清除学习数据</button>
+  <button class="clear-btn" bindtap="clearData">
+    <image class="clear-icon" src="/assets/icons/cross.png" mode="aspectFit" />
+    <text>清除学习数据</text>
+  </button>
   <view class="demo-note">演示版 · 本地存储 · 未接云端与发音</view>
 </view>

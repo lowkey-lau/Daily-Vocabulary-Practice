@@ -11,7 +11,17 @@
   <view class="question-area" wx:if="{{question}}">
     <view class="term-row">
       <text class="term">{{question.term}}</text>
-      <view class="audio-pill" bindtap="onAudio">🔊</view>
+      <view
+        class="audio-pill"
+        hover-class="audio-hover"
+        bindtap="onAudio"
+      >
+        <image
+          class="audio-icon"
+          src="/assets/icons/speaker.png"
+          mode="aspectFit"
+        />
+      </view>
     </view>
     <text class="reading">{{question.reading}}</text>
     <text class="prompt">这个词是什么意思？</text>
@@ -22,6 +32,7 @@
       wx:for="{{options}}"
       wx:key="id"
       class="option {{item.state}}"
+      hover-class="option-hover"
       data-id="{{item.id}}"
       bindtap="onSelect"
     >
@@ -35,8 +46,15 @@
 
 <view wx:if="{{showFeedback}}" class="feedback-mask"></view>
 <view wx:if="{{showFeedback}}" class="feedback-sheet">
-  <view class="feedback-title {{isCorrect ? 'ok' : 'no'}}">
-    {{feedbackTitle}}
+  <view class="feedback-head">
+    <image
+      class="feedback-icon"
+      src="{{isCorrect ? '/assets/icons/check.png' : '/assets/icons/cross.png'}}"
+      mode="aspectFit"
+    />
+    <view class="feedback-title {{isCorrect ? 'ok' : 'no'}}">
+      {{feedbackTitle}}
+    </view>
   </view>
   <view class="feedback-main">{{question.term}} = {{question.meaning}}</view>
   <view class="feedback-example">

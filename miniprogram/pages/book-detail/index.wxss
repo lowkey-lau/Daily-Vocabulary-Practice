@@ -100,10 +100,19 @@
 }
 
 .audio-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 24rpx;
   text-align: center;
   font-size: 22rpx;
   color: #a39a8c;
+}
+
+.audio-note-icon {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 8rpx;
 }
 
 .detail-btn {

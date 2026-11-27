@@ -11,6 +11,13 @@
   box-shadow: 0 12rpx 30rpx rgba(30, 42, 39, 0.05);
 }
 
+.stat-icon {
+  display: block;
+  width: 40rpx;
+  height: 40rpx;
+  margin-bottom: 6rpx;
+}
+
 .chart-card {
   margin-top: 24rpx;
 }
@@ -68,10 +75,19 @@
 }
 
 .chart-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 20rpx;
   text-align: center;
   font-size: 22rpx;
   color: #a39a8c;
+}
+
+.chart-empty-icon {
+  width: 64rpx;
+  height: 64rpx;
+  margin-bottom: 6rpx;
 }
 
 .stats-note-card {

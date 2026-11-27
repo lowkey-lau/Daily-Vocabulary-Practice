@@ -24,15 +24,21 @@
     "list": [
       {
         "pagePath": "pages/home/index",
-        "text": "今日"
+        "text": "今日",
+        "iconPath": "assets/tabbar/tab-today.png",
+        "selectedIconPath": "assets/tabbar/tab-today.png"
       },
       {
         "pagePath": "pages/books/index",
-        "text": "词书"
+        "text": "词书",
+        "iconPath": "assets/tabbar/tab-books.png",
+        "selectedIconPath": "assets/tabbar/tab-books.png"
       },
       {
         "pagePath": "pages/settings/index",
-        "text": "我的"
+        "text": "我的",
+        "iconPath": "assets/tabbar/tab-me.png",
+        "selectedIconPath": "assets/tabbar/tab-me.png"
       }
     ]
   },

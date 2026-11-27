@@ -44,7 +44,16 @@
   margin-left: 18rpx;
   border-radius: 50%;
   background: var(--jade-soft);
-  font-size: 28rpx;
+  transition: transform 160ms ease;
+}
+
+.audio-icon {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.audio-hover {
+  transform: scale(0.9);
 }
 
 .reading {

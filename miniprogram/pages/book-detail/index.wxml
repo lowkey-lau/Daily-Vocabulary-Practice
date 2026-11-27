@@ -26,7 +26,14 @@
   </view>
 
   <view class="section-head row-between">
-    <text class="title-md">先看几个</text>
+    <view class="row">
+      <image
+        class="section-icon"
+        src="/assets/icons/book.png"
+        mode="aspectFit"
+      />
+      <text class="title-md">先看几个</text>
+    </view>
     <text class="caption">粤拼 + 普通话释义</text>
   </view>
 
@@ -40,9 +47,17 @@
     </view>
   </view>
 
-  <view class="audio-note">🔊 发音将在接入 TTS 后开放</view>
+  <view class="audio-note">
+    <image
+      class="audio-note-icon"
+      src="/assets/icons/speaker.png"
+      mode="aspectFit"
+    />
+    <text>发音将在接入 TTS 后开放</text>
+  </view>
 
   <button class="primary-btn detail-btn" bindtap="start">
-    {{detail.learned > 0 ? '继续学习' : '开始学习'}}
+    <image class="btn-icon" src="/assets/icons/book.png" mode="aspectFit" />
+    <text>{{detail.learned > 0 ? '继续学习' : '开始学习'}}</text>
   </button>
 </view>

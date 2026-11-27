@@ -41,6 +41,17 @@
   align-items: flex-end;
 }
 
+.profile-streak-row {
+  display: flex;
+  align-items: center;
+}
+
+.profile-streak-icon {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 6rpx;
+}
+
 .profile-streak-num {
   font-size: 40rpx;
   font-weight: 700;
@@ -82,10 +93,21 @@
   padding: 26rpx 0;
   border-top: 2rpx solid var(--line);
   font-size: 28rpx;
+  transition: opacity 160ms ease;
 }
 
 .menu-row:first-child {
   border-top: none;
+}
+
+.menu-icon {
+  width: 38rpx;
+  height: 38rpx;
+  margin-right: 14rpx;
+}
+
+.menu-hover {
+  opacity: 0.6;
 }
 
 .menu-arrow {
@@ -121,11 +143,18 @@
 
 .clear-btn {
   display: flex;
+  align-items: center;
   justify-content: center;
   margin-top: 32rpx;
   padding: 20rpx;
   color: var(--coral);
   font-size: 26rpx;
+}
+
+.clear-icon {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 8rpx;
 }
 
 .demo-note {

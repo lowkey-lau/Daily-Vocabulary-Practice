@@ -8,6 +8,7 @@
 | --- | --- |
 | 需求梳理 / PRD | ✅ v0.2 |
 | 本地 Demo | ✅ 8 个页面，30 词，本地存储 |
+| 视觉 / 图标 | ✅ Fluent Emoji 卡通图标 + 轻动效 |
 | 云端 / 登录 | ⬜ 未开始 |
 | TTS 发音 | ⬜ 未接入（界面已留位置） |
 | 正式内容制作 | 🟡 Demo 词库 30 词，正式词书待制作 |
@@ -56,12 +57,21 @@ npm run typecheck
 | 管理 | 无管理界面 | 导入脚本；管理页 P1 |
 | 同步 | 换设备不同步 | 云端同步 |
 
+## 视觉与图标
+
+- 视觉方向：保留米色 + 墨绿 + 珊瑚的温暖手绘感，不引入整套 UI 组件库。
+- 交互：页面进入、选项判定、反馈弹层、星星逐个弹出等轻量动效，基于 WXSS `animation` / `transition`。
+- 图标：Microsoft Fluent Emoji（Flat 风格，MIT License），已转为 PNG；tabBar 81px、页面图标 128px，全部本地加载。
+- 图标来源与许可见 `miniprogram/assets/README.md` 和 `miniprogram/assets/LICENSE-FluentEmoji.txt`。
+- 现在不引入 TDesign / Vant：Demo 页面少、视觉自定义程度高，组件库需要 npm 构建且会拉向通用企业风；等定位稳定、复用变多再评估。
+
 ## 规划中的技术栈
 
 - 微信原生小程序 + TypeScript（开发者工具内置 TS 编译，`typecheck` 单独跑）
 - Demo：本地存储；正式版：微信云开发（云数据库 / 云函数 / 云存储）
 - 内容通过 JSON 批量导入，管理员 openid 白名单
 - 第三方 TTS（腾讯云 / Qwen3-TTS 备选）预生成音频，存入云存储
+- 图标：Fluent Emoji（MIT），本地 PNG，无网络依赖
 
 ## 目录结构
 
@@ -70,6 +80,7 @@ npm run typecheck
 ├── miniprogram/
 │   ├── app.ts / app.json / app.wxss
 │   ├── sitemap.json
+│   ├── assets/                # Fluent Emoji 图标（PNG）
 │   ├── data/words.ts          # Demo 词库（30 个粤语日常词）
 │   ├── services/store.ts      # 本地存储、每日建议、复习与统计
 │   └── pages/

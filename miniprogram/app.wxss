@@ -21,7 +21,8 @@ page {
 view,
 text,
 button,
-scroll-view {
+scroll-view,
+image {
   box-sizing: border-box;
 }
 
@@ -41,6 +42,7 @@ button::after {
 .page {
   min-height: 100vh;
   padding: 32rpx 32rpx calc(56rpx + env(safe-area-inset-bottom));
+  animation: page-in 280ms ease-out both;
 }
 
 .page.tight {
@@ -120,6 +122,32 @@ button::after {
   color: var(--jade);
 }
 
+.btn-icon {
+  width: 34rpx;
+  height: 34rpx;
+  margin-right: 10rpx;
+  flex-shrink: 0;
+}
+
+.section-icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 12rpx;
+  flex-shrink: 0;
+}
+
+.eyebrow-icon {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 8rpx;
+  flex-shrink: 0;
+}
+
+.empty-icon-img {
+  width: 128rpx;
+  height: 128rpx;
+}
+
 .jade {
   color: var(--jade);
 }
@@ -137,6 +165,12 @@ button::after {
   border-radius: 32rpx;
   padding: 32rpx;
   box-shadow: 0 16rpx 40rpx rgba(30, 42, 39, 0.06);
+  transition: transform 180ms ease, box-shadow 180ms ease, opacity 180ms ease;
+}
+
+.card-hover {
+  transform: scale(0.987);
+  opacity: 0.94;
 }
 
 .card + .card {
@@ -199,6 +233,7 @@ button::after {
   font-weight: 600;
   letter-spacing: 1rpx;
   box-shadow: 0 16rpx 32rpx rgba(14, 79, 74, 0.2);
+  transition: transform 160ms ease, opacity 160ms ease;
 }
 
 .primary-btn:active {
@@ -223,6 +258,7 @@ button::after {
   color: var(--jade);
   font-size: 30rpx;
   font-weight: 600;
+  transition: transform 160ms ease, opacity 160ms ease;
 }
 
 .text-btn {
@@ -317,6 +353,11 @@ button::after {
   transform: scale(0.99);
 }
 
+.option-hover {
+  transform: scale(0.985);
+  opacity: 0.9;
+}
+
 .option-letter {
   display: flex;
   align-items: center;
@@ -341,6 +382,7 @@ button::after {
 .option.correct {
   border-color: var(--jade);
   background: var(--jade-soft);
+  animation: option-pop 280ms cubic-bezier(0.2, 0.9, 0.2, 1);
 }
 
 .option.correct .option-letter {
@@ -351,6 +393,7 @@ button::after {
 .option.wrong {
   border-color: var(--coral);
   background: var(--coral-soft);
+  animation: option-shake 320ms ease;
 }
 
 .option.wrong .option-letter {
@@ -382,7 +425,19 @@ button::after {
   border-radius: 36rpx 36rpx 0 0;
   background: var(--card);
   box-shadow: 0 -20rpx 60rpx rgba(24, 36, 33, 0.16);
-  animation: sheet-up 220ms ease-out;
+  animation: sheet-up 280ms cubic-bezier(0.2, 0.9, 0.2, 1);
+}
+
+.feedback-head {
+  display: flex;
+  align-items: center;
+}
+
+.feedback-icon {
+  width: 56rpx;
+  height: 56rpx;
+  margin-right: 12rpx;
+  flex-shrink: 0;
 }
 
 .feedback-title {
@@ -462,5 +517,47 @@ button::after {
   }
   to {
     transform: translateY(0);
+  }
+}
+
+@keyframes page-in {
+  from {
+    opacity: 0;
+    transform: translateY(10rpx);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes option-pop {
+  0% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(1.025);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes option-shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-6rpx);
+  }
+  40% {
+    transform: translateX(6rpx);
+  }
+  60% {
+    transform: translateX(-4rpx);
+  }
+  80% {
+    transform: translateX(4rpx);
   }
 }

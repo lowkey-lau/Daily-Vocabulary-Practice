@@ -11,16 +11,17 @@
 
 .streak-pill {
   display: flex;
-  align-items: baseline;
-  padding: 14rpx 22rpx;
+  align-items: center;
+  padding: 12rpx 22rpx;
   border-radius: 32rpx;
   background: var(--jade-soft);
   color: var(--jade);
 }
 
-.streak-fire {
+.streak-icon {
+  width: 34rpx;
+  height: 34rpx;
   margin-right: 8rpx;
-  font-size: 24rpx;
 }
 
 .streak-number {
@@ -172,6 +173,7 @@
   border-radius: 28rpx;
   background: var(--card);
   box-shadow: 0 16rpx 40rpx rgba(30, 42, 39, 0.06);
+  transition: transform 180ms ease, opacity 180ms ease;
 }
 
 .quick-card + .quick-card {
@@ -180,8 +182,8 @@
 
 .quick-icon {
   display: block;
-  font-size: 34rpx;
-  color: var(--coral);
+  width: 46rpx;
+  height: 46rpx;
 }
 
 .quick-title {
