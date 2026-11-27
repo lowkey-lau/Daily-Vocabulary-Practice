@@ -6,13 +6,14 @@
 
 | 阶段 | 状态 |
 | --- | --- |
-| 需求梳理 / PRD | ✅ v0.7 |
+| 需求梳理 / PRD | ✅ v0.8（模块化） |
 | 本地 Demo | ✅ 12 个页面，40 个三阶段测试词，本地存储 |
 | 视觉 / 图标 | ✅ Fluent Emoji 卡通图标 + 轻动效 |
 | 家庭口音词库 | 🟡 本地录音原型已实现，并接入每日练习与统计；云端家庭版待开发 |
 | 云端 / 登录 | ⬜ 未开始 |
 | TTS 发音 | ⬜ 未接入（界面已留位置） |
 | 正式内容制作 | 🟡 Demo 词库 40 词（家人 / 日常 / 基础三阶段），正式词书待制作 |
+| 商业化 | 🟡 规划完成，当前不收费（[monetization](docs/modules/monetization.md)） |
 | 小程序备案 / 类目 | ⬜ 未启动（公开上架前必须） |
 
 - 产品需求文档：[docs/PRD.md](docs/PRD.md)
@@ -75,7 +76,7 @@ npm run typecheck
 - 长辈录音模式：一屏一词、录音 / 试听 / 重录 / 保存，可选本地说法
 - 子孙用长辈录音做每日练习、跟读、家庭对话卡
 - 默认家庭私有，不做公开 UGC、自由聊天、AI 方言对话
-- 完整设计：[docs/FAMILY-MODULE.md](docs/FAMILY-MODULE.md)
+- 完整设计：[docs/modules/family-accent.md](docs/modules/family-accent.md)
 
 ### 家庭录音原型（本地）
 
@@ -161,8 +162,13 @@ npm run build:words   # 生成 miniprogram/data/words.ts
 │   └── source/                # HSK 1–2 源词表快照
 ├── scripts/                   # fetch:hsk / build:words
 ├── docs/
-│   ├── PRD.md
-│   └── FAMILY-MODULE.md       # 家庭口音词库（长辈教学）设计
+│   ├── PRD.md                 # 总 PRD / 核心学习
+│   └── modules/
+│       ├── README.md          # 模块索引
+│       ├── family-accent.md   # 家庭口音词库
+│       ├── content-pipeline.md
+│       ├── brand-release.md
+│       └── monetization.md    # 商业化规划
 ├── project.config.json
 ├── tsconfig.json
 ├── package.json
@@ -171,11 +177,14 @@ npm run build:words   # 生成 miniprogram/data/words.ts
 
 ## 文档
 
-- [产品需求文档 PRD](docs/PRD.md)
-- [家庭口音词库模块设计](docs/FAMILY-MODULE.md)
+- [总 PRD](docs/PRD.md)
+- [模块化 PRD 索引](docs/modules/README.md)
+- [家庭口音词库模块](docs/modules/family-accent.md)
+- [内容管线模块](docs/modules/content-pipeline.md)
+- [品牌与上线模块](docs/modules/brand-release.md)
+- [商业化模块](docs/modules/monetization.md)
 - [小程序注册资料](brand/INTRO.md)
 - [品牌头像与说明](brand/README.md)
-- [内容管线](content/README.md)
 - [来源与许可](content/SOURCES.md)
 - [开发约定](CLAUDE.md)
 

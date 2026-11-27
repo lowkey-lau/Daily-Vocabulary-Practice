@@ -4,8 +4,8 @@
 
 产品名：拾乡音。面向碎片时间学习的多语言 / 方言词汇练习微信小程序。当前本地测试词表有 40 个词，按「家人称呼 → 日常场景 → 基础词汇」三阶段组织，验证家庭录音与学习流程；正式首发语言 / 方言待定。
 
-- 需求唯一事实来源：`docs/PRD.md`
-- 当前阶段：本地 Demo + 家庭录音本地原型已完成（12 个页面，40 个三阶段测试词）；家庭录音已接入每日练习、学习统计和错词本。云端家庭版待开发，设计见 `docs/FAMILY-MODULE.md`。
+- 需求唯一事实来源：`docs/PRD.md` + `docs/modules/`
+- 当前阶段：本地 Demo + 家庭录音本地原型已完成（12 个页面，40 个三阶段测试词）；家庭录音已接入每日练习、学习统计和错词本。云端家庭版待开发；商业化规划已完成，当前不收费。
 
 ## 技术栈
 
@@ -18,6 +18,7 @@
 - 图标：Microsoft Fluent Emoji（MIT），本地 PNG；不引入整套 UI 组件库
 - 本地录音原型：`wx.getRecorderManager` + `wx.env.USER_DATA_PATH`；音频文件不进入云端
 - 第二阶段：家庭口音词库（长辈录音），需要云端多用户、家庭权限与录音存储
+- 商业化：后期规划见 `docs/modules/monetization.md`；当前版本不接广告、不收费
 
 在 PRD 评审通过前，不要擅自引入后端框架、跨端框架或第三方 UI 库；如认为有必要，先说明理由并更新文档。
 
@@ -28,15 +29,20 @@ miniprogram/      小程序客户端
   app.ts/json/wxss
   assets/         Fluent Emoji 图标（PNG）与许可
   data/words.ts   自动生成（40 个三阶段测试词；不要手改）
-  content/        选词、源词表快照、来源与许可
-  scripts/        fetch:hsk / build:words 内容脚本
   services/       本地存储、每日建议、复习算法、家庭录音
   pages/          今日、词书、词书详情、练习、结果、统计、错词本、设置、家庭录音
 cloudfunctions/   （规划）云函数
-content/          （规划）词书 JSON、TTS 与导入脚本
-docs/             PRD、设计稿、决策记录
-  PRD.md          产品需求
-  FAMILY-MODULE.md  家庭口音词库（长辈教学）设计
+content/          选词、HSK 源快照、来源与许可
+scripts/          fetch:hsk / build:words 内容脚本
+brand/            小程序头像、注册资料、品牌说明
+docs/             PRD、模块文档、决策记录
+  PRD.md          总 PRD / 核心学习
+  modules/        模块化 PRD
+    README.md     模块索引
+    family-accent.md
+    content-pipeline.md
+    brand-release.md
+    monetization.md
 ```
 
 ## 开发约定
@@ -64,7 +70,7 @@ docs/             PRD、设计稿、决策记录
 
 ## 需求变更
 
-实现与 PRD 不一致时，先更新 `docs/PRD.md` 并在 PR 描述中说明，再改代码。
+实现与 PRD 不一致时，先更新 `docs/PRD.md` 或对应 `docs/modules/` 文档，并在 PR 描述中说明，再改代码。
 
 ## 常用命令
 
