@@ -15,7 +15,6 @@ export type FamilyRecording = {
 export type RecordedWord = {
   id: string;
   term: string;
-  reading: string;
   meaning: string;
   localTerm: string;
   audioPath: string;
@@ -133,7 +132,6 @@ export function getRecordedWords(): RecordedWord[] {
     out.push({
       id: word.id,
       term: word.term,
-      reading: word.reading,
       meaning: word.meaning,
       localTerm: recording.localTerm || word.term,
       audioPath: recording.audioPath,

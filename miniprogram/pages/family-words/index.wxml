@@ -29,7 +29,6 @@
         <text class="word-standard" wx:if="{{item.localTerm !== item.term}}">
           {{item.term}}
         </text>
-        <text class="word-reading">{{item.reading}}</text>
         <text class="word-meaning">{{item.meaning}}</text>
       </view>
       <view class="word-actions">

@@ -54,19 +54,18 @@
   letter-spacing: 2rpx;
 }
 
-.word-reading {
-  display: block;
-  margin-top: 8rpx;
-  font-size: 26rpx;
-  letter-spacing: 2rpx;
-  color: var(--jade);
-}
-
 .word-meaning {
   display: block;
   margin-top: 20rpx;
   font-size: 30rpx;
   color: var(--ink);
+}
+
+.word-note {
+  display: block;
+  margin-top: 14rpx;
+  font-size: 22rpx;
+  color: var(--muted);
 }
 
 .local-term {

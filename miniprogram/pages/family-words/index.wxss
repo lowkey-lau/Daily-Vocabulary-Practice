@@ -77,14 +77,6 @@
   color: var(--muted);
 }
 
-.word-reading {
-  display: block;
-  margin-top: 2rpx;
-  font-size: 22rpx;
-  letter-spacing: 1rpx;
-  color: var(--jade);
-}
-
 .word-meaning {
   display: block;
   margin-top: 6rpx;

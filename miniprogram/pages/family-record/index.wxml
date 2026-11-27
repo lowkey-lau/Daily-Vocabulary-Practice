@@ -12,8 +12,8 @@
   <view class="card word-card" wx:if="{{word}}">
     <text class="word-hint">请用家里的说法读一遍</text>
     <text class="word-term">{{word.term}}</text>
-    <text class="word-reading">{{word.reading}}</text>
     <text class="word-meaning">{{word.meaning}}</text>
+    <text class="word-note">各地口音不同，不用管标准读音，按家里的读法录就好</text>
   </view>
 
   <view class="local-term">
