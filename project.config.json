@@ -1,9 +1,9 @@
 {
   "description": "粤语每日词汇练习小程序 demo",
-  "appid": "touristappid",
+  "appid": "wxdbc042534dde6f16",
   "compileType": "miniprogram",
   "miniprogramRoot": "miniprogram/",
-  "projectname": "daily-vocabulary-demo",
+  "projectname": "daily-vocabulary-practice",
   "setting": {
     "useCompilerPlugins": ["typescript"],
     "es6": true,
@@ -20,7 +20,7 @@
       "outputPath": ""
     }
   },
-  "libVersion": "3.7.8",
+  "libVersion": "3.18.1",
   "packOptions": {
     "ignore": [],
     "include": []

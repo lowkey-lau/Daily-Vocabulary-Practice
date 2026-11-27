@@ -53,7 +53,7 @@ docs/             PRD、设计稿、决策记录
 npm install
 npm run typecheck          # TypeScript 类型检查
 
-# 微信开发者工具：导入仓库根目录即可（AppID 已配置 touristappid）
+# 微信开发者工具：导入仓库根目录即可（AppID 已配置真实开发 AppID）
 # 命令行打开需先在「设置 → 安全设置」开启服务端口：
 # /Applications/wechatwebdevtools.app/Contents/MacOS/cli open --project <repo>
 ```
