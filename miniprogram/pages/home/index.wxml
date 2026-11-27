@@ -2,7 +2,7 @@
   <view class="home-top fade-up">
     <view>
       <view class="eyebrow">今日 · {{todayLabel}}</view>
-      <view class="brand">粤学几个</view>
+      <view class="brand">每日几个</view>
       <view class="caption">得闲就学，几个都算。</view>
     </view>
     <view class="streak-pill">
@@ -84,7 +84,7 @@
     hover-class="card-hover"
     bindtap="goBookDetail"
   >
-    <view class="book-cover">粤</view>
+    <view class="book-cover">词</view>
     <view class="flex-1">
       <view class="title-md">{{bookTitle}}</view>
       <view class="caption">{{bookSubtitle}}</view>

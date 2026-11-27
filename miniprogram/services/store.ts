@@ -1,7 +1,7 @@
 import { BOOK, WORDS, Word } from '../data/words';
 
-const STORAGE_KEY = 'daily_vocab_demo_v1';
-const STATE_VERSION = 1;
+const STORAGE_KEY = 'daily_vocab_demo_v2';
+const STATE_VERSION = 2;
 const DAY_MS = 24 * 60 * 60 * 1000;
 const BOX_INTERVALS = [0, 1, 3, 7, 15, 30];
 

@@ -10,7 +10,7 @@
     </view>
     <view class="title-xl">选一本，</view>
     <view class="title-xl">每天学几个。</view>
-    <view class="caption books-sub">先做粤语，其他方言在路上。</view>
+    <view class="caption books-sub">先用普通话词表跑通录音流程，方言词书后续接入。</view>
   </view>
 
   <view
@@ -19,7 +19,7 @@
     bindtap="openBook"
   >
     <view class="book-main-cover">
-      <text class="cover-char">粤</text>
+      <text class="cover-char">词</text>
       <text class="cover-label">入门 · {{totalWords}} 词</text>
     </view>
     <view class="book-main-body">
@@ -38,7 +38,7 @@
       <view class="book-meta">
         <text>{{mastered}} 个已掌握</text>
         <text class="book-meta-dot">·</text>
-        <text>粤拼注音</text>
+        <text>拼音注音</text>
       </view>
       <button class="primary-btn book-btn" catchtap="start">
         <image class="btn-icon" src="/assets/icons/book.png" mode="aspectFit" />
@@ -56,7 +56,7 @@
       />
       <text class="title-md">在路上</text>
     </view>
-    <text class="caption">先把粤语学稳</text>
+    <text class="caption">先把流程跑顺</text>
   </view>
 
   <view
@@ -66,7 +66,7 @@
     wx:key="id"
     bindtap="showComing"
   >
-    <view class="upcoming-mark">粤</view>
+    <view class="upcoming-mark">词</view>
     <view class="flex-1 upcoming-body">
       <view class="upcoming-title">{{item.title}}</view>
       <view class="caption">{{item.subtitle}}</view>

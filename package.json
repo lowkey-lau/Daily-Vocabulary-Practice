@@ -2,7 +2,7 @@
   "name": "daily-vocabulary-demo",
   "version": "0.1.0",
   "private": true,
-  "description": "粤语每日词汇练习微信小程序 demo",
+  "description": "每日词汇练习微信小程序 demo（普通话测试词表）",
   "scripts": {
     "typecheck": "tsc --noEmit"
   },

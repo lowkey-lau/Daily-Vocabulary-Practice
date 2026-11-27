@@ -43,10 +43,13 @@
   </view>
 
   <view class="record-area" wx:else>
+    <view class="cancel-hint {{willCancel ? 'show' : ''}}">松开取消</view>
     <view
-      class="record-btn {{isRecording ? 'recording' : ''}}"
-      hover-class="record-hover"
-      bindtap="onRecordTap"
+      class="record-btn {{isRecording ? 'recording' : ''}} {{willCancel ? 'canceling' : ''}} {{pressing ? 'pressing' : ''}}"
+      catchtouchstart="onTouchStart"
+      catchtouchmove="onTouchMove"
+      catchtouchend="onTouchEnd"
+      catchtouchcancel="onTouchCancel"
     >
       <image
         class="record-icon"
@@ -54,17 +57,24 @@
         mode="aspectFit"
       />
     </view>
-    <text class="record-status" wx:if="{{isRecording}}">
+    <text class="record-status" wx:if="{{willCancel}}">松开取消</text>
+    <text class="record-status" wx:elif="{{isRecording}}">
       录音中 · {{seconds}} 秒
     </text>
     <text class="record-status" wx:elif="{{hasTake}}">
       已录 {{seconds}} 秒
     </text>
-    <text class="record-status" wx:else>按一下开始录音</text>
-    <text class="record-tip" wx:if="{{isRecording}}">
-      再点一下停止 · 最长 15 秒
+    <text class="record-status" wx:else>按住录音</text>
+    <text class="record-tip" wx:if="{{willCancel}}">
+      松手会丢弃这段录音
     </text>
-    <text class="record-tip" wx:else>安静环境，手机离嘴 10–20cm</text>
+    <text class="record-tip" wx:elif="{{isRecording}}">
+      松开结束 · 上滑取消
+    </text>
+    <text class="record-tip" wx:elif="{{hasTake}}">
+      按住麦克风可重录，或直接保存
+    </text>
+    <text class="record-tip" wx:else>按住说话，松开结束</text>
   </view>
 
   <view class="record-actions" wx:if="{{hasTake && !isRecording}}">
@@ -75,10 +85,6 @@
         mode="aspectFit"
       />
       <text>{{isPlaying ? '播放中…' : '试听'}}</text>
-    </button>
-    <button class="secondary-btn take-btn" bindtap="onRecordTap">
-      <image class="btn-icon" src="/assets/icons/mic.png" mode="aspectFit" />
-      <text>重录</text>
     </button>
   </view>
 

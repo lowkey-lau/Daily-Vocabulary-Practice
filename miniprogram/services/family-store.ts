@@ -1,6 +1,6 @@
 import { WORDS } from '../data/words';
 
-const STORAGE_KEY = 'family_demo_v1';
+const STORAGE_KEY = 'family_demo_v2';
 const AUDIO_DIR_NAME = 'family-audio';
 
 export type FamilyRecording = {
@@ -41,9 +41,9 @@ type FamilyState = {
 
 function defaultState(): FamilyState {
   return {
-    version: 1,
-    familyName: '我们家的粤语',
-    hometown: '广东 · 台山',
+    version: 2,
+    familyName: '我们家的家乡话',
+    hometown: '示例家乡',
     recordings: {},
   };
 }
@@ -51,7 +51,7 @@ function defaultState(): FamilyState {
 function loadState(): FamilyState {
   try {
     const raw = wx.getStorageSync(STORAGE_KEY);
-    if (raw && raw.version === 1) {
+    if (raw && raw.version === 2) {
       return {
         ...defaultState(),
         ...raw,
@@ -231,9 +231,9 @@ export function getFamilyMembers(): Array<{
     },
     {
       id: 'kid',
-      name: '小粤',
+      name: '小语',
       role: '学习者',
-      initial: '粤',
+      initial: '语',
       status: '已加入',
     },
   ];

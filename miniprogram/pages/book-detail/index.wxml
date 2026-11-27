@@ -4,7 +4,7 @@
       <text class="cover-pill">{{detail.level}}</text>
       <text class="cover-pill">{{detail.totalWords}} 词</text>
     </view>
-    <text class="detail-char">粤</text>
+    <text class="detail-char">词</text>
     <text class="detail-title">{{detail.title}}</text>
     <text class="detail-subtitle">{{detail.subtitle}}</text>
   </view>
@@ -34,7 +34,7 @@
       />
       <text class="title-md">先看几个</text>
     </view>
-    <text class="caption">粤拼 + 普通话释义</text>
+    <text class="caption">拼音 + 普通话释义</text>
   </view>
 
   <view class="card sample-card">

@@ -19,6 +19,8 @@ Page({
     isRecording: false,
     isPlaying: false,
     hasTake: false,
+    pressing: false,
+    willCancel: false,
     seconds: 0,
     audioPath: '',
     localTerm: '',
@@ -31,6 +33,12 @@ Page({
   audioCtx: null as any,
   timer: null as any,
   recordStartedAt: 0,
+  touchStartY: 0,
+  touchStartTime: 0,
+  holding: false,
+  recordingActive: false,
+  cancelRecording: false,
+  willCancelFlag: false,
   pendingPath: '',
   savedPath: '',
   unloaded: false,
@@ -60,6 +68,8 @@ Page({
 
   onUnload() {
     this.unloaded = true;
+    this.holding = false;
+    this.recordingActive = false;
     this.clearTimer();
     if (this.data.isRecording && this.recorder) {
       try {
@@ -83,8 +93,9 @@ Page({
       this.handleRecorderStop(res);
     });
     recorder.onError(() => {
+      this.recordingActive = false;
       this.clearTimer();
-      this.setData({ isRecording: false });
+      this.setData({ isRecording: false, pressing: false, willCancel: false });
       wx.showToast({ title: '录音失败，请用真机试试', icon: 'none' });
     });
     this.recorder = recorder;
@@ -132,6 +143,10 @@ Page({
     const word = WORDS[index];
     if (!word) return;
     const existing = getRecording(word.id);
+    this.holding = false;
+    this.recordingActive = false;
+    this.cancelRecording = false;
+    this.willCancelFlag = false;
     this.stopPlayback();
     this.savedPath = existing ? existing.audioPath : '';
     this.pendingPath = '';
@@ -143,6 +158,8 @@ Page({
       progressPercent: Math.round(((index + 1) / WORDS.length) * 100),
       isRecording: false,
       isPlaying: false,
+      pressing: false,
+      willCancel: false,
       hasTake: Boolean(existing),
       seconds: existing ? existing.duration : 0,
       audioPath: existing ? existing.audioPath : '',
@@ -169,7 +186,7 @@ Page({
     }
   },
 
-  onRecordTap() {
+  onTouchStart(event: any) {
     if (this.data.permissionDenied) {
       wx.showModal({
         title: '需要麦克风权限',
@@ -181,16 +198,35 @@ Page({
       });
       return;
     }
-    if (this.data.isRecording) {
-      this.recorder.stop();
-      return;
-    }
+    if (this.recordingActive || this.data.isRecording) return;
     if (!this.data.word || !this.recorder) return;
 
+    const touch = event.touches && event.touches[0];
+    this.holding = true;
+    this.touchStartY = touch ? touch.clientY : 0;
+    this.touchStartTime = Date.now();
+    this.willCancelFlag = false;
+    this.setData({ pressing: true, willCancel: false });
+    this.beginRecording();
+  },
+
+  beginRecording() {
+    if (!this.holding || this.recordingActive || !this.recorder) return;
     this.stopPlayback();
+    if (this.pendingPath && this.pendingPath !== this.savedPath) {
+      deleteAudioFile(this.pendingPath);
+    }
     this.pendingPath = '';
     this.recordStartedAt = Date.now();
-    this.setData({ isRecording: true, isPlaying: false, seconds: 0 });
+    this.recordingActive = true;
+    this.cancelRecording = false;
+    this.willCancelFlag = false;
+    this.setData({
+      isRecording: true,
+      isPlaying: false,
+      seconds: 0,
+      willCancel: false,
+    });
 
     try {
       this.recorder.start({
@@ -201,19 +237,88 @@ Page({
         format: 'mp3',
       });
       this.startTimer();
+      if (wx.vibrateShort) wx.vibrateShort({ type: 'light' });
     } catch (err) {
+      this.recordingActive = false;
       this.clearTimer();
-      this.setData({ isRecording: false });
+      this.setData({ isRecording: false, pressing: false });
       wx.showToast({ title: '开始录音失败', icon: 'none' });
+    }
+  },
+
+  onTouchMove(event: any) {
+    if (!this.holding || !this.recordingActive) return;
+    const touch = event.touches && event.touches[0];
+    if (!touch) return;
+    const delta = this.touchStartY - touch.clientY;
+    if (delta > 60 && !this.willCancelFlag) {
+      this.willCancelFlag = true;
+      this.setData({ willCancel: true });
+      if (wx.vibrateShort) wx.vibrateShort({ type: 'light' });
+    } else if (delta < 30 && this.willCancelFlag) {
+      this.willCancelFlag = false;
+      this.setData({ willCancel: false });
+    }
+  },
+
+  onTouchEnd() {
+    const heldFor = Date.now() - this.touchStartTime;
+    this.holding = false;
+    this.setData({ pressing: false });
+
+    if (!this.recordingActive) {
+      this.setData({ willCancel: false });
+      return;
+    }
+
+    this.recordingActive = false;
+    const cancelled = this.willCancelFlag || heldFor < 200;
+    const message = this.willCancelFlag
+      ? '已取消'
+      : '长按录音，松开结束';
+    this.willCancelFlag = false;
+    this.setData({ isRecording: false, willCancel: false });
+
+    if (cancelled) {
+      this.cancelRecording = true;
+      if (this.recorder) this.recorder.stop();
+      wx.showToast({ title: message, icon: 'none' });
+      return;
+    }
+
+    if (this.recorder) this.recorder.stop();
+  },
+
+  onTouchCancel() {
+    this.holding = false;
+    this.setData({ pressing: false, willCancel: false });
+    if (this.recordingActive) {
+      this.recordingActive = false;
+      this.cancelRecording = true;
+      this.willCancelFlag = false;
+      if (this.recorder) this.recorder.stop();
+      wx.showToast({ title: '已取消', icon: 'none' });
     }
   },
 
   handleRecorderStop(res: any) {
     if (this.unloaded) return;
+    this.recordingActive = false;
     this.clearTimer();
-    this.setData({ isRecording: false });
+    this.setData({ isRecording: false, pressing: false, willCancel: false });
+
+    if (this.holding) {
+      this.holding = false;
+      wx.showToast({ title: '已录满 15 秒', icon: 'none' });
+    }
+
     const word = this.data.word;
     const tempFilePath = res && res.tempFilePath;
+    if (this.cancelRecording) {
+      this.cancelRecording = false;
+      if (tempFilePath) deleteAudioFile(tempFilePath);
+      return;
+    }
     if (!word || !tempFilePath) {
       wx.showToast({ title: '没有录到声音，再试一次', icon: 'none' });
       return;

@@ -1,5 +1,5 @@
 {
-  "description": "粤语每日词汇练习小程序 demo",
+  "description": "每日词汇练习小程序 demo（普通话测试词表）",
   "appid": "wxdbc042534dde6f16",
   "compileType": "miniprogram",
   "miniprogramRoot": "miniprogram/",

@@ -93,8 +93,21 @@
 }
 
 .record-area {
-  padding: 48rpx 0 24rpx;
+  padding: 36rpx 0 24rpx;
   text-align: center;
+}
+
+.cancel-hint {
+  height: 34rpx;
+  margin-bottom: 10rpx;
+  font-size: 24rpx;
+  color: var(--coral);
+  opacity: 0;
+  transition: opacity 120ms ease;
+}
+
+.cancel-hint.show {
+  opacity: 1;
 }
 
 .record-btn {
@@ -107,7 +120,11 @@
   border-radius: 50%;
   background: linear-gradient(145deg, #1b6b62, #0e4f4a);
   box-shadow: 0 20rpx 50rpx rgba(14, 79, 74, 0.28);
-  transition: transform 160ms ease;
+  transition: transform 160ms ease, background 160ms ease;
+}
+
+.record-btn.pressing {
+  transform: scale(0.96);
 }
 
 .record-btn.recording {
@@ -115,8 +132,8 @@
   animation: record-pulse 1.2s ease-in-out infinite;
 }
 
-.record-hover {
-  transform: scale(0.95);
+.record-btn.canceling {
+  background: #8a3b2a;
 }
 
 .record-icon {
@@ -145,10 +162,6 @@
 
 .take-btn {
   flex: 1;
-}
-
-.take-btn + .take-btn {
-  margin-left: 16rpx;
 }
 
 .save-btn {

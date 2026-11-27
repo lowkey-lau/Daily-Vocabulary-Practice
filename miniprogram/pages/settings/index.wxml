@@ -1,6 +1,6 @@
 <view class="page settings">
   <view class="profile-card card-dark fade-up">
-    <view class="profile-avatar">粤</view>
+    <view class="profile-avatar">语</view>
     <view class="flex-1">
       <view class="profile-name">小小学习者</view>
       <view class="profile-sub">每天学几个，得闲就学</view>
@@ -77,13 +77,13 @@
     </view>
     <view class="about-body" wx:if="{{showAbout}}">
       <text class="about-p">
-        粤学几个是一个轻量的粤语词汇练习小程序。每天 3–5 分钟，学几个词也算数。
+        每日几个是一个轻量的词汇练习小程序。每天 3–5 分钟，学几个词也算数；本地测试词表暂用普通话。
       </text>
       <text class="about-p">
         演示版只把学习记录保存在你的手机本地，不收集个人信息、不上传数据。正式版接入云端时会更新隐私说明。
       </text>
       <text class="about-p">
-        Demo 词库是示例内容，正式发布前会由粤语母语者逐条审校释义、粤拼和例句。
+        当前是普通话测试词表；正式发布前会按选定语言 / 方言由母语者审校释义、拼音 / 注音和例句。
       </text>
       <text class="about-p">
         发音将由第三方 TTS 预生成，正式接入后会在这里说明来源。
