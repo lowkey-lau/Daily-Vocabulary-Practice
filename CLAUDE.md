@@ -2,10 +2,10 @@
 
 ## 项目
 
-面向碎片时间学习的多语言 / 方言词汇练习微信小程序。当前本地测试词表用普通话 30 词，验证通用学习与长辈录音流程；正式首发语言 / 方言待定。
+面向碎片时间学习的多语言 / 方言词汇练习微信小程序。当前本地测试词表用 HSK 1–2 选词 40 个，验证通用学习与长辈录音流程；正式首发语言 / 方言待定。
 
 - 需求唯一事实来源：`docs/PRD.md`
-- 当前阶段：本地 Demo + 家庭录音本地原型已完成（12 个页面，30 个普通话测试词）；第二阶段云端家庭版待开发，设计见 `docs/FAMILY-MODULE.md`。
+- 当前阶段：本地 Demo + 家庭录音本地原型已完成（12 个页面，40 个 HSK 1–2 选词）；第二阶段云端家庭版待开发，设计见 `docs/FAMILY-MODULE.md`。
 
 ## 技术栈
 
@@ -14,6 +14,7 @@
 - Demo：本地存储（`wx.getStorageSync` / `wx.setStorageSync`）
 - 正式版：微信云开发（云数据库、云函数、云存储）
 - 内容以 JSON 批量导入，管理员 openid 白名单
+- 本地测试词表管线：HSK 1–2 选词（MIT）+ pinyin-pro（MIT）+ 原创释义/例句
 - 图标：Microsoft Fluent Emoji（MIT），本地 PNG；不引入整套 UI 组件库
 - 本地录音原型：`wx.getRecorderManager` + `wx.env.USER_DATA_PATH`；音频文件不进入云端
 - 第二阶段：家庭口音词库（长辈录音），需要云端多用户、家庭权限与录音存储
@@ -26,7 +27,9 @@
 miniprogram/      小程序客户端
   app.ts/json/wxss
   assets/         Fluent Emoji 图标（PNG）与许可
-  data/words.ts   Demo 词库（当前 30 个普通话测试词；正式版迁到 content/ JSON）
+  data/words.ts   自动生成（40 个 HSK 1–2 选词；不要手改）
+  content/        选词、源词表快照、来源与许可
+  scripts/        fetch:hsk / build:words 内容脚本
   services/       本地存储、每日建议、复习算法、家庭录音
   pages/          今日、词书、词书详情、练习、结果、统计、错词本、设置、家庭录音
 cloudfunctions/   （规划）云函数
@@ -52,6 +55,8 @@ docs/             PRD、设计稿、决策记录
 - 若后续要引入 TDesign / Vant，先更新 README / PRD 并说明构建成本与收益。
 - 家庭模块默认家庭私有；所有家庭读写经云函数校验成员身份；长辈录音需明确同意，可删除。
 - 家庭录入页不展示拼音 / 标准注音；方言读音以长辈实际录音为准，本地说法可选填。
+- `miniprogram/data/words.ts` 是自动生成的；改词表请编辑 `content/selected-words.json`，再跑 `npm run build:words`。
+- 内容来源、许可和使用范围必须记录在 `content/SOURCES.md`。
 - 本地录音只写 `USER_DATA_PATH`；删除录音 / 清空家庭数据时同步删除文件，避免孤儿文件。
 - 录音交互与微信语音一致：长按开始、松开结束、上滑取消；录音页必须处理 `scope.record` 权限。
 - 模拟器可能不支持录音，以真机预览为准。
@@ -66,6 +71,8 @@ docs/             PRD、设计稿、决策记录
 ```bash
 npm install
 npm run typecheck          # TypeScript 类型检查
+npm run fetch:hsk          # 拉取 HSK 1–2 源词表（需要网络）
+npm run build:words        # 从 content/selected-words.json 生成 data/words.ts
 
 # 微信开发者工具：导入仓库根目录即可（AppID 已配置真实开发 AppID）
 # 命令行打开需先在「设置 → 安全设置」开启服务端口：

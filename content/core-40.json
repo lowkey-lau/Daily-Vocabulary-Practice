@@ -1,0 +1,584 @@
+{
+  "source": {
+    "name": "Complete HSK Vocabulary",
+    "repo": "https://github.com/drkameleon/complete-hsk-vocabulary",
+    "files": [
+      "https://raw.githubusercontent.com/drkameleon/complete-hsk-vocabulary/main/wordlists/exclusive/old/1.json",
+      "https://raw.githubusercontent.com/drkameleon/complete-hsk-vocabulary/main/wordlists/exclusive/old/2.json"
+    ],
+    "license": "MIT",
+    "accessedAt": "2026-11-27",
+    "note": "仅提取词目、HSK 等级、词频、词性；不取源数据中的拼音和英文释义。拼音由 pinyin-pro 生成，中文释义与例句由本项目原创。"
+  },
+  "pinyin": {
+    "generator": "pinyin-pro",
+    "license": "MIT",
+    "overrides": {
+      "学生": "xué sheng",
+      "朋友": "péng you"
+    }
+  },
+  "wordCount": 40,
+  "words": [
+    {
+      "id": "hsk-001",
+      "term": "爱",
+      "reading": "ài",
+      "meaning": "对人或事物有很深的感情",
+      "pos": "动词",
+      "example": "我爱我的家人。",
+      "exampleMeaning": "表达对家人的感情。",
+      "tags": [
+        "情感"
+      ],
+      "hskLevel": 1,
+      "frequency": 130
+    },
+    {
+      "id": "hsk-002",
+      "term": "吃",
+      "reading": "chī",
+      "meaning": "把食物放进嘴里咽下去",
+      "pos": "动词",
+      "example": "我们一起去吃饭。",
+      "exampleMeaning": "到了饭点，约人一起用餐。",
+      "tags": [
+        "饮食"
+      ],
+      "hskLevel": 1,
+      "frequency": 142
+    },
+    {
+      "id": "hsk-003",
+      "term": "喝",
+      "reading": "hē",
+      "meaning": "把水或饮料咽下去",
+      "pos": "动词",
+      "example": "运动完记得喝水。",
+      "exampleMeaning": "提醒补充水分。",
+      "tags": [
+        "饮食"
+      ],
+      "hskLevel": 1,
+      "frequency": 428
+    },
+    {
+      "id": "hsk-004",
+      "term": "看",
+      "reading": "kàn",
+      "meaning": "用眼睛观察",
+      "pos": "动词",
+      "example": "我看了一会儿书。",
+      "exampleMeaning": "描述阅读或观察。",
+      "tags": [
+        "感官"
+      ],
+      "hskLevel": 1,
+      "frequency": 52
+    },
+    {
+      "id": "hsk-005",
+      "term": "听",
+      "reading": "tīng",
+      "meaning": "用耳朵接收声音",
+      "pos": "动词",
+      "example": "我在听音乐。",
+      "exampleMeaning": "描述听声音。",
+      "tags": [
+        "感官"
+      ],
+      "hskLevel": 1,
+      "frequency": 190
+    },
+    {
+      "id": "hsk-006",
+      "term": "说话",
+      "reading": "shuō huà",
+      "meaning": "用嘴表达意思",
+      "pos": "动词",
+      "example": "他们正在说话。",
+      "exampleMeaning": "描述正在交谈。",
+      "tags": [
+        "交流"
+      ],
+      "hskLevel": 1,
+      "frequency": 880
+    },
+    {
+      "id": "hsk-007",
+      "term": "买",
+      "reading": "mǎi",
+      "meaning": "用钱换东西",
+      "pos": "动词",
+      "example": "妈妈去买菜了。",
+      "exampleMeaning": "描述购物。",
+      "tags": [
+        "日常"
+      ],
+      "hskLevel": 1,
+      "frequency": 240
+    },
+    {
+      "id": "hsk-008",
+      "term": "来",
+      "reading": "lái",
+      "meaning": "从别处到说话人这里",
+      "pos": "动词",
+      "example": "你明天来我家吗？",
+      "exampleMeaning": "邀请对方过来。",
+      "tags": [
+        "出行"
+      ],
+      "hskLevel": 1,
+      "frequency": 31
+    },
+    {
+      "id": "hsk-009",
+      "term": "回",
+      "reading": "huí",
+      "meaning": "从外面回到原来的地方",
+      "pos": "动词",
+      "example": "天黑了，早点回家。",
+      "exampleMeaning": "提醒回住处。",
+      "tags": [
+        "出行"
+      ],
+      "hskLevel": 1,
+      "frequency": 225
+    },
+    {
+      "id": "hsk-010",
+      "term": "坐",
+      "reading": "zuò",
+      "meaning": "把身体放在椅子等物体上",
+      "pos": "动词",
+      "example": "请坐这里。",
+      "exampleMeaning": "请对方坐下。",
+      "tags": [
+        "动作"
+      ],
+      "hskLevel": 1,
+      "frequency": 435
+    },
+    {
+      "id": "hsk-011",
+      "term": "走",
+      "reading": "zǒu",
+      "meaning": "用脚一步一步前进",
+      "pos": "动词",
+      "example": "我们走路去公园。",
+      "exampleMeaning": "描述步行。",
+      "tags": [
+        "出行"
+      ],
+      "hskLevel": 2,
+      "frequency": 109
+    },
+    {
+      "id": "hsk-012",
+      "term": "住",
+      "reading": "zhù",
+      "meaning": "长期在一个地方生活",
+      "pos": "动词",
+      "example": "我住在学校附近。",
+      "exampleMeaning": "描述居住。",
+      "tags": [
+        "居住"
+      ],
+      "hskLevel": 1,
+      "frequency": 280
+    },
+    {
+      "id": "hsk-013",
+      "term": "睡觉",
+      "reading": "shuì jiào",
+      "meaning": "闭上眼睛休息",
+      "pos": "动词",
+      "example": "早点睡觉，明天有精神。",
+      "exampleMeaning": "提醒按时休息。",
+      "tags": [
+        "日常"
+      ],
+      "hskLevel": 1,
+      "frequency": 944
+    },
+    {
+      "id": "hsk-014",
+      "term": "工作",
+      "reading": "gōng zuò",
+      "meaning": "为了做事付出劳动",
+      "pos": "动词",
+      "example": "爸爸每天去工作。",
+      "exampleMeaning": "描述上班劳动。",
+      "tags": [
+        "工作"
+      ],
+      "hskLevel": 1,
+      "frequency": 111
+    },
+    {
+      "id": "hsk-015",
+      "term": "学习",
+      "reading": "xué xí",
+      "meaning": "通过读书或练习获得知识",
+      "pos": "动词",
+      "example": "我每天学习一个小时。",
+      "exampleMeaning": "描述学习。",
+      "tags": [
+        "学习"
+      ],
+      "hskLevel": 1,
+      "frequency": 789
+    },
+    {
+      "id": "hsk-016",
+      "term": "认识",
+      "reading": "rèn shi",
+      "meaning": "知道并熟悉某人或某事",
+      "pos": "动词",
+      "example": "我认识这位老师。",
+      "exampleMeaning": "表示熟悉某人。",
+      "tags": [
+        "关系"
+      ],
+      "hskLevel": 1,
+      "frequency": 463
+    },
+    {
+      "id": "hsk-017",
+      "term": "喜欢",
+      "reading": "xǐ huan",
+      "meaning": "对人或事物有好感",
+      "pos": "动词",
+      "example": "我喜欢喝茶。",
+      "exampleMeaning": "表达喜好。",
+      "tags": [
+        "情感"
+      ],
+      "hskLevel": 1,
+      "frequency": 139
+    },
+    {
+      "id": "hsk-018",
+      "term": "高兴",
+      "reading": "gāo xìng",
+      "meaning": "心情很好",
+      "pos": "形容词",
+      "example": "今天我很高兴。",
+      "exampleMeaning": "描述好心情。",
+      "tags": [
+        "情感"
+      ],
+      "hskLevel": 1,
+      "frequency": 920
+    },
+    {
+      "id": "hsk-019",
+      "term": "热",
+      "reading": "rè",
+      "meaning": "温度高",
+      "pos": "形容词",
+      "example": "今天很热。",
+      "exampleMeaning": "描述天气温度高。",
+      "tags": [
+        "天气"
+      ],
+      "hskLevel": 1,
+      "frequency": 938
+    },
+    {
+      "id": "hsk-020",
+      "term": "冷",
+      "reading": "lěng",
+      "meaning": "温度低",
+      "pos": "形容词",
+      "example": "冬天很冷。",
+      "exampleMeaning": "描述天气温度低。",
+      "tags": [
+        "天气"
+      ],
+      "hskLevel": 1,
+      "frequency": 1027
+    },
+    {
+      "id": "hsk-021",
+      "term": "下雨",
+      "reading": "xià yǔ",
+      "meaning": "天空落下雨水",
+      "pos": "动词",
+      "example": "下雨了，记得带伞。",
+      "exampleMeaning": "提醒带伞。",
+      "tags": [
+        "天气"
+      ],
+      "hskLevel": 1,
+      "frequency": 5648
+    },
+    {
+      "id": "hsk-022",
+      "term": "天气",
+      "reading": "tiān qì",
+      "meaning": "一个地方冷热晴雨的状况",
+      "pos": "名词",
+      "example": "今天天气很好。",
+      "exampleMeaning": "描述气候状况。",
+      "tags": [
+        "天气"
+      ],
+      "hskLevel": 1,
+      "frequency": 1675
+    },
+    {
+      "id": "hsk-023",
+      "term": "米饭",
+      "reading": "mǐ fàn",
+      "meaning": "用米做成的饭",
+      "pos": "名词",
+      "example": "我想吃米饭。",
+      "exampleMeaning": "表示主食。",
+      "tags": [
+        "饮食"
+      ],
+      "hskLevel": 1,
+      "frequency": 10194
+    },
+    {
+      "id": "hsk-024",
+      "term": "苹果",
+      "reading": "píng guǒ",
+      "meaning": "一种常见水果",
+      "pos": "名词",
+      "example": "这个苹果很甜。",
+      "exampleMeaning": "描述水果。",
+      "tags": [
+        "饮食"
+      ],
+      "hskLevel": 1,
+      "frequency": 2562
+    },
+    {
+      "id": "hsk-025",
+      "term": "茶",
+      "reading": "chá",
+      "meaning": "用茶叶泡出的饮料",
+      "pos": "名词",
+      "example": "爷爷喜欢喝茶。",
+      "exampleMeaning": "描述饮品。",
+      "tags": [
+        "饮食"
+      ],
+      "hskLevel": 1,
+      "frequency": 1910
+    },
+    {
+      "id": "hsk-026",
+      "term": "杯子",
+      "reading": "bēi zi",
+      "meaning": "用来喝水的容器",
+      "pos": "名词",
+      "example": "请给我一个杯子。",
+      "exampleMeaning": "请求容器。",
+      "tags": [
+        "物品"
+      ],
+      "hskLevel": 1,
+      "frequency": 6162
+    },
+    {
+      "id": "hsk-027",
+      "term": "手机",
+      "reading": "shǒu jī",
+      "meaning": "可以随身携带的移动电话",
+      "pos": "名词",
+      "example": "我的手机没电了。",
+      "exampleMeaning": "描述手机状态。",
+      "tags": [
+        "物品"
+      ],
+      "hskLevel": 2,
+      "frequency": 857
+    },
+    {
+      "id": "hsk-028",
+      "term": "电视",
+      "reading": "diàn shì",
+      "meaning": "用来看节目的家用电器",
+      "pos": "名词",
+      "example": "爷爷在看电视。",
+      "exampleMeaning": "描述观看电视。",
+      "tags": [
+        "物品"
+      ],
+      "hskLevel": 1,
+      "frequency": 779
+    },
+    {
+      "id": "hsk-029",
+      "term": "衣服",
+      "reading": "yī fu",
+      "meaning": "穿在身上的东西",
+      "pos": "名词",
+      "example": "天冷了多穿衣服。",
+      "exampleMeaning": "提醒保暖。",
+      "tags": [
+        "物品"
+      ],
+      "hskLevel": 1,
+      "frequency": 1472
+    },
+    {
+      "id": "hsk-030",
+      "term": "桌子",
+      "reading": "zhuō zi",
+      "meaning": "用来放东西或工作的家具",
+      "pos": "名词",
+      "example": "书在桌子上。",
+      "exampleMeaning": "描述位置。",
+      "tags": [
+        "物品"
+      ],
+      "hskLevel": 1,
+      "frequency": 3639
+    },
+    {
+      "id": "hsk-031",
+      "term": "椅子",
+      "reading": "yǐ zi",
+      "meaning": "用来坐的家具",
+      "pos": "名词",
+      "example": "请坐这把椅子。",
+      "exampleMeaning": "请对方坐下。",
+      "tags": [
+        "物品"
+      ],
+      "hskLevel": 1,
+      "frequency": 4472
+    },
+    {
+      "id": "hsk-032",
+      "term": "医院",
+      "reading": "yī yuàn",
+      "meaning": "看病、治疗的地方",
+      "pos": "名词",
+      "example": "他去医院看医生。",
+      "exampleMeaning": "描述就医。",
+      "tags": [
+        "场所"
+      ],
+      "hskLevel": 1,
+      "frequency": 608
+    },
+    {
+      "id": "hsk-033",
+      "term": "学校",
+      "reading": "xué xiào",
+      "meaning": "学习的地方",
+      "pos": "名词",
+      "example": "孩子去学校了。",
+      "exampleMeaning": "描述上学。",
+      "tags": [
+        "场所"
+      ],
+      "hskLevel": 1,
+      "frequency": 430
+    },
+    {
+      "id": "hsk-034",
+      "term": "老师",
+      "reading": "lǎo shī",
+      "meaning": "教学生的人",
+      "pos": "名词",
+      "example": "老师讲课很清楚。",
+      "exampleMeaning": "描述老师。",
+      "tags": [
+        "人物"
+      ],
+      "hskLevel": 1,
+      "frequency": 799
+    },
+    {
+      "id": "hsk-035",
+      "term": "学生",
+      "reading": "xué sheng",
+      "meaning": "在学校学习的人",
+      "pos": "名词",
+      "example": "他是我的学生。",
+      "exampleMeaning": "描述身份。",
+      "tags": [
+        "人物"
+      ],
+      "hskLevel": 1,
+      "frequency": 651
+    },
+    {
+      "id": "hsk-036",
+      "term": "朋友",
+      "reading": "péng you",
+      "meaning": "彼此熟悉、关系好的人",
+      "pos": "名词",
+      "example": "他是我的好朋友。",
+      "exampleMeaning": "描述关系。",
+      "tags": [
+        "关系"
+      ],
+      "hskLevel": 1,
+      "frequency": 280
+    },
+    {
+      "id": "hsk-037",
+      "term": "家",
+      "reading": "jiā",
+      "meaning": "自己居住的地方",
+      "pos": "名词",
+      "example": "我回家了。",
+      "exampleMeaning": "表示回到住处。",
+      "tags": [
+        "场所"
+      ],
+      "hskLevel": 1,
+      "frequency": 124
+    },
+    {
+      "id": "hsk-038",
+      "term": "爸爸",
+      "reading": "bà ba",
+      "meaning": "父亲",
+      "pos": "名词",
+      "example": "爸爸去上班了。",
+      "exampleMeaning": "描述父亲。",
+      "tags": [
+        "家庭"
+      ],
+      "hskLevel": 1,
+      "frequency": 908
+    },
+    {
+      "id": "hsk-039",
+      "term": "妈妈",
+      "reading": "mā ma",
+      "meaning": "母亲",
+      "pos": "名词",
+      "example": "妈妈在做饭。",
+      "exampleMeaning": "描述母亲。",
+      "tags": [
+        "家庭"
+      ],
+      "hskLevel": 1,
+      "frequency": 527
+    },
+    {
+      "id": "hsk-040",
+      "term": "医生",
+      "reading": "yī shēng",
+      "meaning": "给人看病的人",
+      "pos": "名词",
+      "example": "医生给他检查身体。",
+      "exampleMeaning": "描述职业。",
+      "tags": [
+        "人物"
+      ],
+      "hskLevel": 1,
+      "frequency": 827
+    }
+  ]
+}

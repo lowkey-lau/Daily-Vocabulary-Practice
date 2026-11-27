@@ -1,0 +1,2600 @@
+{
+  "source": {
+    "name": "Complete HSK Vocabulary",
+    "repo": "https://github.com/drkameleon/complete-hsk-vocabulary",
+    "files": [
+      "https://raw.githubusercontent.com/drkameleon/complete-hsk-vocabulary/main/wordlists/exclusive/old/1.json",
+      "https://raw.githubusercontent.com/drkameleon/complete-hsk-vocabulary/main/wordlists/exclusive/old/2.json"
+    ],
+    "license": "MIT",
+    "accessedAt": "2026-11-27",
+    "note": "仅提取词目、HSK 等级、词频、词性；不取源数据中的拼音和英文释义。拼音由 pinyin-pro 生成，中文释义与例句由本项目原创。"
+  },
+  "words": [
+    {
+      "term": "的",
+      "hskLevel": 1,
+      "frequency": 1,
+      "pos": [
+        "u",
+        "n"
+      ]
+    },
+    {
+      "term": "了",
+      "hskLevel": 1,
+      "frequency": 3,
+      "pos": [
+        "y",
+        "u",
+        "v"
+      ]
+    },
+    {
+      "term": "我",
+      "hskLevel": 1,
+      "frequency": 3,
+      "pos": [
+        "r"
+      ]
+    },
+    {
+      "term": "是",
+      "hskLevel": 1,
+      "frequency": 4,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "你",
+      "hskLevel": 1,
+      "frequency": 5,
+      "pos": [
+        "r"
+      ]
+    },
+    {
+      "term": "在",
+      "hskLevel": 1,
+      "frequency": 5,
+      "pos": [
+        "p",
+        "v",
+        "d"
+      ]
+    },
+    {
+      "term": "不",
+      "hskLevel": 1,
+      "frequency": 9,
+      "pos": [
+        "d"
+      ]
+    },
+    {
+      "term": "有",
+      "hskLevel": 1,
+      "frequency": 9,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "他",
+      "hskLevel": 1,
+      "frequency": 10,
+      "pos": [
+        "r"
+      ]
+    },
+    {
+      "term": "这",
+      "hskLevel": 1,
+      "frequency": 11,
+      "pos": [
+        "r"
+      ]
+    },
+    {
+      "term": "个",
+      "hskLevel": 1,
+      "frequency": 19,
+      "pos": [
+        "q",
+        "g"
+      ]
+    },
+    {
+      "term": "和",
+      "hskLevel": 1,
+      "frequency": 19,
+      "pos": [
+        "cc",
+        "p",
+        "v",
+        "qv",
+        "g",
+        "n"
+      ]
+    },
+    {
+      "term": "人",
+      "hskLevel": 1,
+      "frequency": 19,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "我们",
+      "hskLevel": 1,
+      "frequency": 19,
+      "pos": [
+        "r"
+      ]
+    },
+    {
+      "term": "好",
+      "hskLevel": 1,
+      "frequency": 20,
+      "pos": [
+        "a",
+        "d",
+        "v"
+      ]
+    },
+    {
+      "term": "一",
+      "hskLevel": 1,
+      "frequency": 21,
+      "pos": [
+        "m",
+        "d",
+        "t"
+      ]
+    },
+    {
+      "term": "会",
+      "hskLevel": 1,
+      "frequency": 23,
+      "pos": [
+        "v",
+        "n"
+      ]
+    },
+    {
+      "term": "都",
+      "hskLevel": 1,
+      "frequency": 25,
+      "pos": [
+        "d",
+        "g"
+      ]
+    },
+    {
+      "term": "上",
+      "hskLevel": 1,
+      "frequency": 29,
+      "pos": [
+        "f",
+        "v",
+        "g"
+      ]
+    },
+    {
+      "term": "来",
+      "hskLevel": 1,
+      "frequency": 31,
+      "pos": [
+        "v",
+        "f",
+        "m",
+        "u",
+        "y"
+      ]
+    },
+    {
+      "term": "很",
+      "hskLevel": 1,
+      "frequency": 35,
+      "pos": [
+        "d"
+      ]
+    },
+    {
+      "term": "去",
+      "hskLevel": 1,
+      "frequency": 38,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "她",
+      "hskLevel": 1,
+      "frequency": 38,
+      "pos": [
+        "r"
+      ]
+    },
+    {
+      "term": "想",
+      "hskLevel": 1,
+      "frequency": 44,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "能",
+      "hskLevel": 1,
+      "frequency": 46,
+      "pos": [
+        "v",
+        "g"
+      ]
+    },
+    {
+      "term": "那",
+      "hskLevel": 1,
+      "frequency": 48,
+      "pos": [
+        "r",
+        "c"
+      ]
+    },
+    {
+      "term": "看",
+      "hskLevel": 1,
+      "frequency": 52,
+      "pos": [
+        "v",
+        "u"
+      ]
+    },
+    {
+      "term": "做",
+      "hskLevel": 1,
+      "frequency": 53,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "什么",
+      "hskLevel": 1,
+      "frequency": 55,
+      "pos": [
+        "r"
+      ]
+    },
+    {
+      "term": "点",
+      "hskLevel": 1,
+      "frequency": 58,
+      "pos": [
+        "qt",
+        "n",
+        "t",
+        "v"
+      ]
+    },
+    {
+      "term": "没",
+      "hskLevel": 1,
+      "frequency": 63,
+      "pos": [
+        "d",
+        "v"
+      ]
+    },
+    {
+      "term": "大",
+      "hskLevel": 1,
+      "frequency": 66,
+      "pos": [
+        "a",
+        "d",
+        "n",
+        "g"
+      ]
+    },
+    {
+      "term": "下",
+      "hskLevel": 1,
+      "frequency": 70,
+      "pos": [
+        "v",
+        "f",
+        "qt",
+        "g"
+      ]
+    },
+    {
+      "term": "里",
+      "hskLevel": 1,
+      "frequency": 75,
+      "pos": [
+        "f",
+        "q"
+      ]
+    },
+    {
+      "term": "现在",
+      "hskLevel": 1,
+      "frequency": 77,
+      "pos": [
+        "t"
+      ]
+    },
+    {
+      "term": "年",
+      "hskLevel": 1,
+      "frequency": 79,
+      "pos": [
+        "qt",
+        "t",
+        "n"
+      ]
+    },
+    {
+      "term": "多",
+      "hskLevel": 1,
+      "frequency": 80,
+      "pos": [
+        "a",
+        "m",
+        "ad",
+        "d",
+        "v",
+        "g"
+      ]
+    },
+    {
+      "term": "吗",
+      "hskLevel": 1,
+      "frequency": 83,
+      "pos": [
+        "y"
+      ]
+    },
+    {
+      "term": "太",
+      "hskLevel": 1,
+      "frequency": 87,
+      "pos": [
+        "d",
+        "b"
+      ]
+    },
+    {
+      "term": "呢",
+      "hskLevel": 1,
+      "frequency": 96,
+      "pos": [
+        "y"
+      ]
+    },
+    {
+      "term": "小",
+      "hskLevel": 1,
+      "frequency": 100,
+      "pos": [
+        "a",
+        "ad"
+      ]
+    },
+    {
+      "term": "时候",
+      "hskLevel": 1,
+      "frequency": 107,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "工作",
+      "hskLevel": 1,
+      "frequency": 111,
+      "pos": [
+        "vn",
+        "v",
+        "n"
+      ]
+    },
+    {
+      "term": "家",
+      "hskLevel": 1,
+      "frequency": 124,
+      "pos": [
+        "n",
+        "q"
+      ]
+    },
+    {
+      "term": "怎么",
+      "hskLevel": 1,
+      "frequency": 128,
+      "pos": [
+        "r"
+      ]
+    },
+    {
+      "term": "爱",
+      "hskLevel": 1,
+      "frequency": 130,
+      "pos": [
+        "v",
+        "vn",
+        "b"
+      ]
+    },
+    {
+      "term": "喜欢",
+      "hskLevel": 1,
+      "frequency": 139,
+      "pos": [
+        "v",
+        "vn"
+      ]
+    },
+    {
+      "term": "吃",
+      "hskLevel": 1,
+      "frequency": 142,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "谁",
+      "hskLevel": 1,
+      "frequency": 142,
+      "pos": [
+        "r"
+      ]
+    },
+    {
+      "term": "今天",
+      "hskLevel": 1,
+      "frequency": 155,
+      "pos": [
+        "t"
+      ]
+    },
+    {
+      "term": "月",
+      "hskLevel": 1,
+      "frequency": 161,
+      "pos": [
+        "n",
+        "t"
+      ]
+    },
+    {
+      "term": "几",
+      "hskLevel": 1,
+      "frequency": 178,
+      "pos": [
+        "m",
+        "d"
+      ]
+    },
+    {
+      "term": "听",
+      "hskLevel": 1,
+      "frequency": 190,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "开",
+      "hskLevel": 1,
+      "frequency": 195,
+      "pos": [
+        "v",
+        "q"
+      ]
+    },
+    {
+      "term": "叫",
+      "hskLevel": 1,
+      "frequency": 200,
+      "pos": [
+        "v",
+        "p",
+        "n"
+      ]
+    },
+    {
+      "term": "请",
+      "hskLevel": 1,
+      "frequency": 216,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "钱",
+      "hskLevel": 1,
+      "frequency": 218,
+      "pos": [
+        "n",
+        "nr"
+      ]
+    },
+    {
+      "term": "本",
+      "hskLevel": 1,
+      "frequency": 222,
+      "pos": [
+        "r",
+        "q",
+        "d",
+        "n"
+      ]
+    },
+    {
+      "term": "回",
+      "hskLevel": 1,
+      "frequency": 225,
+      "pos": [
+        "v",
+        "qv"
+      ]
+    },
+    {
+      "term": "东西",
+      "hskLevel": 1,
+      "frequency": 226,
+      "pos": [
+        "n",
+        "f",
+        "nr"
+      ]
+    },
+    {
+      "term": "三",
+      "hskLevel": 1,
+      "frequency": 233,
+      "pos": [
+        "m",
+        "t"
+      ]
+    },
+    {
+      "term": "买",
+      "hskLevel": 1,
+      "frequency": 240,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "岁",
+      "hskLevel": 1,
+      "frequency": 266,
+      "pos": [
+        "qt"
+      ]
+    },
+    {
+      "term": "朋友",
+      "hskLevel": 1,
+      "frequency": 280,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "住",
+      "hskLevel": 1,
+      "frequency": 280,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "水",
+      "hskLevel": 1,
+      "frequency": 335,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "写",
+      "hskLevel": 1,
+      "frequency": 352,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "日",
+      "hskLevel": 1,
+      "frequency": 395,
+      "pos": [
+        "t",
+        "g",
+        "b",
+        "qt"
+      ]
+    },
+    {
+      "term": "喝",
+      "hskLevel": 1,
+      "frequency": 428,
+      "pos": [
+        "g",
+        "vn"
+      ]
+    },
+    {
+      "term": "学校",
+      "hskLevel": 1,
+      "frequency": 430,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "坐",
+      "hskLevel": 1,
+      "frequency": 435,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "认识",
+      "hskLevel": 1,
+      "frequency": 463,
+      "pos": [
+        "v",
+        "n",
+        "vn"
+      ]
+    },
+    {
+      "term": "分钟",
+      "hskLevel": 1,
+      "frequency": 465,
+      "pos": [
+        "qt"
+      ]
+    },
+    {
+      "term": "明天",
+      "hskLevel": 1,
+      "frequency": 469,
+      "pos": [
+        "t"
+      ]
+    },
+    {
+      "term": "四",
+      "hskLevel": 1,
+      "frequency": 481,
+      "pos": [
+        "m",
+        "t"
+      ]
+    },
+    {
+      "term": "块",
+      "hskLevel": 1,
+      "frequency": 483,
+      "pos": [
+        "q",
+        "g"
+      ]
+    },
+    {
+      "term": "谢谢",
+      "hskLevel": 1,
+      "frequency": 520,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "多少",
+      "hskLevel": 1,
+      "frequency": 526,
+      "pos": [
+        "r"
+      ]
+    },
+    {
+      "term": "妈妈",
+      "hskLevel": 1,
+      "frequency": 527,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "少",
+      "hskLevel": 1,
+      "frequency": 538,
+      "pos": [
+        "a",
+        "ad",
+        "v",
+        "d",
+        "g"
+      ]
+    },
+    {
+      "term": "电影",
+      "hskLevel": 1,
+      "frequency": 546,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "哪",
+      "hskLevel": 1,
+      "frequency": 547,
+      "pos": [
+        "r",
+        "y"
+      ]
+    },
+    {
+      "term": "昨天",
+      "hskLevel": 1,
+      "frequency": 557,
+      "pos": [
+        "t"
+      ]
+    },
+    {
+      "term": "书",
+      "hskLevel": 1,
+      "frequency": 560,
+      "pos": [
+        "n",
+        "g"
+      ]
+    },
+    {
+      "term": "五",
+      "hskLevel": 1,
+      "frequency": 563,
+      "pos": [
+        "m",
+        "t"
+      ]
+    },
+    {
+      "term": "先生",
+      "hskLevel": 1,
+      "frequency": 586,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "医院",
+      "hskLevel": 1,
+      "frequency": 608,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "些",
+      "hskLevel": 1,
+      "frequency": 611,
+      "pos": [
+        "q"
+      ]
+    },
+    {
+      "term": "狗",
+      "hskLevel": 1,
+      "frequency": 620,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "学生",
+      "hskLevel": 1,
+      "frequency": 651,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "二",
+      "hskLevel": 1,
+      "frequency": 664,
+      "pos": [
+        "m",
+        "t"
+      ]
+    },
+    {
+      "term": "儿子",
+      "hskLevel": 1,
+      "frequency": 665,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "中国",
+      "hskLevel": 1,
+      "frequency": 729,
+      "pos": [
+        "ns"
+      ]
+    },
+    {
+      "term": "电视",
+      "hskLevel": 1,
+      "frequency": 779,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "下午",
+      "hskLevel": 1,
+      "frequency": 782,
+      "pos": [
+        "t"
+      ]
+    },
+    {
+      "term": "学习",
+      "hskLevel": 1,
+      "frequency": 789,
+      "pos": [
+        "v",
+        "vn"
+      ]
+    },
+    {
+      "term": "老师",
+      "hskLevel": 1,
+      "frequency": 799,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "六",
+      "hskLevel": 1,
+      "frequency": 802,
+      "pos": [
+        "m",
+        "t"
+      ]
+    },
+    {
+      "term": "医生",
+      "hskLevel": 1,
+      "frequency": 827,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "名字",
+      "hskLevel": 1,
+      "frequency": 829,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "十",
+      "hskLevel": 1,
+      "frequency": 865,
+      "pos": [
+        "m",
+        "t"
+      ]
+    },
+    {
+      "term": "看见",
+      "hskLevel": 1,
+      "frequency": 870,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "女儿",
+      "hskLevel": 1,
+      "frequency": 879,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "说话",
+      "hskLevel": 1,
+      "frequency": 880,
+      "pos": [
+        "v",
+        "vn"
+      ]
+    },
+    {
+      "term": "爸爸",
+      "hskLevel": 1,
+      "frequency": 908,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "字",
+      "hskLevel": 1,
+      "frequency": 913,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "漂亮",
+      "hskLevel": 1,
+      "frequency": 915,
+      "pos": [
+        "a"
+      ]
+    },
+    {
+      "term": "高兴",
+      "hskLevel": 1,
+      "frequency": 920,
+      "pos": [
+        "a",
+        "an"
+      ]
+    },
+    {
+      "term": "热",
+      "hskLevel": 1,
+      "frequency": 938,
+      "pos": [
+        "a",
+        "n",
+        "k",
+        "v",
+        "ad",
+        "an"
+      ]
+    },
+    {
+      "term": "睡觉",
+      "hskLevel": 1,
+      "frequency": 944,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "电脑",
+      "hskLevel": 1,
+      "frequency": 946,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "读",
+      "hskLevel": 1,
+      "frequency": 1013,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "冷",
+      "hskLevel": 1,
+      "frequency": 1027,
+      "pos": [
+        "a",
+        "ad",
+        "g"
+      ]
+    },
+    {
+      "term": "飞机",
+      "hskLevel": 1,
+      "frequency": 1067,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "猫",
+      "hskLevel": 1,
+      "frequency": 1150,
+      "pos": [
+        "n",
+        "v"
+      ]
+    },
+    {
+      "term": "打电话",
+      "hskLevel": 1,
+      "frequency": 1218,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "后面",
+      "hskLevel": 1,
+      "frequency": 1300,
+      "pos": [
+        "f"
+      ]
+    },
+    {
+      "term": "喂",
+      "hskLevel": 1,
+      "frequency": 1301,
+      "pos": [
+        "v",
+        "e"
+      ]
+    },
+    {
+      "term": "八",
+      "hskLevel": 1,
+      "frequency": 1362,
+      "pos": [
+        "m",
+        "t"
+      ]
+    },
+    {
+      "term": "怎么样",
+      "hskLevel": 1,
+      "frequency": 1367,
+      "pos": [
+        "r"
+      ]
+    },
+    {
+      "term": "七",
+      "hskLevel": 1,
+      "frequency": 1419,
+      "pos": [
+        "m",
+        "t"
+      ]
+    },
+    {
+      "term": "菜",
+      "hskLevel": 1,
+      "frequency": 1448,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "衣服",
+      "hskLevel": 1,
+      "frequency": 1472,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "小姐",
+      "hskLevel": 1,
+      "frequency": 1575,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "对不起",
+      "hskLevel": 1,
+      "frequency": 1577,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "天气",
+      "hskLevel": 1,
+      "frequency": 1675,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "前面",
+      "hskLevel": 1,
+      "frequency": 1789,
+      "pos": [
+        "f"
+      ]
+    },
+    {
+      "term": "同学",
+      "hskLevel": 1,
+      "frequency": 1828,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "茶",
+      "hskLevel": 1,
+      "frequency": 1910,
+      "pos": [
+        "n",
+        "g"
+      ]
+    },
+    {
+      "term": "星期",
+      "hskLevel": 1,
+      "frequency": 1956,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "九",
+      "hskLevel": 1,
+      "frequency": 2040,
+      "pos": [
+        "m",
+        "t",
+        "b"
+      ]
+    },
+    {
+      "term": "上午",
+      "hskLevel": 1,
+      "frequency": 2188,
+      "pos": [
+        "t"
+      ]
+    },
+    {
+      "term": "再见",
+      "hskLevel": 1,
+      "frequency": 2487,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "苹果",
+      "hskLevel": 1,
+      "frequency": 2562,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "中午",
+      "hskLevel": 1,
+      "frequency": 2600,
+      "pos": [
+        "t"
+      ]
+    },
+    {
+      "term": "出租车",
+      "hskLevel": 1,
+      "frequency": 2677,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "水果",
+      "hskLevel": 1,
+      "frequency": 3271,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "商店",
+      "hskLevel": 1,
+      "frequency": 3479,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "没关系",
+      "hskLevel": 1,
+      "frequency": 3541,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "零",
+      "hskLevel": 1,
+      "frequency": 3623,
+      "pos": [
+        "m",
+        "t",
+        "g"
+      ]
+    },
+    {
+      "term": "桌子",
+      "hskLevel": 1,
+      "frequency": 3639,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "椅子",
+      "hskLevel": 1,
+      "frequency": 4472,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "北京",
+      "hskLevel": 1,
+      "frequency": 4799,
+      "pos": [
+        "ns"
+      ]
+    },
+    {
+      "term": "下雨",
+      "hskLevel": 1,
+      "frequency": 5648,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "杯子",
+      "hskLevel": 1,
+      "frequency": 6162,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "火车站",
+      "hskLevel": 1,
+      "frequency": 7270,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "米饭",
+      "hskLevel": 1,
+      "frequency": 10194,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "汉语",
+      "hskLevel": 1,
+      "frequency": 13422,
+      "pos": [
+        "nz"
+      ]
+    },
+    {
+      "term": "饭馆",
+      "hskLevel": 1,
+      "frequency": 16449,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "不客气",
+      "hskLevel": 1,
+      "frequency": 16723,
+      "pos": []
+    },
+    {
+      "term": "就",
+      "hskLevel": 2,
+      "frequency": 15,
+      "pos": [
+        "d",
+        "p",
+        "c",
+        "v"
+      ]
+    },
+    {
+      "term": "要",
+      "hskLevel": 2,
+      "frequency": 19,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "也",
+      "hskLevel": 2,
+      "frequency": 23,
+      "pos": [
+        "d",
+        "y",
+        "u",
+        "b"
+      ]
+    },
+    {
+      "term": "到",
+      "hskLevel": 2,
+      "frequency": 29,
+      "pos": [
+        "v",
+        "p"
+      ]
+    },
+    {
+      "term": "还",
+      "hskLevel": 2,
+      "frequency": 37,
+      "pos": [
+        "d",
+        "v"
+      ]
+    },
+    {
+      "term": "着",
+      "hskLevel": 2,
+      "frequency": 38,
+      "pos": [
+        "u",
+        "v",
+        "n",
+        "q"
+      ]
+    },
+    {
+      "term": "给",
+      "hskLevel": 2,
+      "frequency": 46,
+      "pos": [
+        "p",
+        "v",
+        "u"
+      ]
+    },
+    {
+      "term": "让",
+      "hskLevel": 2,
+      "frequency": 54,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "吧",
+      "hskLevel": 2,
+      "frequency": 58,
+      "pos": [
+        "y"
+      ]
+    },
+    {
+      "term": "得",
+      "hskLevel": 2,
+      "frequency": 58,
+      "pos": [
+        "u",
+        "v"
+      ]
+    },
+    {
+      "term": "可以",
+      "hskLevel": 2,
+      "frequency": 58,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "为",
+      "hskLevel": 2,
+      "frequency": 58,
+      "pos": [
+        "p",
+        "v"
+      ]
+    },
+    {
+      "term": "从",
+      "hskLevel": 2,
+      "frequency": 70,
+      "pos": [
+        "p",
+        "g"
+      ]
+    },
+    {
+      "term": "真",
+      "hskLevel": 2,
+      "frequency": 76,
+      "pos": [
+        "d",
+        "a",
+        "g"
+      ]
+    },
+    {
+      "term": "两",
+      "hskLevel": 2,
+      "frequency": 81,
+      "pos": [
+        "m",
+        "t"
+      ]
+    },
+    {
+      "term": "出",
+      "hskLevel": 2,
+      "frequency": 85,
+      "pos": [
+        "v",
+        "q"
+      ]
+    },
+    {
+      "term": "已经",
+      "hskLevel": 2,
+      "frequency": 85,
+      "pos": [
+        "d"
+      ]
+    },
+    {
+      "term": "最",
+      "hskLevel": 2,
+      "frequency": 89,
+      "pos": [
+        "d",
+        "g"
+      ]
+    },
+    {
+      "term": "因为",
+      "hskLevel": 2,
+      "frequency": 91,
+      "pos": [
+        "p",
+        "c"
+      ]
+    },
+    {
+      "term": "再",
+      "hskLevel": 2,
+      "frequency": 91,
+      "pos": [
+        "d",
+        "g"
+      ]
+    },
+    {
+      "term": "次",
+      "hskLevel": 2,
+      "frequency": 99,
+      "pos": [
+        "qv",
+        "a",
+        "g"
+      ]
+    },
+    {
+      "term": "知道",
+      "hskLevel": 2,
+      "frequency": 105,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "问题",
+      "hskLevel": 2,
+      "frequency": 109,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "走",
+      "hskLevel": 2,
+      "frequency": 109,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "它",
+      "hskLevel": 2,
+      "frequency": 114,
+      "pos": [
+        "r"
+      ]
+    },
+    {
+      "term": "但是",
+      "hskLevel": 2,
+      "frequency": 115,
+      "pos": [
+        "c"
+      ]
+    },
+    {
+      "term": "可能",
+      "hskLevel": 2,
+      "frequency": 127,
+      "pos": [
+        "v",
+        "n"
+      ]
+    },
+    {
+      "term": "时间",
+      "hskLevel": 2,
+      "frequency": 127,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "开始",
+      "hskLevel": 2,
+      "frequency": 132,
+      "pos": [
+        "v",
+        "vn"
+      ]
+    },
+    {
+      "term": "新",
+      "hskLevel": 2,
+      "frequency": 150,
+      "pos": [
+        "a",
+        "d",
+        "b"
+      ]
+    },
+    {
+      "term": "找",
+      "hskLevel": 2,
+      "frequency": 152,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "快",
+      "hskLevel": 2,
+      "frequency": 153,
+      "pos": [
+        "a",
+        "d",
+        "g"
+      ]
+    },
+    {
+      "term": "比",
+      "hskLevel": 2,
+      "frequency": 155,
+      "pos": [
+        "p",
+        "v",
+        "n",
+        "b"
+      ]
+    },
+    {
+      "term": "所以",
+      "hskLevel": 2,
+      "frequency": 157,
+      "pos": [
+        "c"
+      ]
+    },
+    {
+      "term": "觉得",
+      "hskLevel": 2,
+      "frequency": 161,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "向",
+      "hskLevel": 2,
+      "frequency": 165,
+      "pos": [
+        "p",
+        "v",
+        "g"
+      ]
+    },
+    {
+      "term": "一起",
+      "hskLevel": 2,
+      "frequency": 172,
+      "pos": [
+        "s",
+        "d",
+        "nr"
+      ]
+    },
+    {
+      "term": "希望",
+      "hskLevel": 2,
+      "frequency": 182,
+      "pos": [
+        "v",
+        "n",
+        "vn"
+      ]
+    },
+    {
+      "term": "大家",
+      "hskLevel": 2,
+      "frequency": 189,
+      "pos": [
+        "r",
+        "n"
+      ]
+    },
+    {
+      "term": "非常",
+      "hskLevel": 2,
+      "frequency": 194,
+      "pos": [
+        "d",
+        "b"
+      ]
+    },
+    {
+      "term": "孩子",
+      "hskLevel": 2,
+      "frequency": 207,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "别",
+      "hskLevel": 2,
+      "frequency": 214,
+      "pos": [
+        "d",
+        "v",
+        "r",
+        "vn"
+      ]
+    },
+    {
+      "term": "公司",
+      "hskLevel": 2,
+      "frequency": 220,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "第一",
+      "hskLevel": 2,
+      "frequency": 223,
+      "pos": [
+        "m"
+      ]
+    },
+    {
+      "term": "问",
+      "hskLevel": 2,
+      "frequency": 246,
+      "pos": [
+        "v",
+        "g",
+        "vn"
+      ]
+    },
+    {
+      "term": "长",
+      "hskLevel": 2,
+      "frequency": 246,
+      "pos": [
+        "a",
+        "v",
+        "ad",
+        "g"
+      ]
+    },
+    {
+      "term": "告诉",
+      "hskLevel": 2,
+      "frequency": 252,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "事情",
+      "hskLevel": 2,
+      "frequency": 271,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "号",
+      "hskLevel": 2,
+      "frequency": 278,
+      "pos": [
+        "q",
+        "n",
+        "v"
+      ]
+    },
+    {
+      "term": "高",
+      "hskLevel": 2,
+      "frequency": 290,
+      "pos": [
+        "a",
+        "ad",
+        "v",
+        "g"
+      ]
+    },
+    {
+      "term": "件",
+      "hskLevel": 2,
+      "frequency": 292,
+      "pos": [
+        "q",
+        "g"
+      ]
+    },
+    {
+      "term": "张",
+      "hskLevel": 2,
+      "frequency": 316,
+      "pos": [
+        "q",
+        "nr",
+        "v",
+        "g"
+      ]
+    },
+    {
+      "term": "准备",
+      "hskLevel": 2,
+      "frequency": 333,
+      "pos": [
+        "v",
+        "vn"
+      ]
+    },
+    {
+      "term": "进",
+      "hskLevel": 2,
+      "frequency": 338,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "每",
+      "hskLevel": 2,
+      "frequency": 340,
+      "pos": [
+        "r"
+      ]
+    },
+    {
+      "term": "您",
+      "hskLevel": 2,
+      "frequency": 357,
+      "pos": [
+        "r"
+      ]
+    },
+    {
+      "term": "送",
+      "hskLevel": 2,
+      "frequency": 370,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "笑",
+      "hskLevel": 2,
+      "frequency": 382,
+      "pos": [
+        "v",
+        "vn"
+      ]
+    },
+    {
+      "term": "女人",
+      "hskLevel": 2,
+      "frequency": 383,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "小时",
+      "hskLevel": 2,
+      "frequency": 389,
+      "pos": [
+        "n",
+        "q"
+      ]
+    },
+    {
+      "term": "完",
+      "hskLevel": 2,
+      "frequency": 395,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "路",
+      "hskLevel": 2,
+      "frequency": 409,
+      "pos": [
+        "n",
+        "qv"
+      ]
+    },
+    {
+      "term": "男人",
+      "hskLevel": 2,
+      "frequency": 415,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "玩",
+      "hskLevel": 2,
+      "frequency": 415,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "正在",
+      "hskLevel": 2,
+      "frequency": 420,
+      "pos": [
+        "d"
+      ]
+    },
+    {
+      "term": "门",
+      "hskLevel": 2,
+      "frequency": 422,
+      "pos": [
+        "n",
+        "q"
+      ]
+    },
+    {
+      "term": "穿",
+      "hskLevel": 2,
+      "frequency": 430,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "外",
+      "hskLevel": 2,
+      "frequency": 489,
+      "pos": [
+        "f"
+      ]
+    },
+    {
+      "term": "帮助",
+      "hskLevel": 2,
+      "frequency": 499,
+      "pos": [
+        "v",
+        "vn"
+      ]
+    },
+    {
+      "term": "晚上",
+      "hskLevel": 2,
+      "frequency": 502,
+      "pos": [
+        "t"
+      ]
+    },
+    {
+      "term": "错",
+      "hskLevel": 2,
+      "frequency": 531,
+      "pos": [
+        "v",
+        "n"
+      ]
+    },
+    {
+      "term": "卖",
+      "hskLevel": 2,
+      "frequency": 590,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "远",
+      "hskLevel": 2,
+      "frequency": 635,
+      "pos": [
+        "a",
+        "ad"
+      ]
+    },
+    {
+      "term": "快乐",
+      "hskLevel": 2,
+      "frequency": 637,
+      "pos": [
+        "a",
+        "an"
+      ]
+    },
+    {
+      "term": "懂",
+      "hskLevel": 2,
+      "frequency": 669,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "药",
+      "hskLevel": 2,
+      "frequency": 701,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "黑",
+      "hskLevel": 2,
+      "frequency": 724,
+      "pos": [
+        "a",
+        "g",
+        "b"
+      ]
+    },
+    {
+      "term": "身体",
+      "hskLevel": 2,
+      "frequency": 731,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "元",
+      "hskLevel": 2,
+      "frequency": 744,
+      "pos": [
+        "q",
+        "tg"
+      ]
+    },
+    {
+      "term": "介绍",
+      "hskLevel": 2,
+      "frequency": 779,
+      "pos": [
+        "v",
+        "vn"
+      ]
+    },
+    {
+      "term": "红",
+      "hskLevel": 2,
+      "frequency": 794,
+      "pos": [
+        "a",
+        "v",
+        "g"
+      ]
+    },
+    {
+      "term": "欢迎",
+      "hskLevel": 2,
+      "frequency": 796,
+      "pos": [
+        "v",
+        "vn"
+      ]
+    },
+    {
+      "term": "眼睛",
+      "hskLevel": 2,
+      "frequency": 814,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "近",
+      "hskLevel": 2,
+      "frequency": 822,
+      "pos": [
+        "a",
+        "v"
+      ]
+    },
+    {
+      "term": "手机",
+      "hskLevel": 2,
+      "frequency": 857,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "忙",
+      "hskLevel": 2,
+      "frequency": 859,
+      "pos": [
+        "v",
+        "a",
+        "ad",
+        "g",
+        "an"
+      ]
+    },
+    {
+      "term": "离",
+      "hskLevel": 2,
+      "frequency": 912,
+      "pos": [
+        "v",
+        "p"
+      ]
+    },
+    {
+      "term": "白",
+      "hskLevel": 2,
+      "frequency": 930,
+      "pos": [
+        "a",
+        "nr",
+        "d",
+        "b",
+        "v",
+        "g"
+      ]
+    },
+    {
+      "term": "去年",
+      "hskLevel": 2,
+      "frequency": 933,
+      "pos": [
+        "t"
+      ]
+    },
+    {
+      "term": "票",
+      "hskLevel": 2,
+      "frequency": 956,
+      "pos": [
+        "n",
+        "q"
+      ]
+    },
+    {
+      "term": "意思",
+      "hskLevel": 2,
+      "frequency": 988,
+      "pos": [
+        "n",
+        "v"
+      ]
+    },
+    {
+      "term": "早上",
+      "hskLevel": 2,
+      "frequency": 1092,
+      "pos": [
+        "t"
+      ]
+    },
+    {
+      "term": "回答",
+      "hskLevel": 2,
+      "frequency": 1100,
+      "pos": [
+        "v",
+        "vn"
+      ]
+    },
+    {
+      "term": "运动",
+      "hskLevel": 2,
+      "frequency": 1138,
+      "pos": [
+        "vn",
+        "n",
+        "v"
+      ]
+    },
+    {
+      "term": "妻子",
+      "hskLevel": 2,
+      "frequency": 1187,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "鱼",
+      "hskLevel": 2,
+      "frequency": 1189,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "累",
+      "hskLevel": 2,
+      "frequency": 1197,
+      "pos": [
+        "a",
+        "v",
+        "an"
+      ]
+    },
+    {
+      "term": "休息",
+      "hskLevel": 2,
+      "frequency": 1225,
+      "pos": [
+        "v",
+        "vn"
+      ]
+    },
+    {
+      "term": "洗",
+      "hskLevel": 2,
+      "frequency": 1298,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "船",
+      "hskLevel": 2,
+      "frequency": 1346,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "房间",
+      "hskLevel": 2,
+      "frequency": 1357,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "丈夫",
+      "hskLevel": 2,
+      "frequency": 1376,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "上班",
+      "hskLevel": 2,
+      "frequency": 1495,
+      "pos": [
+        "v",
+        "vn"
+      ]
+    },
+    {
+      "term": "生日",
+      "hskLevel": 2,
+      "frequency": 1506,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "姐姐",
+      "hskLevel": 2,
+      "frequency": 1513,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "课",
+      "hskLevel": 2,
+      "frequency": 1517,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "哥哥",
+      "hskLevel": 2,
+      "frequency": 1655,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "咖啡",
+      "hskLevel": 2,
+      "frequency": 1698,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "考试",
+      "hskLevel": 2,
+      "frequency": 1718,
+      "pos": [
+        "vn",
+        "v"
+      ]
+    },
+    {
+      "term": "千",
+      "hskLevel": 2,
+      "frequency": 1728,
+      "pos": [
+        "m",
+        "t"
+      ]
+    },
+    {
+      "term": "慢",
+      "hskLevel": 2,
+      "frequency": 1770,
+      "pos": [
+        "a",
+        "ad"
+      ]
+    },
+    {
+      "term": "旁边",
+      "hskLevel": 2,
+      "frequency": 1815,
+      "pos": [
+        "f"
+      ]
+    },
+    {
+      "term": "颜色",
+      "hskLevel": 2,
+      "frequency": 1880,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "雪",
+      "hskLevel": 2,
+      "frequency": 1971,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "妹妹",
+      "hskLevel": 2,
+      "frequency": 2093,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "报纸",
+      "hskLevel": 2,
+      "frequency": 2232,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "贵",
+      "hskLevel": 2,
+      "frequency": 2239,
+      "pos": [
+        "a",
+        "r",
+        "b",
+        "g"
+      ]
+    },
+    {
+      "term": "机场",
+      "hskLevel": 2,
+      "frequency": 2308,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "踢",
+      "hskLevel": 2,
+      "frequency": 2330,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "弟弟",
+      "hskLevel": 2,
+      "frequency": 2424,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "百",
+      "hskLevel": 2,
+      "frequency": 2455,
+      "pos": [
+        "m",
+        "t"
+      ]
+    },
+    {
+      "term": "好吃",
+      "hskLevel": 2,
+      "frequency": 2484,
+      "pos": [
+        "a"
+      ]
+    },
+    {
+      "term": "旅游",
+      "hskLevel": 2,
+      "frequency": 2534,
+      "pos": [
+        "vn",
+        "v"
+      ]
+    },
+    {
+      "term": "起床",
+      "hskLevel": 2,
+      "frequency": 2645,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "题",
+      "hskLevel": 2,
+      "frequency": 2690,
+      "pos": [
+        "n",
+        "v"
+      ]
+    },
+    {
+      "term": "便宜",
+      "hskLevel": 2,
+      "frequency": 2814,
+      "pos": [
+        "a",
+        "v",
+        "an"
+      ]
+    },
+    {
+      "term": "唱歌",
+      "hskLevel": 2,
+      "frequency": 2876,
+      "pos": [
+        "v",
+        "vn"
+      ]
+    },
+    {
+      "term": "右边",
+      "hskLevel": 2,
+      "frequency": 2906,
+      "pos": [
+        "f"
+      ]
+    },
+    {
+      "term": "牛奶",
+      "hskLevel": 2,
+      "frequency": 2986,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "自行车",
+      "hskLevel": 2,
+      "frequency": 3400,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "鸡蛋",
+      "hskLevel": 2,
+      "frequency": 3501,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "姓",
+      "hskLevel": 2,
+      "frequency": 3576,
+      "pos": [
+        "v",
+        "n"
+      ]
+    },
+    {
+      "term": "游泳",
+      "hskLevel": 2,
+      "frequency": 3695,
+      "pos": [
+        "v",
+        "vn"
+      ]
+    },
+    {
+      "term": "跳舞",
+      "hskLevel": 2,
+      "frequency": 3920,
+      "pos": [
+        "v",
+        "vn"
+      ]
+    },
+    {
+      "term": "阴",
+      "hskLevel": 2,
+      "frequency": 4058,
+      "pos": [
+        "a",
+        "g",
+        "ad",
+        "b"
+      ]
+    },
+    {
+      "term": "生病",
+      "hskLevel": 2,
+      "frequency": 4336,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "左边",
+      "hskLevel": 2,
+      "frequency": 4584,
+      "pos": [
+        "f"
+      ]
+    },
+    {
+      "term": "公斤",
+      "hskLevel": 2,
+      "frequency": 4784,
+      "pos": [
+        "q"
+      ]
+    },
+    {
+      "term": "教室",
+      "hskLevel": 2,
+      "frequency": 5082,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "服务员",
+      "hskLevel": 2,
+      "frequency": 5531,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "手表",
+      "hskLevel": 2,
+      "frequency": 6179,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "跑步",
+      "hskLevel": 2,
+      "frequency": 7199,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "西瓜",
+      "hskLevel": 2,
+      "frequency": 9098,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "晴",
+      "hskLevel": 2,
+      "frequency": 9343,
+      "pos": [
+        "v"
+      ]
+    },
+    {
+      "term": "羊肉",
+      "hskLevel": 2,
+      "frequency": 11336,
+      "pos": [
+        "n"
+      ]
+    },
+    {
+      "term": "公共汽车",
+      "hskLevel": 2,
+      "frequency": 13591,
+      "pos": []
+    },
+    {
+      "term": "打篮球",
+      "hskLevel": 2,
+      "frequency": 1000000,
+      "pos": []
+    }
+  ]
+}

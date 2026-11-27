@@ -1,6 +1,6 @@
 import { WORDS } from '../data/words';
 
-const STORAGE_KEY = 'family_demo_v2';
+const STORAGE_KEY = 'family_demo_v3';
 const AUDIO_DIR_NAME = 'family-audio';
 
 export type FamilyRecording = {
@@ -40,7 +40,7 @@ type FamilyState = {
 
 function defaultState(): FamilyState {
   return {
-    version: 2,
+    version: 3,
     familyName: '我们家的家乡话',
     hometown: '示例家乡',
     recordings: {},
@@ -50,7 +50,7 @@ function defaultState(): FamilyState {
 function loadState(): FamilyState {
   try {
     const raw = wx.getStorageSync(STORAGE_KEY);
-    if (raw && raw.version === 2) {
+    if (raw && raw.version === 3) {
       return {
         ...defaultState(),
         ...raw,

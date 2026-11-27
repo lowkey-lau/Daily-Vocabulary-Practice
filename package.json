@@ -4,10 +4,13 @@
   "private": true,
   "description": "每日词汇练习微信小程序 demo（普通话测试词表）",
   "scripts": {
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "fetch:hsk": "node scripts/fetch-hsk.mjs",
+    "build:words": "node scripts/build-words.mjs"
   },
   "devDependencies": {
     "miniprogram-api-typings": "^5.3.1",
+    "pinyin-pro": "^3.29.5",
     "typescript": "^5.9.3"
   }
 }

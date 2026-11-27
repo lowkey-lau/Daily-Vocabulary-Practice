@@ -1,18 +1,18 @@
 # 每日单词练习小程序
 
-面向碎片时间学习的多语言 / 方言词汇练习微信小程序。当前本地测试词表用普通话 30 词，先验证通用学习与长辈录音流程；正式首发语言 / 方言待定。每天 3–5 分钟，学几个词也算数。
+面向碎片时间学习的多语言 / 方言词汇练习微信小程序。当前本地测试词表用 HSK 1–2 选词 40 个，先验证通用学习与长辈录音流程；正式首发语言 / 方言待定。每天 3–5 分钟，学几个词也算数。
 
 ## 当前状态
 
 | 阶段 | 状态 |
 | --- | --- |
-| 需求梳理 / PRD | ✅ v0.4 |
-| 本地 Demo | ✅ 12 个页面，30 个普通话测试词，本地存储 |
+| 需求梳理 / PRD | ✅ v0.5 |
+| 本地 Demo | ✅ 12 个页面，40 个 HSK 1–2 选词，本地存储 |
 | 视觉 / 图标 | ✅ Fluent Emoji 卡通图标 + 轻动效 |
 | 家庭口音词库 | 🟡 本地录音原型已实现；云端家庭版待开发 |
 | 云端 / 登录 | ⬜ 未开始 |
 | TTS 发音 | ⬜ 未接入（界面已留位置） |
-| 正式内容制作 | 🟡 Demo 词库 30 词，正式词书待制作 |
+| 正式内容制作 | 🟡 Demo 词库 40 词（HSK 1–2 选词），正式词书待制作 |
 | 小程序备案 / 类目 | ⬜ 未启动（公开上架前必须） |
 
 - 产品需求文档：[docs/PRD.md](docs/PRD.md)
@@ -52,7 +52,7 @@ npm run typecheck
 
 | 维度 | Demo | 正式版 |
 | --- | --- | --- |
-| 数据 | `miniprogram/data/words.ts` 内置 30 个普通话测试词 | JSON 导入 + 云数据库 |
+| 数据 | `miniprogram/data/words.ts` 内置 40 个 HSK 1–2 选词（自动生成） | JSON 导入 + 云数据库 |
 | 账号 | 无登录，数据只在本机 | 微信登录 + 云开发 |
 | 发音 | 未接入 TTS | 服务端预生成音频 |
 | 家庭录音 | 本地文件，仅当前设备 | 云存储 + 家庭同步 |
@@ -89,10 +89,27 @@ npm run typecheck
 
 - 录音只保存在当前设备的 `USER_DATA_PATH`，不上传云端。
 - 开发者工具模拟器可能不支持麦克风录音，建议用「预览」在真机测试。
-- 30 个 Demo 词；正式版 100–200 词 + 云端家庭同步。
+- 40 个 Demo 词（HSK 1–2 选词）；正式版 100–200 词 + 云端家庭同步。
 - 家庭录入页不显示拼音 / 标准读音，长辈按自家口音录；本地说法可选填。
 - 需要麦克风权限；拒绝后可在设置里开启。
 - 清空入口：家庭主页底部「清空本地家庭数据」。
+
+## 内容管线
+
+当前 40 个测试词来自 HSK 1–2 选词，释义和例句由本项目原创：
+
+- **词目 / 等级 / 词频**：Complete HSK Vocabulary（MIT）
+- **拼音**：pinyin-pro（MIT），轻声人工覆盖
+- **释义 / 例句 / 标签**：本项目原创
+
+```bash
+npm run fetch:hsk     # 拉取 HSK 2.0 Level 1–2 源词表
+npm run build:words   # 生成 miniprogram/data/words.ts
+```
+
+- 编辑 `content/selected-words.json`，不要直接改 `miniprogram/data/words.ts`
+- 来源与许可：[content/SOURCES.md](content/SOURCES.md)
+- 管线说明：[content/README.md](content/README.md)
 
 ## 规划中的技术栈
 
@@ -112,7 +129,7 @@ npm run typecheck
 │   ├── app.ts / app.json / app.wxss
 │   ├── sitemap.json
 │   ├── assets/                # Fluent Emoji 图标（PNG）
-│   ├── data/words.ts          # Demo 词库（30 个普通话测试词）
+│   ├── data/words.ts          # 自动生成（40 个 HSK 1–2 选词）
 │   ├── services/
 │   │   ├── store.ts           # 本地存储、每日建议、复习与统计
 │   │   └── family-store.ts    # 家庭录音、本地家庭词库、听音题
@@ -129,6 +146,11 @@ npm run typecheck
 │       ├── family-record/     # 长辈录音
 │       ├── family-words/      # 家庭词库
 │       └── family-practice/   # 听音选义
+├── content/                   # 选词、HSK 源快照、来源与许可
+│   ├── selected-words.json    # 人工维护的选词 + 原创释义/例句
+│   ├── core-40.json           # 构建产物（审阅用）
+│   └── source/                # HSK 1–2 源词表快照
+├── scripts/                   # fetch:hsk / build:words
 ├── docs/
 │   ├── PRD.md
 │   └── FAMILY-MODULE.md       # 家庭口音词库（长辈教学）设计
@@ -142,6 +164,8 @@ npm run typecheck
 
 - [产品需求文档 PRD](docs/PRD.md)
 - [家庭口音词库模块设计](docs/FAMILY-MODULE.md)
+- [内容管线](content/README.md)
+- [来源与许可](content/SOURCES.md)
 - [开发约定](CLAUDE.md)
 
 ## 协作约定
