@@ -9,6 +9,7 @@
 | 需求梳理 / PRD | ✅ v0.2 |
 | 本地 Demo | ✅ 8 个页面，30 词，本地存储 |
 | 视觉 / 图标 | ✅ Fluent Emoji 卡通图标 + 轻动效 |
+| 家庭口音词库 | 🟡 模块设计完成，待开发（第二阶段） |
 | 云端 / 登录 | ⬜ 未开始 |
 | TTS 发音 | ⬜ 未接入（界面已留位置） |
 | 正式内容制作 | 🟡 Demo 词库 30 词，正式词书待制作 |
@@ -65,6 +66,16 @@ npm run typecheck
 - 图标来源与许可见 `miniprogram/assets/README.md` 和 `miniprogram/assets/LICENSE-FluentEmoji.txt`。
 - 现在不引入 TDesign / Vant：Demo 页面少、视觉自定义程度高，组件库需要 npm 构建且会拉向通用企业风；等定位稳定、复用变多再评估。
 
+## 第二阶段：家庭口音词库（长辈教学）
+
+**一句话**：让每个家庭用自己的口音，建一座只属于家人的方言词库——长辈录，子孙学。
+
+- 家庭私有空间 + 邀请 + 角色（管理员 / 长辈 / 学习者）
+- 长辈录音模式：一屏一词、录音 / 试听 / 重录 / 保存，可选本地说法
+- 子孙用长辈录音做每日练习、跟读、家庭对话卡
+- 默认家庭私有，不做公开 UGC、自由聊天、AI 方言对话
+- 完整设计：[docs/FAMILY-MODULE.md](docs/FAMILY-MODULE.md)
+
 ## 规划中的技术栈
 
 - 微信原生小程序 + TypeScript（开发者工具内置 TS 编译，`typecheck` 单独跑）
@@ -72,6 +83,7 @@ npm run typecheck
 - 内容通过 JSON 批量导入，管理员 openid 白名单
 - 第三方 TTS（腾讯云 / Qwen3-TTS 备选）预生成音频，存入云存储
 - 图标：Fluent Emoji（MIT），本地 PNG，无网络依赖
+- 家庭模块（第二阶段）：云端多用户 + 家庭权限 + 长辈录音存储
 
 ## 目录结构
 
@@ -93,7 +105,8 @@ npm run typecheck
 │       ├── wrongbook/         # 错词本
 │       └── settings/          # 我的 / 设置
 ├── docs/
-│   └── PRD.md
+│   ├── PRD.md
+│   └── FAMILY-MODULE.md       # 家庭口音词库（长辈教学）设计
 ├── project.config.json
 ├── tsconfig.json
 ├── package.json
@@ -103,6 +116,7 @@ npm run typecheck
 ## 文档
 
 - [产品需求文档 PRD](docs/PRD.md)
+- [家庭口音词库模块设计](docs/FAMILY-MODULE.md)
 - [开发约定](CLAUDE.md)
 
 ## 协作约定
