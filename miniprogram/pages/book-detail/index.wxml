@@ -1,0 +1,48 @@
+<view class="page book-detail" wx:if="{{detail}}">
+  <view class="detail-cover fade-up">
+    <view class="row-between">
+      <text class="cover-pill">{{detail.level}}</text>
+      <text class="cover-pill">{{detail.totalWords}} 词</text>
+    </view>
+    <text class="detail-char">粤</text>
+    <text class="detail-title">{{detail.title}}</text>
+    <text class="detail-subtitle">{{detail.subtitle}}</text>
+  </view>
+
+  <view class="card detail-body">
+    <text class="body">{{detail.description}}</text>
+    <view class="divider"></view>
+    <view class="row-between detail-meta">
+      <text>学习进度</text>
+      <text class="detail-value">{{detail.learned}} / {{detail.totalWords}}</text>
+    </view>
+    <view class="progress-track detail-track">
+      <view class="progress-fill" style="width: {{detail.percent}}%"></view>
+    </view>
+    <view class="row-between detail-meta">
+      <text>已掌握</text>
+      <text class="detail-value">{{detail.mastered}} 个</text>
+    </view>
+  </view>
+
+  <view class="section-head row-between">
+    <text class="title-md">先看几个</text>
+    <text class="caption">粤拼 + 普通话释义</text>
+  </view>
+
+  <view class="card sample-card">
+    <view class="sample-row" wx:for="{{detail.samples}}" wx:key="term">
+      <view class="flex-1">
+        <text class="sample-term">{{item.term}}</text>
+        <text class="sample-reading">{{item.reading}}</text>
+      </view>
+      <text class="sample-meaning">{{item.meaning}}</text>
+    </view>
+  </view>
+
+  <view class="audio-note">🔊 发音将在接入 TTS 后开放</view>
+
+  <button class="primary-btn detail-btn" bindtap="start">
+    {{detail.learned > 0 ? '继续学习' : '开始学习'}}
+  </button>
+</view>

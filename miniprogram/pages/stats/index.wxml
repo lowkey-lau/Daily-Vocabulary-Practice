@@ -1,0 +1,62 @@
+<view class="page stats" wx:if="{{stats}}">
+  <view class="eyebrow">学习统计</view>
+  <view class="title-xl">一点点，</view>
+  <view class="title-xl">也在往前走。</view>
+
+  <view class="stat-grid stats-top">
+    <view class="stat-card">
+      <view class="stat-value">{{stats.learned}}</view>
+      <view class="stat-label">累计学习</view>
+    </view>
+    <view class="stat-card">
+      <view class="stat-value">{{stats.mastered}}</view>
+      <view class="stat-label">已掌握</view>
+    </view>
+    <view class="stat-card">
+      <view class="stat-value">{{stats.streak}}</view>
+      <view class="stat-label">连续天数</view>
+    </view>
+  </view>
+
+  <view class="card chart-card">
+    <view class="row-between">
+      <text class="title-md">近 7 天</text>
+      <text class="caption">
+        共 {{stats.totalAnswered}} 题 · 正确率 {{stats.accuracy}}%
+      </text>
+    </view>
+
+    <view class="chart">
+      <view class="chart-col" wx:for="{{stats.days}}" wx:key="key">
+        <view class="chart-bar-wrap">
+          <view
+            class="chart-bar {{item.isToday ? 'today' : ''}}"
+            style="height: {{item.height}}%"
+          ></view>
+        </view>
+        <text class="chart-count">{{item.answered}}</text>
+        <text class="chart-label {{item.isToday ? 'today-label' : ''}}">
+          {{item.label}}
+        </text>
+      </view>
+    </view>
+
+    <view class="chart-empty" wx:if="{{stats.totalAnswered === 0}}">
+      还没有记录，去学几个词吧。
+    </view>
+  </view>
+
+  <view class="card stats-note-card">
+    <view class="row-between">
+      <text>错词本</text>
+      <text class="detail-value">{{stats.wrongCount}} 个</text>
+    </view>
+    <button class="secondary-btn stats-btn" bindtap="goWrong">
+      去复习错词
+    </button>
+  </view>
+
+  <button class="primary-btn stats-main-btn" bindtap="goPractice">
+    去学几个词
+  </button>
+</view>

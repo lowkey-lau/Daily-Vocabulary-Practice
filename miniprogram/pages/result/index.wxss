@@ -1,0 +1,133 @@
+.result {
+  padding-top: 16rpx;
+}
+
+.result-hero {
+  padding: 32rpx 0 12rpx;
+  text-align: center;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 22rpx 0 8rpx;
+}
+
+.star {
+  margin: 0 8rpx;
+  font-size: 56rpx;
+  color: #ded4c2;
+}
+
+.star.on {
+  color: var(--gold);
+  text-shadow: 0 6rpx 18rpx rgba(224, 174, 69, 0.3);
+}
+
+.accuracy {
+  font-size: 108rpx;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -2rpx;
+  color: var(--jade);
+}
+
+.percent {
+  margin-left: 4rpx;
+  font-size: 42rpx;
+}
+
+.accuracy-label {
+  font-size: 24rpx;
+  color: var(--muted);
+}
+
+.result-message {
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  color: var(--ink);
+}
+
+.result-stats {
+  margin-top: 28rpx;
+}
+
+.result-stats .stat-card {
+  background: var(--card);
+  box-shadow: 0 12rpx 30rpx rgba(30, 42, 39, 0.05);
+}
+
+.result-detail {
+  margin-top: 24rpx;
+}
+
+.detail-row {
+  padding: 16rpx 0;
+  font-size: 27rpx;
+}
+
+.detail-row + .detail-row {
+  border-top: 2rpx solid var(--line);
+}
+
+.detail-value {
+  font-weight: 600;
+  color: var(--jade);
+}
+
+.wrong-card {
+  margin-top: 24rpx;
+}
+
+.wrong-item {
+  display: flex;
+  align-items: center;
+  padding: 22rpx 0;
+  border-top: 2rpx solid var(--line);
+}
+
+.wrong-term {
+  display: block;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+
+.wrong-reading {
+  display: block;
+  margin-top: 2rpx;
+  font-size: 22rpx;
+  color: var(--jade);
+  letter-spacing: 1rpx;
+}
+
+.wrong-meaning {
+  margin-left: 20rpx;
+  font-size: 26rpx;
+  color: var(--muted);
+  text-align: right;
+}
+
+.result-actions {
+  margin-top: 36rpx;
+}
+
+.action-btn {
+  margin-bottom: 18rpx;
+}
+
+.home-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 18rpx;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.empty-caption {
+  margin-top: 8rpx;
+}
+
+.empty-btn {
+  margin-top: 36rpx;
+}

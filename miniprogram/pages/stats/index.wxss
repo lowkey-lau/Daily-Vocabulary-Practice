@@ -1,0 +1,87 @@
+.stats {
+  padding-top: 24rpx;
+}
+
+.stats-top {
+  margin-top: 32rpx;
+}
+
+.stats-top .stat-card {
+  background: var(--card);
+  box-shadow: 0 12rpx 30rpx rgba(30, 42, 39, 0.05);
+}
+
+.chart-card {
+  margin-top: 24rpx;
+}
+
+.chart {
+  display: flex;
+  align-items: flex-end;
+  height: 320rpx;
+  margin-top: 28rpx;
+}
+
+.chart-col {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.chart-bar-wrap {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  height: 230rpx;
+}
+
+.chart-bar {
+  width: 34rpx;
+  min-height: 6rpx;
+  border-radius: 10rpx 10rpx 4rpx 4rpx;
+  background: #cfe1db;
+  transition: height 260ms ease;
+}
+
+.chart-bar.today {
+  background: var(--jade);
+}
+
+.chart-count {
+  margin-top: 8rpx;
+  font-size: 20rpx;
+  color: var(--muted);
+}
+
+.chart-label {
+  margin-top: 4rpx;
+  font-size: 22rpx;
+  color: var(--muted);
+}
+
+.chart-label.today-label {
+  color: var(--jade);
+  font-weight: 600;
+}
+
+.chart-empty {
+  margin-top: 20rpx;
+  text-align: center;
+  font-size: 22rpx;
+  color: #a39a8c;
+}
+
+.stats-note-card {
+  margin-top: 24rpx;
+}
+
+.stats-btn {
+  margin-top: 22rpx;
+}
+
+.stats-main-btn {
+  margin-top: 28rpx;
+}

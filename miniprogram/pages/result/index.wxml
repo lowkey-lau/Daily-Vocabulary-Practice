@@ -1,0 +1,88 @@
+<view class="page result" wx:if="{{hasResult}}">
+  <view class="result-hero fade-up">
+    <view class="eyebrow">{{modeLabel}} · {{dateLabel}}</view>
+    <view class="stars">
+      <text
+        wx:for="{{stars}}"
+        wx:key="id"
+        class="star {{item.on ? 'on' : ''}}"
+      >★</text>
+    </view>
+    <view class="accuracy">
+      {{accuracy}}<text class="percent">%</text>
+    </view>
+    <view class="accuracy-label">正确率</view>
+    <view class="result-message">{{message}}</view>
+  </view>
+
+  <view class="stat-grid result-stats">
+    <view class="stat-card">
+      <view class="stat-value">{{correct}}</view>
+      <view class="stat-label">答对</view>
+    </view>
+    <view class="stat-card">
+      <view class="stat-value">{{total}}</view>
+      <view class="stat-label">总题数</view>
+    </view>
+    <view class="stat-card">
+      <view class="stat-value">{{streak}}</view>
+      <view class="stat-label">连续天数</view>
+    </view>
+  </view>
+
+  <view class="card result-detail">
+    <view class="row-between detail-row">
+      <text>新学单词</text>
+      <text class="detail-value">{{newCount}} 个</text>
+    </view>
+    <view class="row-between detail-row">
+      <text>复习单词</text>
+      <text class="detail-value">{{reviewCount}} 个</text>
+    </view>
+    <view class="row-between detail-row">
+      <text>用时</text>
+      <text class="detail-value">{{durationText}}</text>
+    </view>
+  </view>
+
+  <view class="card wrong-card" wx:if="{{hasWrong}}">
+    <view class="row-between">
+      <text class="title-md">这次错的词</text>
+      <text class="caption">{{wrongWords.length}} 个</text>
+    </view>
+    <view class="wrong-item" wx:for="{{wrongWords}}" wx:key="id">
+      <view class="flex-1">
+        <text class="wrong-term">{{item.term}}</text>
+        <text class="wrong-reading">{{item.reading}}</text>
+      </view>
+      <text class="wrong-meaning">{{item.meaning}}</text>
+    </view>
+  </view>
+
+  <view class="result-actions">
+    <button
+      class="primary-btn action-btn"
+      wx:if="{{canAgain}}"
+      bindtap="again"
+    >
+      {{mode === 'wrong' ? '再复习一组' : '再学几个'}}
+    </button>
+    <button
+      class="secondary-btn action-btn"
+      wx:if="{{hasWrong}}"
+      bindtap="reviewWrong"
+    >
+      复习错词
+    </button>
+    <button class="text-btn home-link" bindtap="goHome">回到今日</button>
+  </view>
+</view>
+
+<view class="page" wx:else>
+  <view class="empty">
+    <view class="empty-icon">◷</view>
+    <view class="title-md">还没有练习记录</view>
+    <view class="caption empty-caption">去学几个词，回来就能看到结果。</view>
+    <button class="primary-btn empty-btn" bindtap="goHome">去学几个词</button>
+  </view>
+</view>

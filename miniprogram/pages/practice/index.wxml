@@ -1,0 +1,49 @@
+<view class="page practice">
+  <view class="practice-top row-between">
+    <text class="eyebrow">{{mode === 'wrong' ? '错词复习' : '今日练习'}}</text>
+    <text class="practice-count">{{index + 1}} / {{total}}</text>
+  </view>
+
+  <view class="progress-track practice-track">
+    <view class="progress-fill" style="width: {{progressPercent}}%"></view>
+  </view>
+
+  <view class="question-area" wx:if="{{question}}">
+    <view class="term-row">
+      <text class="term">{{question.term}}</text>
+      <view class="audio-pill" bindtap="onAudio">🔊</view>
+    </view>
+    <text class="reading">{{question.reading}}</text>
+    <text class="prompt">这个词是什么意思？</text>
+  </view>
+
+  <view class="options">
+    <view
+      wx:for="{{options}}"
+      wx:key="id"
+      class="option {{item.state}}"
+      data-id="{{item.id}}"
+      bindtap="onSelect"
+    >
+      <text class="option-letter">{{item.letter}}</text>
+      <text class="option-text">{{item.text}}</text>
+    </view>
+  </view>
+
+  <view class="practice-hint" wx:if="{{!answered}}">选一个你觉得对的</view>
+</view>
+
+<view wx:if="{{showFeedback}}" class="feedback-mask"></view>
+<view wx:if="{{showFeedback}}" class="feedback-sheet">
+  <view class="feedback-title {{isCorrect ? 'ok' : 'no'}}">
+    {{feedbackTitle}}
+  </view>
+  <view class="feedback-main">{{question.term}} = {{question.meaning}}</view>
+  <view class="feedback-example">
+    <view>{{question.example}}</view>
+    <view class="feedback-example-meaning">{{question.exampleMeaning}}</view>
+  </view>
+  <button class="primary-btn feedback-btn" bindtap="onContinue">
+    {{isLast ? '看结果' : '继续'}}
+  </button>
+</view>

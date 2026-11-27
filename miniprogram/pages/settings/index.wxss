@@ -1,0 +1,136 @@
+.settings {
+  padding-top: 24rpx;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  padding: 32rpx;
+  border-radius: 32rpx;
+}
+
+.profile-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 96rpx;
+  height: 96rpx;
+  margin-right: 22rpx;
+  border-radius: 50%;
+  background: rgba(255, 252, 245, 0.14);
+  color: #fffdf8;
+  font-size: 44rpx;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.profile-name {
+  font-size: 34rpx;
+  font-weight: 600;
+}
+
+.profile-sub {
+  margin-top: 4rpx;
+  font-size: 22rpx;
+  color: rgba(255, 253, 248, 0.68);
+}
+
+.profile-streak {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.profile-streak-num {
+  font-size: 40rpx;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.profile-streak-label {
+  margin-top: 6rpx;
+  font-size: 20rpx;
+  color: rgba(255, 253, 248, 0.64);
+}
+
+.settings-card {
+  margin-top: 24rpx;
+}
+
+.setting-caption {
+  margin-top: 6rpx;
+}
+
+.setting-chips {
+  margin-top: 20rpx;
+}
+
+.setting-title {
+  font-size: 28rpx;
+  font-weight: 500;
+}
+
+.menu-card {
+  margin-top: 24rpx;
+  padding: 8rpx 28rpx;
+}
+
+.menu-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26rpx 0;
+  border-top: 2rpx solid var(--line);
+  font-size: 28rpx;
+}
+
+.menu-row:first-child {
+  border-top: none;
+}
+
+.menu-arrow {
+  color: #b3aa9c;
+  font-size: 30rpx;
+}
+
+.about-body {
+  padding: 8rpx 0 24rpx;
+  border-top: 2rpx solid var(--line);
+}
+
+.about-p {
+  display: block;
+  margin-top: 14rpx;
+  font-size: 24rpx;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.data-card {
+  margin-top: 24rpx;
+}
+
+.data-row {
+  padding: 14rpx 0;
+  font-size: 26rpx;
+}
+
+.data-row + .data-row {
+  border-top: 2rpx solid var(--line);
+}
+
+.clear-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 32rpx;
+  padding: 20rpx;
+  color: var(--coral);
+  font-size: 26rpx;
+}
+
+.demo-note {
+  margin-top: 12rpx;
+  text-align: center;
+  font-size: 21rpx;
+  color: #a39a8c;
+}

@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/books/index",
+    "pages/settings/index",
+    "pages/practice/index",
+    "pages/result/index",
+    "pages/book-detail/index",
+    "pages/stats/index",
+    "pages/wrongbook/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#0E4F4A",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "粤学几个",
+    "backgroundColor": "#F6F0E4",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "color": "#9A9286",
+    "selectedColor": "#0E4F4A",
+    "backgroundColor": "#FFFCF5",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "今日"
+      },
+      {
+        "pagePath": "pages/books/index",
+        "text": "词书"
+      },
+      {
+        "pagePath": "pages/settings/index",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

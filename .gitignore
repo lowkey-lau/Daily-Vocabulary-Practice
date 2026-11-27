@@ -3,6 +3,10 @@ node_modules/
 **/node_modules/
 miniprogram_npm/
 
+# 微信开发者工具 TypeScript 编译产物（如有）
+miniprogram/**/*.js
+miniprogram/**/*.js.map
+
 # 微信开发者工具本地私有配置
 project.private.config.json
 

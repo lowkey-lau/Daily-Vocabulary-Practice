@@ -1,0 +1,58 @@
+<view class="page books">
+  <view class="books-hero fade-up">
+    <view class="eyebrow">词书</view>
+    <view class="title-xl">选一本，</view>
+    <view class="title-xl">每天学几个。</view>
+    <view class="caption books-sub">先做粤语，其他方言在路上。</view>
+  </view>
+
+  <view class="book-main card fade-up" bindtap="openBook">
+    <view class="book-main-cover">
+      <text class="cover-char">粤</text>
+      <text class="cover-label">入门 · {{totalWords}} 词</text>
+    </view>
+    <view class="book-main-body">
+      <view class="row-between">
+        <text class="title-md">{{book.title}}</text>
+        <text class="pill pill-light" wx:if="{{hasProgress}}">学习中</text>
+        <text class="pill pill-muted" wx:else>未开始</text>
+      </view>
+      <view class="caption book-desc">{{book.subtitle}}</view>
+      <view class="book-bar-row">
+        <view class="progress-track flex-1">
+          <view class="progress-fill" style="width: {{percent}}%"></view>
+        </view>
+        <text class="book-bar-text">{{learned}} / {{totalWords}}</text>
+      </view>
+      <view class="book-meta">
+        <text>{{mastered}} 个已掌握</text>
+        <text class="book-meta-dot">·</text>
+        <text>粤拼注音</text>
+      </view>
+      <button class="primary-btn book-btn" catchtap="start">
+        {{hasProgress ? '继续学习' : '开始学习'}}
+      </button>
+    </view>
+  </view>
+
+  <view class="section-head row-between">
+    <text class="title-md">在路上</text>
+    <text class="caption">先把粤语学稳</text>
+  </view>
+
+  <view
+    class="upcoming-card card"
+    wx:for="{{upcoming}}"
+    wx:key="id"
+    bindtap="showComing"
+  >
+    <view class="upcoming-mark">粤</view>
+    <view class="flex-1 upcoming-body">
+      <view class="upcoming-title">{{item.title}}</view>
+      <view class="caption">{{item.subtitle}}</view>
+    </view>
+    <text class="upcoming-tag">{{item.tag}}</text>
+  </view>
+
+  <view class="demo-note">演示版只有一本词书 · 30 个日常词</view>
+</view>

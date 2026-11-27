@@ -1,0 +1,35 @@
+<view class="page wrongbook">
+  <view class="eyebrow">错词本</view>
+  <view class="title-xl">答错的词，</view>
+  <view class="title-xl">再见一次就记住了。</view>
+
+  <view class="wrong-summary" wx:if="{{total}}">
+    共 {{total}} 个，连续答对 3 次会移出。
+  </view>
+
+  <view class="card wrong-list" wx:if="{{total}}">
+    <view class="wrong-row" wx:for="{{words}}" wx:key="id">
+      <view class="wrong-index">{{index + 1}}</view>
+      <view class="flex-1">
+        <text class="wrong-term">{{item.term}}</text>
+        <text class="wrong-reading">{{item.reading}}</text>
+      </view>
+      <view class="wrong-right">
+        <text class="wrong-meaning">{{item.meaning}}</text>
+        <text class="wrong-count">错 {{item.count}} 次</text>
+      </view>
+    </view>
+    <button class="primary-btn wrong-btn" bindtap="review">复习错词</button>
+  </view>
+
+  <view class="empty" wx:else>
+    <view class="empty-icon">✓</view>
+    <view class="title-md">错词本是空的</view>
+    <view class="caption empty-caption">
+      答错的词会自动收进来，连续答对 3 次移出。
+    </view>
+    <button class="primary-btn empty-btn" bindtap="goPractice">
+      去学几个词
+    </button>
+  </view>
+</view>

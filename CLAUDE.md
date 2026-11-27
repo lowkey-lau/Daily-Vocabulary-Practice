@@ -5,22 +5,28 @@
 面向碎片时间学习的粤语词汇练习微信小程序。第一版聚焦「看词选义」，每天 3–5 分钟，学几个也算；数据模型保留多语言 / 方言扩展能力。
 
 - 需求唯一事实来源：`docs/PRD.md`
-- 当前阶段：需求与 PRD（v0.2，首发粤语），代码脚手架尚未开始。
+- 当前阶段：本地 Demo 已完成（8 个页面，30 词，本地存储）；下一步接云端与 TTS。
 
-## 技术栈（已定方向）
+## 技术栈
 
 - 微信原生小程序 + TypeScript
-- 微信云开发：云数据库、云函数、云存储
+- TypeScript 由开发者工具内置编译插件处理（只删类型、不做类型检查），提交前跑 `npm run typecheck`
+- Demo：本地存储（`wx.getStorageSync` / `wx.setStorageSync`）
+- 正式版：微信云开发（云数据库、云函数、云存储）
 - 内容以 JSON 批量导入，管理员 openid 白名单
 
 在 PRD 评审通过前，不要擅自引入后端框架、跨端框架或第三方 UI 库；如认为有必要，先说明理由并更新文档。
 
-## 目录约定（规划）
+## 目录约定
 
 ```
-miniprogram/      小程序客户端（pages / components / services / utils）
-cloudfunctions/   云函数（login、getDailyPlan、submitAttempt、adminImport 等）
-content/          词书 JSON、导入与校验脚本
+miniprogram/      小程序客户端
+  app.ts/json/wxss
+  data/words.ts   Demo 词库（正式版迁到 content/ JSON）
+  services/       本地存储、每日建议、复习算法
+  pages/          今日、词书、词书详情、练习、结果、统计、错词本、设置
+cloudfunctions/   （规划）云函数
+content/          （规划）词书 JSON、TTS 与导入脚本
 docs/             PRD、设计稿、决策记录
 ```
 
@@ -35,6 +41,7 @@ docs/             PRD、设计稿、决策记录
 - 不采集儿童个人身份信息，不申请非必要权限。
 - 不接入诱导分享、诱导关注或未经授权的内容。
 - 保持「低压力」原则：不做强制任务、不惩罚断签、不用负面文案。
+- Demo 阶段保持零后端依赖；接云开发时先更新 PRD 和数据模型，再改代码。
 
 ## 需求变更
 
@@ -42,4 +49,11 @@ docs/             PRD、设计稿、决策记录
 
 ## 常用命令
 
-脚手架完成后补充（开发、类型检查、内容导入、部署云函数）。
+```bash
+npm install
+npm run typecheck          # TypeScript 类型检查
+
+# 微信开发者工具：导入仓库根目录即可（AppID 已配置 touristappid）
+# 命令行打开需先在「设置 → 安全设置」开启服务端口：
+# /Applications/wechatwebdevtools.app/Contents/MacOS/cli open --project <repo>
+```

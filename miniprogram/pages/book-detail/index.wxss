@@ -1,0 +1,111 @@
+.book-detail {
+  padding-top: 16rpx;
+}
+
+.detail-cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 380rpx;
+  padding: 32rpx;
+  border-radius: 36rpx;
+  background: linear-gradient(145deg, #1b6b62, #0e4f4a);
+  color: #fffdf8;
+  box-shadow: 0 20rpx 48rpx rgba(14, 79, 74, 0.22);
+}
+
+.cover-pill {
+  padding: 8rpx 18rpx;
+  border-radius: 20rpx;
+  background: rgba(255, 252, 245, 0.14);
+  font-size: 22rpx;
+  color: rgba(255, 253, 248, 0.84);
+}
+
+.detail-char {
+  margin-top: 36rpx;
+  font-size: 120rpx;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.detail-title {
+  margin-top: 12rpx;
+  font-size: 42rpx;
+  font-weight: 700;
+}
+
+.detail-subtitle {
+  margin-top: 6rpx;
+  font-size: 24rpx;
+  color: rgba(255, 253, 248, 0.68);
+}
+
+.detail-body {
+  margin-top: 24rpx;
+}
+
+.detail-meta {
+  padding: 10rpx 0;
+  font-size: 26rpx;
+}
+
+.detail-value {
+  font-weight: 600;
+  color: var(--jade);
+}
+
+.detail-track {
+  margin: 8rpx 0 16rpx;
+}
+
+.section-head {
+  margin: 36rpx 4rpx 16rpx;
+}
+
+.sample-card {
+  padding: 10rpx 28rpx;
+}
+
+.sample-row {
+  display: flex;
+  align-items: center;
+  padding: 22rpx 0;
+  border-top: 2rpx solid var(--line);
+}
+
+.sample-row:first-child {
+  border-top: none;
+}
+
+.sample-term {
+  display: block;
+  font-size: 32rpx;
+  font-weight: 600;
+}
+
+.sample-reading {
+  display: block;
+  margin-top: 2rpx;
+  font-size: 22rpx;
+  letter-spacing: 1rpx;
+  color: var(--jade);
+}
+
+.sample-meaning {
+  margin-left: 20rpx;
+  font-size: 26rpx;
+  color: var(--muted);
+  text-align: right;
+}
+
+.audio-note {
+  margin-top: 24rpx;
+  text-align: center;
+  font-size: 22rpx;
+  color: #a39a8c;
+}
+
+.detail-btn {
+  margin-top: 24rpx;
+}

@@ -1,0 +1,78 @@
+.practice {
+  padding-top: 24rpx;
+  padding-bottom: calc(80rpx + env(safe-area-inset-bottom));
+}
+
+.practice-top {
+  margin-bottom: 16rpx;
+}
+
+.practice-count {
+  font-size: 24rpx;
+  color: var(--muted);
+  letter-spacing: 1rpx;
+}
+
+.practice-track {
+  margin-bottom: 52rpx;
+}
+
+.question-area {
+  padding: 16rpx 0 44rpx;
+  text-align: center;
+}
+
+.term-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.term {
+  font-size: 96rpx;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: 2rpx;
+}
+
+.audio-pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64rpx;
+  height: 64rpx;
+  margin-left: 18rpx;
+  border-radius: 50%;
+  background: var(--jade-soft);
+  font-size: 28rpx;
+}
+
+.reading {
+  display: block;
+  margin-top: 12rpx;
+  font-size: 26rpx;
+  letter-spacing: 2rpx;
+  color: var(--jade);
+}
+
+.prompt {
+  display: block;
+  margin-top: 32rpx;
+  font-size: 26rpx;
+  color: var(--muted);
+}
+
+.options {
+  padding: 0 4rpx;
+}
+
+.practice-hint {
+  margin-top: 24rpx;
+  text-align: center;
+  font-size: 22rpx;
+  color: #a39a8c;
+}
+
+.feedback-btn {
+  margin-top: 28rpx;
+}

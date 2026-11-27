@@ -1,0 +1,90 @@
+<view class="page home">
+  <view class="home-top fade-up">
+    <view>
+      <view class="eyebrow">今日 · {{todayLabel}}</view>
+      <view class="brand">粤学几个</view>
+      <view class="caption">得闲就学，几个都算。</view>
+    </view>
+    <view class="streak-pill">
+      <text class="streak-fire">🔥</text>
+      <text class="streak-number">{{streak}}</text>
+      <text class="streak-label">天</text>
+    </view>
+  </view>
+
+  <view class="hero-card card-dark fade-up">
+    <view class="row-between">
+      <text class="hero-eyebrow">{{completed ? '今日完成' : '今日建议'}}</text>
+      <text class="hero-badge">{{planNewCount}} 新 · {{planReviewCount}} 复习</text>
+    </view>
+
+    <view class="hero-number-row">
+      <text class="hero-number">{{answered}}</text>
+      <text class="hero-divider">/</text>
+      <text class="hero-total">{{planTotal}}</text>
+      <text class="hero-unit">个词</text>
+    </view>
+
+    <view class="hero-track">
+      <view class="hero-fill" style="width: {{progressPercent}}%"></view>
+    </view>
+
+    <text class="hero-note" wx:if="{{completed}}">今天学完了，明天再来。</text>
+    <text class="hero-note" wx:elif="{{hasPlan}}">还剩 {{remaining}} 个，三分钟就能搞定。</text>
+    <text class="hero-note" wx:else>这本书学完了，去复习错词吧。</text>
+
+    <button
+      wx:if="{{!completed && hasPlan}}"
+      class="primary-btn light hero-btn"
+      bindtap="startPractice"
+    >
+      {{answered === 0 ? '开始今日练习' : '继续练习'}}
+    </button>
+    <button
+      wx:elif="{{completed}}"
+      class="primary-btn light hero-btn"
+      bindtap="extraPractice"
+    >
+      再学 3 个
+    </button>
+    <button wx:else class="primary-btn light hero-btn" bindtap="goWrong">
+      复习错词
+    </button>
+  </view>
+
+  <view class="section-head row-between">
+    <text class="title-md">正在学</text>
+    <text class="text-btn" bindtap="goBooks">换词书 ›</text>
+  </view>
+
+  <view class="book-card card" bindtap="goBookDetail">
+    <view class="book-cover">粤</view>
+    <view class="flex-1">
+      <view class="title-md">{{bookTitle}}</view>
+      <view class="caption">{{bookSubtitle}}</view>
+      <view class="book-progress-row">
+        <view class="progress-track flex-1">
+          <view class="progress-fill" style="width: {{bookPercent}}%"></view>
+        </view>
+        <text class="book-progress-text">{{learned}} / {{totalWords}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="quick-grid">
+    <view class="quick-card" bindtap="goWrong">
+      <text class="quick-icon">✎</text>
+      <text class="quick-title">错词本</text>
+      <text class="quick-caption">{{wrongCount}} 个待复习</text>
+    </view>
+    <view class="quick-card" bindtap="goStats">
+      <text class="quick-icon">◷</text>
+      <text class="quick-title">学习统计</text>
+      <text class="quick-caption">看看这周学了几天</text>
+    </view>
+  </view>
+
+  <view class="demo-note">
+    <text>演示版 · 数据只保存在本机，未接云端与发音</text>
+  </view>
+</view>
