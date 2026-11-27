@@ -34,6 +34,18 @@
     </button>
   </view>
 
+  <view class="stage-grid">
+    <view class="stage-mini" wx:for="{{stages}}" wx:key="key">
+      <view class="stage-mini-head">
+        <text class="stage-mini-label">{{item.label}}</text>
+        <text class="stage-mini-count">{{item.recorded}}/{{item.total}}</text>
+      </view>
+      <view class="stage-mini-track">
+        <view class="stage-mini-fill" style="width: {{item.percent}}%"></view>
+      </view>
+    </view>
+  </view>
+
   <view class="family-actions">
     <button class="secondary-btn family-action" bindtap="startPractice">
       <image

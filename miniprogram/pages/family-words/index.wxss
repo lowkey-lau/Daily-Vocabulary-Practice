@@ -123,6 +123,12 @@
   color: var(--jade);
 }
 
+.delete-btn {
+  margin-top: 6rpx;
+  font-size: 21rpx;
+  color: var(--coral);
+}
+
 .empty {
   margin-top: 20rpx;
 }

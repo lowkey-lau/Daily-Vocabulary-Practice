@@ -1,4 +1,5 @@
 import {
+  FamilyStage,
   RecordedWord,
   getFamilyMembers,
   getFamilyOverview,
@@ -14,6 +15,7 @@ Page({
     percent: 0,
     recent: [] as RecordedWord[],
     hasRecordings: false,
+    stages: [] as FamilyStage[],
     members: [] as Array<{
       id: string;
       name: string;
@@ -38,6 +40,7 @@ Page({
       percent: overview.percent,
       recent: overview.recent,
       hasRecordings: overview.hasRecordings,
+      stages: overview.stages,
       members: getFamilyMembers(),
     });
   },

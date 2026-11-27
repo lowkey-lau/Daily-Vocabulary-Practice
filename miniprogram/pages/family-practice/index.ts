@@ -2,6 +2,7 @@ import {
   FamilyQuestion,
   getFamilyPracticeQuestions,
 } from '../../services/family-store';
+import { submitAnswer } from '../../services/store';
 
 Page({
   data: {
@@ -120,6 +121,8 @@ Page({
     if (!selected) return;
 
     const correct = selected.correct;
+    submitAnswer(question.wordId, correct, false);
+
     const options = this.data.options.map((option) => ({
       ...option,
       state:

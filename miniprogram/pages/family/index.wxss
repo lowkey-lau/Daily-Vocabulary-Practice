@@ -50,6 +50,55 @@
   margin-top: 26rpx;
 }
 
+.stage-grid {
+  display: flex;
+  margin-top: 20rpx;
+}
+
+.stage-mini {
+  flex: 1;
+  padding: 18rpx 16rpx;
+  border-radius: 20rpx;
+  background: var(--card);
+  box-shadow: 0 10rpx 26rpx rgba(30, 42, 39, 0.05);
+}
+
+.stage-mini + .stage-mini {
+  margin-left: 12rpx;
+}
+
+.stage-mini-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.stage-mini-label {
+  font-size: 21rpx;
+  color: var(--muted);
+}
+
+.stage-mini-count {
+  font-size: 21rpx;
+  font-weight: 600;
+  color: var(--jade);
+}
+
+.stage-mini-track {
+  height: 8rpx;
+  margin-top: 10rpx;
+  border-radius: 4rpx;
+  background: #ece4d5;
+  overflow: hidden;
+}
+
+.stage-mini-fill {
+  height: 100%;
+  border-radius: 4rpx;
+  background: var(--jade);
+  transition: width 240ms ease;
+}
+
 .family-actions {
   display: flex;
   margin-top: 20rpx;

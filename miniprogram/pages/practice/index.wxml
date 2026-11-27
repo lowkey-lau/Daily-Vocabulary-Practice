@@ -12,7 +12,8 @@
     <view class="term-row">
       <text class="term">{{question.term}}</text>
       <view
-        class="audio-pill"
+        wx:if="{{hasFamilyAudio}}"
+        class="audio-pill {{isPlaying ? 'playing' : ''}}"
         hover-class="audio-hover"
         bindtap="onAudio"
       >
@@ -24,6 +25,9 @@
       </view>
     </view>
     <text class="reading">{{question.reading}}</text>
+    <text class="family-audio-hint" wx:if="{{hasFamilyAudio}}">
+      {{isPlaying ? '正在播放长辈发音' : '点喇叭听长辈发音'}}
+    </text>
     <text class="prompt">这个词是什么意思？</text>
   </view>
 

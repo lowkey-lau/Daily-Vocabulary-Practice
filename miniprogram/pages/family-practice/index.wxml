@@ -71,6 +71,7 @@
     <view class="result-count">{{correctCount}} / {{total}}</view>
     <view class="result-label">答对</view>
     <view class="result-message">今天听了 {{total}} 个家里的词。</view>
+    <view class="result-note">这次练习已计入学习统计和连续天数</view>
   </view>
 
   <button class="primary-btn" bindtap="restart">

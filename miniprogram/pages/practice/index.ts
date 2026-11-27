@@ -7,6 +7,7 @@ import {
   saveResult,
   submitAnswer,
 } from '../../services/store';
+import { getRecording } from '../../services/family-store';
 
 type OptionView = {
   id: string;
@@ -33,7 +34,12 @@ Page({
     startAt: 0,
     sessionCorrect: 0,
     sessionWrongIds: [] as string[],
+    hasFamilyAudio: false,
+    familyAudioPath: '',
+    isPlaying: false,
   },
+
+  audioCtx: null as any,
 
   onLoad(options: Record<string, string>) {
     const mode = options.mode === 'wrong' ? 'wrong' : 'plan';
@@ -75,6 +81,8 @@ Page({
     const question = questions[index];
     if (!question) return;
     const letters = ['A', 'B', 'C', 'D'];
+    const familyRecording = getRecording(question.wordId);
+    this.stopAudio();
 
     this.setData({
       index,
@@ -92,6 +100,9 @@ Page({
       feedbackTitle: '',
       isLast: index === questions.length - 1,
       progressPercent: Math.round(((index + 1) / questions.length) * 100),
+      hasFamilyAudio: Boolean(familyRecording),
+      familyAudioPath: familyRecording ? familyRecording.audioPath : '',
+      isPlaying: false,
     });
   },
 
@@ -150,6 +161,7 @@ Page({
   },
 
   finish() {
+    this.stopAudio();
     if (wx.disableAlertBeforeUnload) {
       wx.disableAlertBeforeUnload();
     }
@@ -171,10 +183,47 @@ Page({
   },
 
   onAudio() {
-    wx.showToast({
-      title: '发音暂未接入',
-      icon: 'none',
+    if (!this.data.familyAudioPath) {
+      wx.showToast({ title: '这个字还没有长辈录音', icon: 'none' });
+      return;
+    }
+    if (this.data.isPlaying) {
+      this.stopAudio();
+      return;
+    }
+    this.playAudio(this.data.familyAudioPath);
+  },
+
+  playAudio(path: string) {
+    this.stopAudio();
+    const ctx = wx.createInnerAudioContext();
+    ctx.src = path;
+    ctx.obeyMuteSwitch = false;
+    ctx.onEnded(() => {
+      this.setData({ isPlaying: false });
     });
+    ctx.onError(() => {
+      this.setData({ isPlaying: false });
+      wx.showToast({ title: '播放失败', icon: 'none' });
+    });
+    ctx.play();
+    this.audioCtx = ctx;
+    this.setData({ isPlaying: true });
+  },
+
+  stopAudio() {
+    if (this.audioCtx) {
+      try {
+        this.audioCtx.stop();
+        this.audioCtx.destroy();
+      } catch (err) {
+        // 忽略播放器清理失败。
+      }
+      this.audioCtx = null;
+    }
+    if (this.data.isPlaying) {
+      this.setData({ isPlaying: false });
+    }
   },
 
   onExit() {
@@ -182,6 +231,7 @@ Page({
   },
 
   onUnload() {
+    this.stopAudio();
     if (wx.disableAlertBeforeUnload) {
       wx.disableAlertBeforeUnload();
     }

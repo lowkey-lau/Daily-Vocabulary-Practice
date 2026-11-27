@@ -180,6 +180,14 @@ export function resetFamily(): void {
   save();
 }
 
+export type FamilyStage = {
+  key: string;
+  label: string;
+  recorded: number;
+  total: number;
+  percent: number;
+};
+
 export function getFamilyOverview(): {
   familyName: string;
   hometown: string;
@@ -189,8 +197,32 @@ export function getFamilyOverview(): {
   recordings: RecordedWord[];
   recent: RecordedWord[];
   hasRecordings: boolean;
+  stages: FamilyStage[];
 } {
   const recordings = getRecordedWords();
+  const recordedIds = new Set(recordings.map((item) => item.id));
+  const stageOrder = ['family', 'daily', 'basic'];
+  const stageLabels: Record<string, string> = {
+    family: '家人称呼',
+    daily: '日常场景',
+    basic: '基础词汇',
+  };
+  const stages = stageOrder.map((key) => {
+    const stageWords = WORDS.filter((word) => word.stage === key);
+    const recorded = stageWords.filter((word) =>
+      recordedIds.has(word.id)
+    ).length;
+    return {
+      key,
+      label: stageLabels[key],
+      recorded,
+      total: stageWords.length,
+      percent: stageWords.length
+        ? Math.round((recorded / stageWords.length) * 100)
+        : 0,
+    };
+  });
+
   return {
     familyName: state.familyName,
     hometown: state.hometown,
@@ -202,6 +234,7 @@ export function getFamilyOverview(): {
     recordings,
     recent: recordings.slice(0, 3),
     hasRecordings: recordings.length > 0,
+    stages,
   };
 }
 

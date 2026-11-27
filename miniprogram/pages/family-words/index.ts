@@ -1,6 +1,7 @@
 import {
   RecordedWord,
   getFamilyOverview,
+  removeRecording,
 } from '../../services/family-store';
 
 Page({
@@ -82,6 +83,25 @@ Page({
     const id = event.currentTarget.dataset.id as string;
     wx.navigateTo({
       url: `/pages/family-record/index?wordId=${id}`,
+    });
+  },
+
+  remove(event: any) {
+    const id = event.currentTarget.dataset.id as string;
+    const word = this.data.words.find((item) => item.id === id);
+    const label = word ? word.localTerm : '这条';
+    wx.showModal({
+      title: '删除录音',
+      content: `删除「${label}」的录音？`,
+      confirmText: '删除',
+      confirmColor: '#DF6747',
+      success: (res) => {
+        if (!res.confirm) return;
+        this.stopPlayback();
+        removeRecording(id);
+        this.refresh();
+        wx.showToast({ title: '已删除', icon: 'none' });
+      },
     });
   },
 

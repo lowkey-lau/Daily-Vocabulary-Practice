@@ -52,8 +52,19 @@
   height: 40rpx;
 }
 
+.audio-pill.playing {
+  background: var(--gold);
+}
+
 .audio-hover {
   transform: scale(0.9);
+}
+
+.family-audio-hint {
+  display: block;
+  margin-top: 8rpx;
+  font-size: 21rpx;
+  color: var(--jade);
 }
 
 .reading {

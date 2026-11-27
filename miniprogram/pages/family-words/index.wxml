@@ -47,6 +47,9 @@
         <text class="rerecord-btn" data-id="{{item.id}}" bindtap="rerecord">
           重录
         </text>
+        <text class="delete-btn" data-id="{{item.id}}" bindtap="remove">
+          删除
+        </text>
       </view>
     </view>
   </view>
