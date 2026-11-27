@@ -2,7 +2,7 @@
   <view class="home-top fade-up">
     <view>
       <view class="eyebrow">今日 · {{todayLabel}}</view>
-      <view class="brand">每日几个</view>
+      <view class="brand">拾乡音</view>
       <view class="caption">得闲就学，几个都算。</view>
     </view>
     <view class="streak-pill">

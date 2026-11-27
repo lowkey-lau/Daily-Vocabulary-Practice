@@ -1,4 +1,4 @@
-# 每日单词练习小程序
+# 拾乡音
 
 面向碎片时间学习的多语言 / 方言词汇练习微信小程序。当前本地测试词表有 40 个词，按「家人称呼 → 日常场景 → 基础词汇」三阶段组织，先验证家庭录音与学习流程；正式首发语言 / 方言待定。每天 3–5 分钟，学几个词也算数。
 
@@ -6,7 +6,7 @@
 
 | 阶段 | 状态 |
 | --- | --- |
-| 需求梳理 / PRD | ✅ v0.6 |
+| 需求梳理 / PRD | ✅ v0.7 |
 | 本地 Demo | ✅ 12 个页面，40 个三阶段测试词，本地存储 |
 | 视觉 / 图标 | ✅ Fluent Emoji 卡通图标 + 轻动效 |
 | 家庭口音词库 | 🟡 本地录音原型已实现；云端家庭版待开发 |
@@ -152,6 +152,7 @@ npm run build:words   # 生成 miniprogram/data/words.ts
 │       ├── family-record/     # 长辈录音
 │       ├── family-words/      # 家庭词库
 │       └── family-practice/   # 听音选义
+├── brand/                     # 小程序头像、注册资料、品牌说明
 ├── content/                   # 选词、HSK 源快照、来源与许可
 │   ├── selected-words.json    # 人工维护的选词 + 原创释义/例句
 │   ├── core.json              # 构建产物（审阅用）
@@ -170,6 +171,8 @@ npm run build:words   # 生成 miniprogram/data/words.ts
 
 - [产品需求文档 PRD](docs/PRD.md)
 - [家庭口音词库模块设计](docs/FAMILY-MODULE.md)
+- [小程序注册资料](brand/INTRO.md)
+- [品牌头像与说明](brand/README.md)
 - [内容管线](content/README.md)
 - [来源与许可](content/SOURCES.md)
 - [开发约定](CLAUDE.md)
